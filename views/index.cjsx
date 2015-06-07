@@ -55,7 +55,7 @@ ItemInfoArea = React.createClass
         for kanmusu in names.hisho
           if (Math.floor(kanmusu.day / key) % 2 == 1)
             flag = 1
-            hishos = hishos + "," + kanmusu.hisho
+            hishos = hishos + " " + kanmusu.hisho
         if flag
           row =
             type: types.type
@@ -71,7 +71,7 @@ ItemInfoArea = React.createClass
         <Divider text="装备改修" />
         <Grid className='vertical-center'>
           <Col xs={2}>选择日期</Col>
-          <Col xs={2}>
+          <Col xs={3}>
             <Input id='sortbase' type='select' placeholder='sun' onChange={@handleKeyChange}>
               <option value='sun'>日曜日</option>
               <option value='mon'>月曜日</option>
