@@ -20,40 +20,48 @@ ItemInfoArea = React.createClass
     dayName: 'sun'
   handleKeyChange: (e) ->
     {rows} = @state
-    path = require 'path'
     switch e.target.value
       when "sun"
-			     pp = path.join(__dirname, "..", "sun.txt")
-        break;
+			     key = 64
+			     break;
       when "mon"
-           pp = path.join(__dirname, "..", "mon.txt")
+           key = 32
            break;
       when "tue"
-           pp = path.join(__dirname, "..", "tue.txt")
+           key = 16
            break;
       when "wed"
-           pp = path.join(__dirname, "..", "wed.txt")
+           key = 8
            break;
       when "thu"
-           pp = path.join(__dirname, "..", "fri.txt")
+           key = 4
            break;
       when "fri"
-           pp = path.join(__dirname, "..", "fri.txt")
+           key = 2
            break;
       when "sat"
-           pp = path.join(__dirname, "..", "sat.txt")
+           key = 1
            break;
+    path = require 'path'
+    pp = path.join(__dirname, "..", "data.json")
     fs = require "fs"
     contents = fs.readFileSync(pp,"utf8")
-    strs = contents.split("\n")
+    db = eval ("(" + contents + ")");
     rows = []
-    for item in strs
-      items = item.split(",")
-      row =
-        type: items[0]
-        name: items[1]
-        hisho: items[2]
-      rows.push row
+    for types in db
+      for names in types.items
+        flag = 0
+        hishos = ""
+        for kanmusu in names.hisho
+          if (Math.floor(kanmusu.day / key) % 2 == 1)
+            flag = 1
+            hishos = hishos + "," + kanmusu.hisho
+        if flag
+          row =
+            type: types.type
+            name: names.name
+            hisho: hishos
+          rows.push row
     @setState
       rows: rows
   render: ->
@@ -65,13 +73,13 @@ ItemInfoArea = React.createClass
           <Col xs={2}>选择日期</Col>
           <Col xs={2}>
             <Input id='sortbase' type='select' placeholder='sun' onChange={@handleKeyChange}>
-              <option value='sun'>日</option>
-              <option value='mon'>月</option>
-              <option value='tue'>火</option>
-              <option value='wed'>水</option>
-              <option value='thu'>木</option>
-              <option value='fri'>金</option>
-              <option value='sat'>土</option>
+              <option value='sun'>日曜日</option>
+              <option value='mon'>月曜日</option>
+              <option value='tue'>火曜日</option>
+              <option value='wed'>水曜日</option>
+              <option value='thu'>木曜日</option>
+              <option value='fri'>金曜日</option>
+              <option value='sat'>土曜日</option>
             </Input>
           </Col>
         </Grid>

@@ -23,7 +23,11 @@ module.exports =
   displayName: [<FontAwesome name='wrench' key={0} />, ' 装备改修']
   author: 'KochiyaOcean'
   link: 'https://github.com/kochiyaocean'
+<<<<<<< Updated upstream
   version: '1.0.0-20150605'
+=======
+  version: '1.1.0-20150605'
+>>>>>>> Stashed changes
   description: '查看装备改修信息'
   handleClick: ->
     itemImprovementWindow.show()
