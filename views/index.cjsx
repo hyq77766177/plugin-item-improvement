@@ -1,10 +1,9 @@
 {React, ReactBootstrap, jQuery} = window
 {Panel, Button, Input, Col, Grid, Row, Table} = ReactBootstrap
 Divider = require './divider'
-
+path = require 'path'
+fs = require "fs"
 ItemImprovementCheckboxArea = React.createClass
-
-
 ItemInfoTable = React.createClass
   render: ->
     <tr>
@@ -12,8 +11,6 @@ ItemInfoTable = React.createClass
       <td>{@props.name}</td>
       <td>{@props.hisho}</td>
     </tr>
-
-
 ItemInfoArea = React.createClass
   getInitialState: ->
     rows:[]
@@ -22,29 +19,20 @@ ItemInfoArea = React.createClass
     {rows} = @state
     switch e.target.value
       when "sun"
-			     key = 64
-			     break;
+       key = 64
       when "mon"
-           key = 32
-           break;
+       key = 32
       when "tue"
-           key = 16
-           break;
+       key = 16
       when "wed"
-           key = 8
-           break;
+       key = 8
       when "thu"
-           key = 4
-           break;
+       key = 4
       when "fri"
-           key = 2
-           break;
+       key = 2
       when "sat"
-           key = 1
-           break;
-    path = require 'path'
+       key = 1
     pp = path.join(__dirname, "..", "data.json")
-    fs = require "fs"
     contents = fs.readFileSync(pp,"utf8")
     db = eval ("(" + contents + ")");
     rows = []
@@ -65,7 +53,6 @@ ItemInfoArea = React.createClass
     @setState
       rows: rows
   render: ->
-
     <Grid id="item-info-area">
       <div id='item-info-settings'>
         <Divider text="装备改修" />
