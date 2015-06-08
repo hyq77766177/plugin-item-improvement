@@ -1,4 +1,4 @@
-{React, ReactBootstrap, jQuery} = window
+{React, ReactBootstrap} = window
 {Panel, Button, Input, Col, Grid, Row, Table} = ReactBootstrap
 Divider = require './divider'
 path = require 'path'
