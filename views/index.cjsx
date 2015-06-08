@@ -1,8 +1,8 @@
 {React, ReactBootstrap} = window
 {Panel, Button, Input, Col, Grid, Row, Table} = ReactBootstrap
 Divider = require './divider'
-path = require 'path'
-fs = require "fs"
+path = require 'path-extra'
+fs = require "fs-extra"
 ItemImprovementCheckboxArea = React.createClass
 ItemInfoTable = React.createClass
   render: ->
@@ -33,8 +33,7 @@ ItemInfoArea = React.createClass
       when "sat"
        key = 1
     pp = path.join(__dirname, "..", "data.json")
-    contents = fs.readFileSync(pp,"utf8")
-    db = eval ("(" + contents + ")");
+    db = fs.readJsonSync(pp, 'utf8')
     rows = []
     for types in db
       for names in types.items
