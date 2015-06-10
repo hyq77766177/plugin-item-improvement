@@ -23,7 +23,7 @@ module.exports =
   displayName: [<FontAwesome name='wrench' key={0} />, ' 装备改修']
   author: 'KochiyaOcean'
   link: 'https://github.com/kochiyaocean'
-  version: '1.2.0-20150605'
+  version: '1.2.1-20150605'
   description: '查看装备改修信息'
   handleClick: ->
     itemImprovementWindow.show()
