@@ -3,7 +3,7 @@
 Divider = require './divider'
 path = require 'path-extra'
 fs = require "fs-extra"
-day = (new Date).getDay()
+day = (new Date).getUTCDay()
 if (new Date).getUTCHours() >= 15
   day = (day + 1) % 7
 ItemImprovementCheckboxArea = React.createClass
@@ -53,7 +53,12 @@ ItemInfoArea = React.createClass
   handleKeyChange: (e) ->
     @getList(e.target.value)
   componentDidMount: ->
-    day = (new Date).getDay()
+    day = (new Date).getUTCDay()
+    if (new Date).getUTCHours() >= 15
+      day = (day + 1) % 7
+    @getList(day)
+  componentWillUnmount: ->
+    day = (new Date).getUTCDay()
     if (new Date).getUTCHours() >= 15
       day = (day + 1) % 7
     @getList(day)
