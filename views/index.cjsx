@@ -36,7 +36,7 @@ ItemInfoArea = React.createClass
         for kanmusu in names.hisho
           if (Math.floor(kanmusu.day / key) % 2 == 1)
             flag = 1
-            hishos = hishos + " " + kanmusu.hisho
+            hishos = hishos + kanmusu.hisho + "　"
         if flag
           row =
             icon: types.icon
@@ -53,6 +53,9 @@ ItemInfoArea = React.createClass
   handleKeyChange: (e) ->
     @getList(e.target.value)
   componentDidMount: ->
+    day = (new Date).getDay()
+    if (new Date).getUTCHours() >= 15
+      day = (day + 1) % 7
     @getList(day)
   render: ->
     <Grid id="item-info-area">
@@ -77,9 +80,9 @@ ItemInfoArea = React.createClass
           <Table striped condensed hover id="main-table">
           <thead className="item-table">
             <tr>
-              <th className="center">装备类型</th>
-              <th className="center">装备名称</th>
-              <th className="center">二号舰娘</th>
+              <th width="150" >　　　装备类型</th>
+              <th width="250" >装备名称</th>
+              <th width="150" >二号舰娘</th>
             </tr>
           </thead>
           <tbody>
