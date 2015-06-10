@@ -3,35 +3,29 @@
 Divider = require './divider'
 path = require 'path-extra'
 fs = require "fs-extra"
+day = (new Date).getDay()
+if (new Date).getUTCHours() >= 15
+  day = (day + 1) % 7
 ItemImprovementCheckboxArea = React.createClass
 ItemInfoTable = React.createClass
   render: ->
     <tr>
-      <td>{@props.type}</td>
+      <td style={{paddingLeft: 10+'px'}}>
+        {
+          <img src={
+              path.join(ROOT, 'assets', 'img', 'slotitem', @props.icon)
+            }
+            />
+        }
+        {@props.type}
+      </td>
       <td>{@props.name}</td>
       <td>{@props.hisho}</td>
     </tr>
 ItemInfoArea = React.createClass
-  getInitialState: ->
-    rows:[]
-    dayName: 'sun'
-  handleKeyChange: (e) ->
+  getList: (_day) ->
     {rows} = @state
-    switch e.target.value
-      when "sun"
-       key = 64
-      when "mon"
-       key = 32
-      when "tue"
-       key = 16
-      when "wed"
-       key = 8
-      when "thu"
-       key = 4
-      when "fri"
-       key = 2
-      when "sat"
-       key = 1
+    key = Math.pow(2, 6- _day)
     pp = path.join(__dirname, "..", "data.json")
     db = fs.readJsonSync(pp, 'utf8')
     rows = []
@@ -45,12 +39,21 @@ ItemInfoArea = React.createClass
             hishos = hishos + " " + kanmusu.hisho
         if flag
           row =
+            icon: types.icon
             type: types.type
             name: names.name
             hisho: hishos
           rows.push row
     @setState
       rows: rows
+  getInitialState: ->
+    rows:[]
+    dayName: day
+    #@getList(day)
+  handleKeyChange: (e) ->
+    @getList(e.target.value)
+  componentDidMount: ->
+    @getList(day)
   render: ->
     <Grid id="item-info-area">
       <div id='item-info-settings'>
@@ -58,14 +61,14 @@ ItemInfoArea = React.createClass
         <Grid className='vertical-center'>
           <Col xs={2}>选择日期</Col>
           <Col xs={3}>
-            <Input id='sortbase' type='select' placeholder='sun' onChange={@handleKeyChange}>
-              <option value='sun'>日曜日</option>
-              <option value='mon'>月曜日</option>
-              <option value='tue'>火曜日</option>
-              <option value='wed'>水曜日</option>
-              <option value='thu'>木曜日</option>
-              <option value='fri'>金曜日</option>
-              <option value='sat'>土曜日</option>
+            <Input id='sortbase' type='select' defaultValue={day} onChange={@handleKeyChange}>
+              <option value=0>星期日</option>
+              <option value=1>星期一</option>
+              <option value=2>星期二</option>
+              <option value=3>星期三</option>
+              <option value=4>星期四</option>
+              <option value=5>星期五</option>
+              <option value=6>星期六</option>
             </Input>
           </Col>
         </Grid>
@@ -87,6 +90,7 @@ ItemInfoArea = React.createClass
                 printRows.push row
               for row, index in printRows
                 <ItemInfoTable
+                  icon = {row.icon}
                   type = {row.type}
                   name = {row.name}
                   hisho = {row.hisho}
