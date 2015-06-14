@@ -6,16 +6,14 @@ windowManager = remote.require './lib/window'
 itemImprovementWindow = null
 initialItemImprovementWindow = ->
   itemImprovementWindow = windowManager.createWindow
-    #Use config
+    # Use config
+    realClose: true
     x: config.get 'poi.window.x', 0
     y: config.get 'poi.window.y', 0
     width: 820
     height: 650
   itemImprovementWindow.loadUrl "file://#{__dirname}/index.html"
-  if process.env.DEBUG?
-    itemImprovementWindow.openDevTools
-      detach: true
-initialItemImprovementWindow()
+  itemImprovementWindow.show()
 
 module.exports =
   name: 'Item-Improevment'
@@ -26,4 +24,4 @@ module.exports =
   version: '1.2.1-20150605'
   description: '查看装备改修信息'
   handleClick: ->
-    itemImprovementWindow.show()
+    initialItemImprovementWindow()
