@@ -14,8 +14,7 @@ initialItemImprovementWindow = ->
     height: 650
   itemImprovementWindow.loadUrl "file://#{__dirname}/index.html"
   itemImprovementWindow.webContents.on 'dom-ready', (e)->
-    setTimeout itemImprovementWindow.show(), 1000
-    #itemImprovementWindow.show()
+    itemImprovementWindow.show()
 
 module.exports =
   name: 'Item-Improevment'
