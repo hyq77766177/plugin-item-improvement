@@ -17,7 +17,7 @@ initialItemImprovementWindow = ->
     itemImprovementWindow.show()
 
 module.exports =
-  name: 'Item-Improevment'
+  name: 'Item-Improvement'
   priority: 50
   displayName: [<FontAwesome name='wrench' key={0} />, ' 装备改修']
   author: 'KochiyaOcean'
