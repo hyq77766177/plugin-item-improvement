@@ -65,11 +65,11 @@ ItemInfoArea = React.createClass
   render: ->
     <Grid id="item-info-area">
       <div id='item-info-settings'>
-        <Divider text="装备改修" />
+        <Divider text="日期设置" />
         <Grid className='vertical-center'>
           <Col xs={2}>选择日期</Col>
           <Col xs={3}>
-            <Input id='sortbase' type='select' defaultValue={day} onChange={@handleKeyChange}>
+            <Input id='sortbase' type='select' bsSize='small' defaultValue={day} onChange={@handleKeyChange}>
               <option value=0>星期日</option>
               <option value=1>星期一</option>
               <option value=2>星期二</option>
@@ -80,7 +80,7 @@ ItemInfoArea = React.createClass
             </Input>
           </Col>
         </Grid>
-        <Divider text="" />
+        <Divider text="改修信息" />
         <Grid>
           <Table striped condensed hover id="main-table">
           <thead className="item-table">
