@@ -27,7 +27,7 @@ ItemInfoArea = React.createClass
     {rows} = @state
     key = Math.pow(2, 6- _day)
     pp = path.join(__dirname, "..", "data.json")
-    db = fs.readJsonSync(pp, 'utf8')
+    db = fs.readJsonSync pp
     rows = []
     for types in db
       for names in types.items
