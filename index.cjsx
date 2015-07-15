@@ -19,7 +19,7 @@ initialItemImprovementWindow = ->
 module.exports =
   name: 'Item-Improvement'
   priority: 50
-  displayName: [<FontAwesome name='wrench' key={0} />, ' 装备改修']
+  displayName: <span><FontAwesome name='wrench' key={0} /> 装备改修</span>
   author: 'KochiyaOcean'
   link: 'https://github.com/kochiyaocean'
   version: '1.2.1-20150618'
