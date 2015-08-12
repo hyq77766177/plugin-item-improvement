@@ -3,6 +3,18 @@
 Divider = require './divider'
 path = require 'path-extra'
 fs = require "fs-extra"
+i18n = require '../node-modules/i18n'
+{__} = i18n
+i18n.configure({
+    locales:['en_US', 'ja_JP', 'zh_CN'],
+    defaultLocale: 'zh_CN',
+    directory: path.join(__dirname, '..', "i18n"),
+    updateFiles: false,
+    indent: "\t",
+    extension: '.json'
+})
+i18n.setLocale(window.language)
+
 day = (new Date).getUTCDay()
 if (new Date).getUTCHours() >= 15
   day = (day + 1) % 7
@@ -65,29 +77,29 @@ ItemInfoArea = React.createClass
   render: ->
     <Grid id="item-info-area">
       <div id='item-info-settings'>
-        <Divider text="日期设置" />
+        <Divider text={__ "Weekday setting"} />
         <Grid className='vertical-center'>
-          <Col xs={2}>选择日期</Col>
+          <Col xs={2}>{__ "Choose weekday"}</Col>
           <Col xs={3}>
             <Input id='sortbase' type='select' bsSize='small' defaultValue={day} onChange={@handleKeyChange}>
-              <option value=0>星期日</option>
-              <option value=1>星期一</option>
-              <option value=2>星期二</option>
-              <option value=3>星期三</option>
-              <option value=4>星期四</option>
-              <option value=5>星期五</option>
-              <option value=6>星期六</option>
+              <option value=0>{__ "Sunday"}</option>
+              <option value=1>{__ "Monday"}</option>
+              <option value=2>{__ "Tuesday"}</option>
+              <option value=3>{__ "Wednesday"}</option>
+              <option value=4>{__ "Thursday"}</option>
+              <option value=5>{__ "Friday"}</option>
+              <option value=6>{__ "Saturday"}</option>
             </Input>
           </Col>
         </Grid>
-        <Divider text="改修信息" />
+        <Divider text={__ "Improvement information"} />
         <Grid>
           <Table striped condensed hover id="main-table">
           <thead className="item-table">
             <tr>
-              <th width="150" >　　　装备类型</th>
-              <th width="250" >装备名称</th>
-              <th width="150" >二号舰娘</th>
+              <th width="150" >　　　{__ "Type"}</th>
+              <th width="250" >{__ "Name"}</th>
+              <th width="150" >{__ "2nd Ship"}</th>
             </tr>
           </thead>
           <tbody>

@@ -2,6 +2,18 @@
 {Button} = ReactBootstrap
 remote = require 'remote'
 windowManager = remote.require './lib/window'
+i18n = require './node-modules/i18n'
+{__} = i18n
+path = require 'path-extra'
+i18n.configure({
+    locales:['en_US', 'ja_JP', 'zh_CN'],
+    defaultLocale: 'zh_CN',
+    directory: path.join(__dirname, "i18n"),
+    updateFiles: false,
+    indent: "\t",
+    extension: '.json'
+})
+i18n.setLocale(window.language)
 
 itemImprovementWindow = null
 initialItemImprovementWindow = ->
@@ -19,10 +31,10 @@ initialItemImprovementWindow = ->
 module.exports =
   name: 'Item-Improvement'
   priority: 50
-  displayName: <span><FontAwesome name='wrench' key={0} /> 装备改修</span>
+  displayName: <span><FontAwesome name='wrench' key={0} /> {__ "Equipment Improvement"}</span>
   author: 'KochiyaOcean'
   link: 'https://github.com/kochiyaocean'
   version: '1.3.0'
-  description: '查看装备改修信息'
+  description: __ "Show possible improvements of the day"
   handleClick: ->
     initialItemImprovementWindow()
