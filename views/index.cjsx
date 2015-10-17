@@ -98,7 +98,7 @@ ItemInfoArea = React.createClass
             <tr>
               <th width="150" >　　　{__ "Type"}</th>
               <th width="250" >{__ "Name"}</th>
-              <th width="150" >{__ "2nd Ship"}</th>
+              <th width="200" >{__ "2nd Ship"}</th>
             </tr>
           </thead>
           <tbody>
