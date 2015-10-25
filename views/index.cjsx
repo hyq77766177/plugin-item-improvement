@@ -1,5 +1,5 @@
 {React, ReactBootstrap} = window
-{Panel, Button, Input, Col, Grid, Row, Table} = ReactBootstrap
+{Panel, Button, Nav, NavItem, Col, Grid, Row, Table} = ReactBootstrap
 Divider = require './divider'
 path = require 'path-extra'
 fs = require "fs-extra"
@@ -60,9 +60,10 @@ ItemInfoArea = React.createClass
   getInitialState: ->
     rows:[]
     dayName: day
-    #@getList(day)
-  handleKeyChange: (e) ->
-    @getList(e.target.value)
+  handleKeyChange: (key) ->
+    @getList(key)
+    @setState
+      dayName: key
   componentDidMount: ->
     day = (new Date).getUTCDay()
     if (new Date).getUTCHours() >= 15
@@ -78,17 +79,16 @@ ItemInfoArea = React.createClass
       <div id='item-info-settings'>
         <Divider text={__ "Weekday setting"} />
         <Grid className='vertical-center'>
-          <Col xs={2}>{__ "Choose weekday"}</Col>
-          <Col xs={3}>
-            <Input id='sortbase' type='select' bsSize='small' defaultValue={day} onChange={@handleKeyChange}>
-              <option value=0>{__ "Sunday"}</option>
-              <option value=1>{__ "Monday"}</option>
-              <option value=2>{__ "Tuesday"}</option>
-              <option value=3>{__ "Wednesday"}</option>
-              <option value=4>{__ "Thursday"}</option>
-              <option value=5>{__ "Friday"}</option>
-              <option value=6>{__ "Saturday"}</option>
-            </Input>
+          <Col xs={12}>
+            <Nav bsStyle="pills" activeKey={@state.dayName} onSelect={@handleKeyChange}>
+              <NavItem eventKey={0}>{__ "Sunday"}</NavItem>
+              <NavItem eventKey={1}>{__ "Monday"}</NavItem>
+              <NavItem eventKey={2}>{__ "Tuesday"}</NavItem>
+              <NavItem eventKey={3}>{__ "Wednesday"}</NavItem>
+              <NavItem eventKey={4}>{__ "Thursday"}</NavItem>
+              <NavItem eventKey={5}>{__ "Friday"}</NavItem>
+              <NavItem eventKey={6}>{__ "Saturday"}</NavItem>
+            </Nav>
           </Col>
         </Grid>
         <Divider text={__ "Improvement information"} />
