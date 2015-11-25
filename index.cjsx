@@ -33,7 +33,7 @@ module.exports =
   displayName: <span><FontAwesome name='wrench' key={0} /> {__ "Equipment Improvement"}</span>
   author: 'KochiyaOcean'
   link: 'https://github.com/kochiyaocean'
-  version: '1.3.0'
+  version: '1.4.0'
   description: __ "Show possible improvements of the day"
   handleClick: ->
     initialItemImprovementWindow()
