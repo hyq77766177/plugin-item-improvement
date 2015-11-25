@@ -1,5 +1,5 @@
 {
-  "name": "item-improvement",
+  "name": "poi-plugin-item-improvement",
   "version": "1.4.0",
   "description": "Show improvable items of the day #### Usage Put the folder into /path/to/poi/resources/app/plugins",
   "main": "index.cjsx",
