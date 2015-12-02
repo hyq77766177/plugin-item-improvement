@@ -36,6 +36,9 @@ body {
  height: 36px;
  padding: 1px 5px;
 }
+#main-table tbody .highlight {
+  color: #FFFF00;
+}
 .item-table-name {
   padding-left: 10px;
 }

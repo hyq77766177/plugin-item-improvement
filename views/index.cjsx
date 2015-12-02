@@ -14,33 +14,25 @@ i18n.configure
   extension: '.json'
 i18n.setLocale(window.language)
 
-day = (new Date).getUTCDay()
-if (new Date).getUTCHours() >= 15
-  day = (day + 1) % 7
-ItemImprovementCheckboxArea = React.createClass
-ItemInfoTable = React.createClass
+DB = fs.readJsonSync path.join(__dirname, "..", "data.json")
+
+ItemInfoRow = React.createClass
   render: ->
-    <tr>
+    <tr className={if @props.highlight then "highlight"} onClick={@props.onClick}>
       <td style={{paddingLeft: 10+'px'}}>
-        {
-          <img src={
-              path.join(ROOT, 'assets', 'img', 'slotitem', @props.icon)
-            }
-            />
-        }
+        <img src={path.join(ROOT, 'assets', 'img', 'slotitem', @props.icon)} />
         {@props.type}
       </td>
       <td>{@props.name}</td>
       <td>{@props.hisho}</td>
     </tr>
+
 ItemInfoArea = React.createClass
-  getList: (_day) ->
-    {rows} = @state
-    key = Math.pow(2, 6- _day)
-    pp = path.join(__dirname, "..", "data.json")
-    db = fs.readJsonSync pp
+  getRows: ->
+    {day} = @state
+    key = Math.pow(2, 6 - day)
     rows = []
-    for types in db
+    for types in DB
       for names in types.items
         flag = 0
         hishos = ""
@@ -48,39 +40,45 @@ ItemInfoArea = React.createClass
           if (Math.floor(kanmusu.day / key) % 2 == 1)
             flag = 1
             hishos = hishos + kanmusu.hisho + "　"
+        highlight = names.name in @state.highlights
         if flag
           row =
             icon: types.icon
             type: types.type
             name: names.name
             hisho: hishos
+            highlight: highlight
           rows.push row
-    @setState
-      rows: rows
+    return rows
   getInitialState: ->
+    day = (new Date).getUTCDay()
+    if (new Date).getUTCHours() >= 15
+      day = (day + 1) % 7
+
     rows:[]
-    dayName: day
+    day: day
+    highlights: config.get('plugin.ItemImprovement.highlights', [])
   handleKeyChange: (key) ->
-    @getList(key)
     @setState
-      dayName: key
-  componentDidMount: ->
-    day = (new Date).getUTCDay()
-    if (new Date).getUTCHours() >= 15
-      day = (day + 1) % 7
-    @getList(day)
-  componentWillUnmount: ->
-    day = (new Date).getUTCDay()
-    if (new Date).getUTCHours() >= 15
-      day = (day + 1) % 7
-    @getList(day)
+      day: key
+  handleClickItem: (name) ->
+    {highlights} = @state
+    if name in highlights
+      highlights = highlights.filter (v) -> v != name
+    else
+      highlights.push(name)
+    config.set('plugin.ItemImprovement.highlights', highlights)
+    @setState
+      highlights: highlights
+
   render: ->
+    rows = @getRows()
     <Grid id="item-info-area">
       <div id='item-info-settings'>
         <Divider text={__ "Weekday setting"} />
         <Grid className='vertical-center'>
           <Col xs={12}>
-            <Nav bsStyle="pills" activeKey={@state.dayName} onSelect={@handleKeyChange}>
+            <Nav bsStyle="pills" activeKey={@state.day} onSelect={@handleKeyChange}>
               <NavItem eventKey={0}>{__ "Sunday"}</NavItem>
               <NavItem eventKey={1}>{__ "Monday"}</NavItem>
               <NavItem eventKey={2}>{__ "Tuesday"}</NavItem>
@@ -103,16 +101,15 @@ ItemInfoArea = React.createClass
           </thead>
           <tbody>
           {
-            if @state.rows?
-              printRows = []
-              for row in @state.rows
-                printRows.push row
-              for row, index in printRows
-                <ItemInfoTable
+            if rows?
+              for row, index in rows
+                <ItemInfoRow
                   icon = {row.icon}
                   type = {row.type}
                   name = {row.name}
                   hisho = {row.hisho}
+                  highlight = {row.highlight}
+                  onClick = {@handleClickItem.bind(@, row.name)}
                 />
             }
           </tbody>
@@ -120,4 +117,5 @@ ItemInfoArea = React.createClass
         </Grid>
       </div>
     </Grid>
+
 React.render <ItemInfoArea />, $('item-improvement')
