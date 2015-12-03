@@ -17,8 +17,9 @@ i18n.setLocale(window.language)
 DATA = fs.readJsonSync path.join(__dirname, "..", "assets", "data.json")
 
 ItemInfoRow = React.createClass
+  HIGHLIGHT_CLASS: if window.isDarkTheme then "highlight" else "highlight light"
   render: ->
-    <tr className={if @props.highlight then "highlight"} onClick={@props.onClick}>
+    <tr className={if @props.highlight then @HIGHLIGHT_CLASS} onClick={@props.onClick}>
       <td style={{paddingLeft: 10+'px'}}>
         <img src={path.join(ROOT, 'assets', 'img', 'slotitem', @props.icon)} />
         {@props.type}
