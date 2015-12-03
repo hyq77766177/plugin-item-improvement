@@ -14,7 +14,7 @@ i18n.configure
   extension: '.json'
 i18n.setLocale(window.language)
 
-DB = fs.readJsonSync path.join(__dirname, "..", "data.json")
+DATA = fs.readJsonSync path.join(__dirname, "..", "assets", "data.json")
 
 ItemInfoRow = React.createClass
   render: ->
@@ -30,25 +30,21 @@ ItemInfoRow = React.createClass
 ItemInfoArea = React.createClass
   getRows: ->
     {day} = @state
-    key = Math.pow(2, 6 - day)
     rows = []
-    for types in DB
-      for names in types.items
-        flag = 0
-        hishos = ""
-        for kanmusu in names.hisho
-          if (Math.floor(kanmusu.day / key) % 2 == 1)
-            flag = 1
-            hishos = hishos + kanmusu.hisho + "　"
-        highlight = names.name in @state.highlights
-        if flag
-          row =
-            icon: types.icon
-            type: types.type
-            name: names.name
-            hisho: hishos
-            highlight: highlight
-          rows.push row
+    for item in DATA
+      hishos = []
+      for secretary in item.secretary
+        if secretary.day[day]
+          hishos.push secretary.name
+      highlight = item.name in @state.highlights
+      if hishos.length > 0
+        row =
+          icon: item.icon
+          type: item.type
+          name: item.name
+          hisho: hishos.join(' ')
+          highlight: highlight
+        rows.push row
     return rows
   getInitialState: ->
     day = (new Date).getUTCDay()
