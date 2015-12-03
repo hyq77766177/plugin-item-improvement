@@ -30,8 +30,9 @@ module.exports =
   name: 'Item-Improvement'
   priority: 50
   displayName: <span><FontAwesome name='wrench' key={0} /> {__ "Equipment Improvement"}</span>
-  author: 'KochiyaOcean'
-  link: 'https://github.com/kochiyaocean'
+  author: 'Dazzy Ding'
+  link: 'https://github.com/yukixz'
+  contributors: [{author: 'KochiyaOcean', link: 'https://github.com/kochiyaocean'}]
   version: '1.4.0'
   description: __ "Show possible improvements of the day"
   handleClick: ->
