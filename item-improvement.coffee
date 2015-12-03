@@ -17,6 +17,7 @@ window.language = config.get 'poi.language', navigator.language
 
 # Custom theme
 window.theme = config.get 'poi.theme', '__default__'
+window.isDarkTheme = /(dark|black|slate|superhero|papercyan)/i.test theme
 if theme == '__default__'
   $('#bootstrap-css')?.setAttribute 'href', "file://#{ROOT}/components/bootstrap/dist/css/bootstrap.css"
 else
