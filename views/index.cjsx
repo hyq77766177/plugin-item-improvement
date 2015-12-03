@@ -130,4 +130,4 @@ ItemInfoArea = React.createClass
       </div>
     </Grid>
 
-React.render <ItemInfoArea />, $('item-improvement')
+ReactDOM.render <ItemInfoArea />, $('item-improvement')
