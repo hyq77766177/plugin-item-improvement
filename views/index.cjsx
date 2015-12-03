@@ -99,15 +99,30 @@ ItemInfoArea = React.createClass
           <tbody>
           {
             if rows?
+              results = []
               for row, index in rows
-                <ItemInfoRow
-                  icon = {row.icon}
-                  type = {row.type}
-                  name = {row.name}
-                  hisho = {row.hisho}
-                  highlight = {row.highlight}
-                  onClick = {@handleClickItem.bind(@, row.id)}
-                />
+                if row.highlight
+                  results.push <ItemInfoRow
+                    key = {row.id}
+                    icon = {row.icon}
+                    type = {row.type}
+                    name = {row.name}
+                    hisho = {row.hisho}
+                    highlight = {row.highlight}
+                    onClick = {@handleClickItem.bind(@, row.id)}
+                  />
+              for row, index in rows
+                if not row.highlight
+                  results.push <ItemInfoRow
+                    key = {row.id}
+                    icon = {row.icon}
+                    type = {row.type}
+                    name = {row.name}
+                    hisho = {row.hisho}
+                    highlight = {row.highlight}
+                    onClick = {@handleClickItem.bind(@, row.id)}
+                  />
+              return results
             }
           </tbody>
           </Table>
