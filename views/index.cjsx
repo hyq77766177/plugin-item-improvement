@@ -14,11 +14,12 @@ i18n.configure
   extension: '.json'
 i18n.setLocale(window.language)
 
-DB = fs.readJsonSync path.join(__dirname, "..", "data.json")
+DATA = fs.readJsonSync path.join(__dirname, "..", "assets", "data.json")
 
 ItemInfoRow = React.createClass
+  HIGHLIGHT_CLASS: if window.isDarkTheme then "highlight" else "highlight light"
   render: ->
-    <tr className={if @props.highlight then "highlight"} onClick={@props.onClick}>
+    <tr className={if @props.highlight then @HIGHLIGHT_CLASS} onClick={@props.onClick}>
       <td style={{paddingLeft: 10+'px'}}>
         <img src={path.join(ROOT, 'assets', 'img', 'slotitem', @props.icon)} />
         {@props.type}
@@ -30,43 +31,39 @@ ItemInfoRow = React.createClass
 ItemInfoArea = React.createClass
   getRows: ->
     {day} = @state
-    key = Math.pow(2, 6 - day)
     rows = []
-    for types in DB
-      for names in types.items
-        flag = 0
-        hishos = ""
-        for kanmusu in names.hisho
-          if (Math.floor(kanmusu.day / key) % 2 == 1)
-            flag = 1
-            hishos = hishos + kanmusu.hisho + "　"
-        highlight = names.name in @state.highlights
-        if flag
-          row =
-            icon: types.icon
-            type: types.type
-            name: names.name
-            hisho: hishos
-            highlight: highlight
-          rows.push row
+    for item in DATA
+      hishos = []
+      for secretary in item.secretary
+        if secretary.day[day]
+          hishos.push secretary.name
+      highlight = item.id in @state.highlights
+      if hishos.length > 0
+        row =
+          id: item.id
+          icon: item.icon
+          type: item.type
+          name: item.name
+          hisho: hishos.join(' ')
+          highlight: highlight
+        rows.push row
     return rows
   getInitialState: ->
     day = (new Date).getUTCDay()
     if (new Date).getUTCHours() >= 15
       day = (day + 1) % 7
 
-    rows:[]
     day: day
     highlights: config.get('plugin.ItemImprovement.highlights', [])
   handleKeyChange: (key) ->
     @setState
       day: key
-  handleClickItem: (name) ->
+  handleClickItem: (id) ->
     {highlights} = @state
-    if name in highlights
-      highlights = highlights.filter (v) -> v != name
+    if id in highlights
+      highlights = highlights.filter (v) -> v != id
     else
-      highlights.push(name)
+      highlights.push(id)
     config.set('plugin.ItemImprovement.highlights', highlights)
     @setState
       highlights: highlights
@@ -102,15 +99,30 @@ ItemInfoArea = React.createClass
           <tbody>
           {
             if rows?
+              results = []
               for row, index in rows
-                <ItemInfoRow
-                  icon = {row.icon}
-                  type = {row.type}
-                  name = {row.name}
-                  hisho = {row.hisho}
-                  highlight = {row.highlight}
-                  onClick = {@handleClickItem.bind(@, row.name)}
-                />
+                if row.highlight
+                  results.push <ItemInfoRow
+                    key = {row.id}
+                    icon = {row.icon}
+                    type = {row.type}
+                    name = {row.name}
+                    hisho = {row.hisho}
+                    highlight = {row.highlight}
+                    onClick = {@handleClickItem.bind(@, row.id)}
+                  />
+              for row, index in rows
+                if not row.highlight
+                  results.push <ItemInfoRow
+                    key = {row.id}
+                    icon = {row.icon}
+                    type = {row.type}
+                    name = {row.name}
+                    hisho = {row.hisho}
+                    highlight = {row.highlight}
+                    onClick = {@handleClickItem.bind(@, row.id)}
+                  />
+              results
             }
           </tbody>
           </Table>

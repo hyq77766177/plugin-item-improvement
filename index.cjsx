@@ -1,9 +1,8 @@
-{React, ReactBootstrap, FontAwesome} = window
-{Button} = ReactBootstrap
+{FontAwesome} = window
 remote = require 'remote'
 windowManager = remote.require './lib/window'
+
 i18n = require 'i18n'
-{__} = i18n
 path = require 'path-extra'
 i18n.configure
   locales: ['en-US', 'ja-JP', 'zh-CN']
@@ -13,27 +12,30 @@ i18n.configure
   indent: "\t"
   extension: '.json'
 i18n.setLocale(window.language)
+{__} = i18n
 
 itemImprovementWindow = null
 initialItemImprovementWindow = ->
   itemImprovementWindow = windowManager.createWindow
-    # Use config
-    realClose: true
     x: config.get 'poi.window.x', 0
     y: config.get 'poi.window.y', 0
     width: 820
     height: 650
+    realClose: true
+  itemImprovementWindow.on 'close', ->
+    itemImprovementWindow = null
   itemImprovementWindow.loadUrl "file://#{__dirname}/index.html"
-  itemImprovementWindow.webContents.on 'dom-ready', (e)->
-    itemImprovementWindow.show()
 
 module.exports =
   name: 'Item-Improvement'
   priority: 50
   displayName: <span><FontAwesome name='wrench' key={0} /> {__ "Equipment Improvement"}</span>
-  author: 'KochiyaOcean'
-  link: 'https://github.com/kochiyaocean'
-  version: '1.4.0'
+  author: 'Dazzy Ding'
+  link: 'https://github.com/yukixz'
+  contributors: [{author: 'KochiyaOcean', link: 'https://github.com/kochiyaocean'}]
+  version: '1.5.0'
   description: __ "Show possible improvements of the day"
   handleClick: ->
-    initialItemImprovementWindow()
+    if not itemImprovementWindow?
+      initialItemImprovementWindow()
+    itemImprovementWindow.show()

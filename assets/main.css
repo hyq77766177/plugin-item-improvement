@@ -37,7 +37,10 @@ body {
  padding: 1px 5px;
 }
 #main-table tbody .highlight {
-  color: #FFFF00;
+  color: #FFFFBF;
+}
+#main-table tbody .highlight.light {
+  color: #7F7F00;
 }
 .item-table-name {
   padding-left: 10px;
