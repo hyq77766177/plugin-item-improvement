@@ -52,7 +52,6 @@ ItemInfoArea = React.createClass
     if (new Date).getUTCHours() >= 15
       day = (day + 1) % 7
 
-    rows:[]
     day: day
     highlights: config.get('plugin.ItemImprovement.highlights', [])
   handleKeyChange: (key) ->
@@ -122,7 +121,7 @@ ItemInfoArea = React.createClass
                     highlight = {row.highlight}
                     onClick = {@handleClickItem.bind(@, row.id)}
                   />
-              return results
+              results
             }
           </tbody>
           </Table>
