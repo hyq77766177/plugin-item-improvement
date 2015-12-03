@@ -36,9 +36,10 @@ ItemInfoArea = React.createClass
       for secretary in item.secretary
         if secretary.day[day]
           hishos.push secretary.name
-      highlight = item.name in @state.highlights
+      highlight = item.id in @state.highlights
       if hishos.length > 0
         row =
+          id: item.id
           icon: item.icon
           type: item.type
           name: item.name
@@ -57,12 +58,12 @@ ItemInfoArea = React.createClass
   handleKeyChange: (key) ->
     @setState
       day: key
-  handleClickItem: (name) ->
+  handleClickItem: (id) ->
     {highlights} = @state
-    if name in highlights
-      highlights = highlights.filter (v) -> v != name
+    if id in highlights
+      highlights = highlights.filter (v) -> v != id
     else
-      highlights.push(name)
+      highlights.push(id)
     config.set('plugin.ItemImprovement.highlights', highlights)
     @setState
       highlights: highlights
@@ -105,7 +106,7 @@ ItemInfoArea = React.createClass
                   name = {row.name}
                   hisho = {row.hisho}
                   highlight = {row.highlight}
-                  onClick = {@handleClickItem.bind(@, row.name)}
+                  onClick = {@handleClickItem.bind(@, row.id)}
                 />
             }
           </tbody>
