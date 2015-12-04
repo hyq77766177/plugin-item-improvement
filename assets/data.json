@@ -1,1605 +1,797 @@
 [
     {
+        "name": "12.7cm連装砲",
+        "id": 2,
         "type": "小口径主砲",
         "icon": "101.png",
-        "id": 2,
-        "name": "12.7cm連装砲",
         "secretary": [
             {
                 "name": "無",
-                "day": [
-                    true,
-                    true,
-                    true,
-                    true,
-                    true,
-                    true,
-                    true
-                ]
+                "day": [true, true, true, true, true, true, true]
             }
         ]
     },
     {
+        "name": "12.7cm連装砲B型改二",
+        "id": 63,
         "type": "小口径主砲",
         "icon": "101.png",
-        "id": 63,
-        "name": "12.7cm連装砲B型改二",
         "secretary": [
             {
                 "name": "夕立改二",
-                "day": [
-                    false,
-                    true,
-                    true,
-                    true,
-                    false,
-                    false,
-                    false
-                ]
+                "day": [false, true, true, true, false, false, false]
             },
             {
                 "name": "绫波改二",
-                "day": [
-                    false,
-                    true,
-                    true,
-                    true,
-                    false,
-                    false,
-                    false
-                ]
+                "day": [false, true, true, true, false, false, false]
             }
         ]
     },
     {
+        "name": "10cm連装高角砲+高射装置",
+        "id": 122,
         "type": "小口径主砲",
         "icon": "116.png",
-        "id": 122,
-        "name": "10cm連装高角砲+高射装置",
         "secretary": [
             {
                 "name": "秋月",
-                "day": [
-                    false,
-                    true,
-                    true,
-                    true,
-                    true,
-                    false,
-                    false
-                ]
+                "day": [false, true, true, true, true, false, false]
             },
             {
                 "name": "照月",
-                "day": [
-                    true,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true,
-                    true
-                ]
+                "day": [true, false, false, false, true, true, true]
             }
         ]
     },
     {
+        "name": "14cm単装砲",
+        "id": 4,
         "type": "中口径主砲",
         "icon": "102.png",
-        "id": 4,
-        "name": "14cm単装砲",
         "secretary": [
             {
                 "name": "無",
-                "day": [
-                    true,
-                    true,
-                    true,
-                    true,
-                    true,
-                    true,
-                    true
-                ]
+                "day": [true, true, true, true, true, true, true]
             }
         ]
     },
     {
+        "name": "14cm連装砲",
+        "id": 119,
         "type": "中口径主砲",
         "icon": "102.png",
-        "id": 119,
-        "name": "14cm連装砲",
         "secretary": [
             {
                 "name": "夕張",
-                "day": [
-                    false,
-                    true,
-                    false,
-                    false,
-                    true,
-                    false,
-                    false
-                ]
+                "day": [false, true, false, false, true, false, false]
             }
         ]
     },
     {
+        "name": "15.2cm連装砲",
+        "id": 65,
         "type": "中口径主砲",
         "icon": "102.png",
-        "id": 65,
-        "name": "15.2cm連装砲",
         "secretary": [
             {
                 "name": "阿賀野",
-                "day": [
-                    false,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true,
-                    true
-                ]
+                "day": [false, false, false, false, true, true, true]
             },
             {
                 "name": "能代",
-                "day": [
-                    true,
-                    true,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true
-                ]
+                "day": [true, true, false, false, false, true, true]
             },
             {
                 "name": "矢矧",
-                "day": [
-                    false,
-                    true,
-                    true,
-                    true,
-                    true,
-                    false,
-                    false
-                ]
+                "day": [false, true, true, true, true, false, false]
             }
         ]
     },
     {
+        "name": "15.2cm連装砲改",
+        "id": 139,
         "type": "中口径主砲",
         "icon": "102.png",
-        "id": 139,
-        "name": "15.2cm連装砲改",
         "secretary": [
             {
                 "name": "矢矧",
-                "day": [
-                    false,
-                    false,
-                    false,
-                    true,
-                    true,
-                    true,
-                    true
-                ]
+                "day": [false, false, false, true, true, true, true]
             },
             {
                 "name": "酒匂",
-                "day": [
-                    true,
-                    true,
-                    true,
-                    false,
-                    false,
-                    false,
-                    true
-                ]
+                "day": [true, true, true, false, false, false, true]
             }
         ]
     },
     {
+        "name": "15.5cm三連装砲",
+        "id": 5,
         "type": "中口径主砲",
         "icon": "102.png",
-        "id": 5,
-        "name": "15.5cm三連装砲",
         "secretary": [
             {
                 "name": "最上",
-                "day": [
-                    false,
-                    false,
-                    false,
-                    true,
-                    false,
-                    true,
-                    true
-                ]
+                "day": [false, false, false, true, false, true, true]
             },
             {
                 "name": "大淀",
-                "day": [
-                    true,
-                    true,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false
-                ]
+                "day": [true, true, false, false, false, false, false]
             }
         ]
     },
     {
+        "name": "20.3cm連装砲",
+        "id": 6,
         "type": "中口径主砲",
         "icon": "102.png",
-        "id": 6,
-        "name": "20.3cm連装砲",
         "secretary": [
             {
                 "name": "青葉",
-                "day": [
-                    true,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true,
-                    true
-                ]
+                "day": [true, false, false, false, true, true, true]
             },
             {
                 "name": "衣笠",
-                "day": [
-                    true,
-                    true,
-                    true,
-                    true,
-                    true,
-                    true,
-                    true
-                ]
+                "day": [true, true, true, true, true, true, true]
             }
         ]
     },
     {
+        "name": "20.3cm(2号)連装砲",
+        "id": 90,
         "type": "中口径主砲",
         "icon": "102.png",
-        "id": 90,
-        "name": "20.3cm(2号)連装砲",
         "secretary": [
             {
                 "name": "妙高",
-                "day": [
-                    true,
-                    true,
-                    true,
-                    false,
-                    false,
-                    false,
-                    false
-                ]
+                "day": [true, true, true, false, false, false, false]
             }
         ]
     },
     {
+        "name": "20.3cm(3号)連装砲",
+        "id": 50,
         "type": "中口径主砲",
         "icon": "102.png",
-        "id": 50,
-        "name": "20.3cm(3号)連装砲",
         "secretary": [
             {
                 "name": "三隈",
-                "day": [
-                    false,
-                    false,
-                    true,
-                    true,
-                    false,
-                    false,
-                    false
-                ]
+                "day": [false, false, true, true, false, false, false]
             }
         ]
     },
     {
+        "name": "35.6cm連装砲",
+        "id": 7,
         "type": "大口径主砲",
         "icon": "103.png",
-        "id": 7,
-        "name": "35.6cm連装砲",
         "secretary": [
             {
                 "name": "扶桑",
-                "day": [
-                    true,
-                    false,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true
-                ]
+                "day": [true, false, false, false, false, true, true]
             }
         ]
     },
     {
-        "type": "大口径主砲",
-        "icon": "103.png",
-        "id": 76,
         "name": "38cm連装砲",
+        "id": 76,
+        "type": "大口径主砲",
+        "icon": "103.png",
         "secretary": [
             {
                 "name": "Bismarck",
-                "day": [
-                    false,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true,
-                    true
-                ]
+                "day": [false, false, false, false, true, true, true]
             }
         ]
     },
     {
-        "type": "大口径主砲",
-        "icon": "103.png",
-        "id": 114,
         "name": "38cm連装砲改",
+        "id": 114,
+        "type": "大口径主砲",
+        "icon": "103.png",
         "secretary": [
             {
                 "name": "Bismarck",
-                "day": [
-                    true,
-                    true,
-                    true,
-                    false,
-                    false,
-                    false,
-                    false
-                ]
+                "day": [true, true, true, false, false, false, false]
             }
         ]
     },
     {
-        "type": "大口径主砲",
-        "icon": "103.png",
-        "id": 133,
         "name": "381mm/50 三連装砲",
+        "id": 133,
+        "type": "大口径主砲",
+        "icon": "103.png",
         "secretary": [
             {
                 "name": "Littorio",
-                "day": [
-                    false,
-                    false,
-                    true,
-                    true,
-                    true,
-                    true,
-                    false
-                ]
+                "day": [false, false, true, true, true, true, false]
             },
             {
                 "name": "Roma",
-                "day": [
-                    true,
-                    true,
-                    false,
-                    false,
-                    false,
-                    false,
-                    true
-                ]
+                "day": [true, true, false, false, false, false, true]
             }
         ]
     },
     {
-        "type": "大口径主砲",
-        "icon": "103.png",
-        "id": 137,
         "name": "381mm/50 三連装砲改",
+        "id": 137,
+        "type": "大口径主砲",
+        "icon": "103.png",
         "secretary": [
             {
                 "name": "Littorio",
-                "day": [
-                    true,
-                    true,
-                    false,
-                    false,
-                    false,
-                    false,
-                    true
-                ]
+                "day": [true, true, false, false, false, false, true]
             },
             {
                 "name": "Roma",
-                "day": [
-                    false,
-                    false,
-                    true,
-                    true,
-                    true,
-                    true,
-                    false
-                ]
+                "day": [false, false, true, true, true, true, false]
             }
         ]
     },
     {
+        "name": "41cm連装砲",
+        "id": 8,
         "type": "大口径主砲",
         "icon": "103.png",
-        "id": 8,
-        "name": "41cm連装砲",
         "secretary": [
             {
                 "name": "長門",
-                "day": [
-                    false,
-                    false,
-                    true,
-                    false,
-                    false,
-                    true,
-                    true
-                ]
+                "day": [false, false, true, false, false, true, true]
             },
             {
                 "name": "陸奥",
-                "day": [
-                    true,
-                    true,
-                    false,
-                    false,
-                    true,
-                    false,
-                    false
-                ]
+                "day": [true, true, false, false, true, false, false]
             }
         ]
     },
     {
-        "type": "大口径主砲",
-        "icon": "103.png",
-        "id": 117,
         "name": "試製46cm連装砲",
+        "id": 117,
+        "type": "大口径主砲",
+        "icon": "103.png",
         "secretary": [
             {
                 "name": "大和",
-                "day": [
-                    true,
-                    true,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false
-                ]
+                "day": [true, true, false, false, false, false, false]
             },
             {
                 "name": "武蔵",
-                "day": [
-                    false,
-                    false,
-                    true,
-                    true,
-                    false,
-                    false,
-                    false
-                ]
+                "day": [false, false, true, true, false, false, false]
             }
         ]
     },
     {
-        "type": "大口径主砲",
-        "icon": "103.png",
-        "id": 9,
         "name": "46cm三連装砲",
+        "id": 9,
+        "type": "大口径主砲",
+        "icon": "103.png",
         "secretary": [
             {
                 "name": "大和",
-                "day": [
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true
-                ]
+                "day": [false, false, false, false, false, true, true]
             },
             {
                 "name": "武蔵",
-                "day": [
-                    true,
-                    true,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false
-                ]
+                "day": [true, true, false, false, false, false, false]
             }
         ]
     },
     {
+        "name": "試製51cm連装砲",
+        "id": 128,
         "type": "大口径主砲",
         "icon": "103.png",
-        "id": 128,
-        "name": "試製51cm連装砲",
         "secretary": [
             {
                 "name": "大和改",
-                "day": [
-                    false,
-                    true,
-                    true,
-                    false,
-                    false,
-                    false,
-                    false
-                ]
+                "day": [false, true, true, false, false, false, false]
             },
             {
                 "name": "武蔵改",
-                "day": [
-                    false,
-                    true,
-                    false,
-                    true,
-                    false,
-                    false,
-                    false
-                ]
+                "day": [false, true, false, true, false, false, false]
             }
         ]
     },
     {
+        "name": "15.2cm単装砲",
+        "id": 11,
         "type": "副砲",
         "icon": "104.png",
-        "id": 11,
-        "name": "15.2cm単装砲",
         "secretary": [
             {
                 "name": "阿賀野",
-                "day": [
-                    true,
-                    true,
-                    true,
-                    false,
-                    false,
-                    false,
-                    false
-                ]
+                "day": [true, true, true, false, false, false, false]
             },
             {
                 "name": "金剛",
-                "day": [
-                    true,
-                    true,
-                    false,
-                    false,
-                    false,
-                    false,
-                    true
-                ]
+                "day": [true, true, false, false, false, false, true]
             },
             {
                 "name": "山城",
-                "day": [
-                    false,
-                    true,
-                    true,
-                    true,
-                    false,
-                    false,
-                    false
-                ]
+                "day": [false, true, true, true, false, false, false]
             }
         ]
     },
     {
+        "name": "OTO 152mm三連装速射砲",
+        "id": 134,
         "type": "副砲",
         "icon": "104.png",
-        "id": 134,
-        "name": "OTO 152mm三連装速射砲",
         "secretary": [
             {
                 "name": "Littorio",
-                "day": [
-                    true,
-                    false,
-                    true,
-                    true,
-                    false,
-                    false,
-                    true
-                ]
+                "day": [true, false, true, true, false, false, true]
             },
             {
                 "name": "Roma",
-                "day": [
-                    true,
-                    true,
-                    false,
-                    false,
-                    true,
-                    true,
-                    false
-                ]
+                "day": [true, true, false, false, true, true, false]
             }
         ]
     },
     {
+        "name": "90mm単装高角砲",
+        "id": 135,
         "type": "副砲",
         "icon": "116.png",
-        "id": 135,
-        "name": "90mm単装高角砲",
         "secretary": [
             {
                 "name": "Littorio",
-                "day": [
-                    false,
-                    true,
-                    true,
-                    true,
-                    true,
-                    false,
-                    false
-                ]
+                "day": [false, true, true, true, true, false, false]
             },
             {
                 "name": "Roma",
-                "day": [
-                    true,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true,
-                    true
-                ]
+                "day": [true, false, false, false, true, true, true]
             }
         ]
     },
     {
+        "name": "61cm三連装魚雷",
+        "id": 13,
         "type": "魚雷",
         "icon": "105.png",
-        "id": 13,
-        "name": "61cm三連装魚雷",
         "secretary": [
             {
                 "name": "吹雪",
-                "day": [
-                    false,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true,
-                    true
-                ]
+                "day": [false, false, false, false, true, true, true]
             },
             {
                 "name": "叢雲",
-                "day": [
-                    true,
-                    true,
-                    true,
-                    false,
-                    false,
-                    false,
-                    false
-                ]
+                "day": [true, true, true, false, false, false, false]
             }
         ]
     },
     {
+        "name": "61cm三連装(酸素)魚雷",
+        "id": 125,
         "type": "魚雷",
         "icon": "105.png",
-        "id": 125,
-        "name": "61cm三連装(酸素)魚雷",
         "secretary": [
             {
                 "name": "吹雪改二",
-                "day": [
-                    false,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true,
-                    true
-                ]
+                "day": [false, false, false, false, true, true, true]
             }
         ]
     },
     {
+        "name": "61cm四連装魚雷",
+        "id": 14,
         "type": "魚雷",
         "icon": "105.png",
-        "id": 14,
-        "name": "61cm四連装魚雷",
         "secretary": [
             {
                 "name": "無",
-                "day": [
-                    true,
-                    true,
-                    true,
-                    false,
-                    false,
-                    true,
-                    true
-                ]
+                "day": [true, true, true, false, false, true, true]
             }
         ]
     },
     {
+        "name": "61cm四連装(酸素)魚雷",
+        "id": 15,
         "type": "魚雷",
         "icon": "105.png",
-        "id": 15,
-        "name": "61cm四連装(酸素)魚雷",
         "secretary": [
             {
                 "name": "大井",
-                "day": [
-                    true,
-                    true,
-                    true,
-                    true,
-                    true,
-                    true,
-                    true
-                ]
+                "day": [true, true, true, true, true, true, true]
             },
             {
                 "name": "北上",
-                "day": [
-                    true,
-                    true,
-                    true,
-                    true,
-                    true,
-                    true,
-                    true
-                ]
+                "day": [true, true, true, true, true, true, true]
             }
         ]
     },
     {
+        "name": "61cm五連装(酸素)魚雷",
+        "id": 58,
         "type": "魚雷",
         "icon": "105.png",
-        "id": 58,
-        "name": "61cm五連装(酸素)魚雷",
         "secretary": [
             {
                 "name": "島風",
-                "day": [
-                    false,
-                    false,
-                    false,
-                    true,
-                    true,
-                    false,
-                    false
-                ]
+                "day": [false, false, false, true, true, false, false]
             }
         ]
     },
     {
+        "name": "13号対空電探",
+        "id": 27,
         "type": "電探",
         "icon": "111.png",
-        "id": 27,
-        "name": "13号対空電探",
         "secretary": [
             {
                 "name": "時雨改二",
-                "day": [
-                    true,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true,
-                    true
-                ]
+                "day": [true, false, false, false, true, true, true]
             },
             {
                 "name": "五十鈴改二",
-                "day": [
-                    true,
-                    true,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true
-                ]
+                "day": [true, true, false, false, false, true, true]
             },
             {
                 "name": "秋月",
-                "day": [
-                    false,
-                    false,
-                    true,
-                    true,
-                    true,
-                    false,
-                    false
-                ]
+                "day": [false, false, true, true, true, false, false]
             },
             {
                 "name": "照月",
-                "day": [
-                    false,
-                    true,
-                    true,
-                    true,
-                    false,
-                    false,
-                    false
-                ]
+                "day": [false, true, true, true, false, false, false]
             }
         ]
     },
     {
+        "name": "13号対空電探改",
+        "id": 106,
         "type": "電探",
         "icon": "111.png",
-        "id": 106,
-        "name": "13号対空電探改",
         "secretary": [
             {
                 "name": "磯風改",
-                "day": [
-                    false,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true,
-                    true
-                ]
+                "day": [false, false, false, false, true, true, true]
             },
             {
                 "name": "初霜改二",
-                "day": [
-                    true,
-                    false,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true
-                ]
+                "day": [true, false, false, false, false, true, true]
             },
             {
                 "name": "雪風",
-                "day": [
-                    true,
-                    true,
-                    true,
-                    true,
-                    false,
-                    false,
-                    false
-                ]
+                "day": [true, true, true, true, false, false, false]
             }
         ]
     },
     {
+        "name": "22号対水上電探",
+        "id": 28,
         "type": "電探",
         "icon": "111.png",
-        "id": 28,
-        "name": "22号対水上電探",
         "secretary": [
             {
                 "name": "日向",
-                "day": [
-                    true,
-                    true,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true
-                ]
+                "day": [true, true, false, false, false, true, true]
             },
             {
                 "name": "夕雲",
-                "day": [
-                    false,
-                    true,
-                    true,
-                    false,
-                    false,
-                    true,
-                    true
-                ]
+                "day": [false, true, true, false, false, true, true]
             },
             {
                 "name": "島風",
-                "day": [
-                    false,
-                    false,
-                    false,
-                    true,
-                    true,
-                    true,
-                    true
-                ]
+                "day": [false, false, false, true, true, true, true]
             }
         ]
     },
     {
+        "name": "22号対水上電探改四",
+        "id": 88,
         "type": "電探",
         "icon": "111.png",
-        "id": 88,
-        "name": "22号対水上電探改四",
         "secretary": [
             {
                 "name": "妙高改二",
-                "day": [
-                    true,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true,
-                    true
-                ]
+                "day": [true, false, false, false, true, true, true]
             },
             {
                 "name": "羽黒改二",
-                "day": [
-                    true,
-                    true,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true
-                ]
+                "day": [true, true, false, false, false, true, true]
             },
             {
                 "name": "金剛改二",
-                "day": [
-                    false,
-                    false,
-                    true,
-                    true,
-                    true,
-                    true,
-                    false
-                ]
+                "day": [false, false, true, true, true, true, false]
             }
         ]
     },
     {
+        "name": "21号対空電探",
+        "id": 30,
         "type": "電探",
         "icon": "111.png",
-        "id": 30,
-        "name": "21号対空電探",
         "secretary": [
             {
                 "name": "伊勢",
-                "day": [
-                    true,
-                    true,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true
-                ]
+                "day": [true, true, false, false, false, true, true]
             },
             {
                 "name": "日向",
-                "day": [
-                    false,
-                    false,
-                    false,
-                    true,
-                    true,
-                    true,
-                    true
-                ]
+                "day": [false, false, false, true, true, true, true]
             }
         ]
     },
     {
+        "name": "21号対空電探改",
+        "id": 89,
         "type": "電探",
         "icon": "111.png",
-        "id": 89,
-        "name": "21号対空電探改",
         "secretary": [
             {
                 "name": "大和",
-                "day": [
-                    true,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true,
-                    true
-                ]
+                "day": [true, false, false, false, true, true, true]
             },
             {
                 "name": "武蔵",
-                "day": [
-                    false,
-                    false,
-                    true,
-                    true,
-                    true,
-                    true,
-                    false
-                ]
+                "day": [false, false, true, true, true, true, false]
             }
         ]
     },
     {
-        "type": "電探",
-        "icon": "111.png",
-        "id": 31,
         "name": "32号対水上電探",
-        "secretary": [
-            {
-                "name": "伊勢",
-                "day": [
-                    false,
-                    false,
-                    false,
-                    true,
-                    true,
-                    true,
-                    true
-                ]
-            },
-            {
-                "name": "日向",
-                "day": [
-                    true,
-                    true,
-                    true,
-                    false,
-                    false,
-                    false,
-                    false
-                ]
-            }
-        ]
-    },
-    {
+        "id": 31,
         "type": "電探",
         "icon": "111.png",
-        "id": 141,
-        "name": "32号対水上電探改",
         "secretary": [
             {
                 "name": "伊勢",
-                "day": [
-                    true,
-                    true,
-                    true,
-                    false,
-                    false,
-                    false,
-                    false
-                ]
+                "day": [false, false, false, true, true, true, true]
             },
             {
                 "name": "日向",
-                "day": [
-                    false,
-                    false,
-                    false,
-                    true,
-                    true,
-                    true,
-                    true
-                ]
+                "day": [true, true, true, false, false, false, false]
             }
         ]
     },
     {
+        "name": "32号対水上電探改",
+        "id": 141,
+        "type": "電探",
+        "icon": "111.png",
+        "secretary": [
+            {
+                "name": "伊勢",
+                "day": [true, true, true, false, false, false, false]
+            },
+            {
+                "name": "日向",
+                "day": [false, false, false, true, true, true, true]
+            }
+        ]
+    },
+    {
+        "name": "九三式水中聴音機",
+        "id": 46,
         "type": "ソナー",
         "icon": "118.png",
-        "id": 46,
-        "name": "九三式水中聴音機",
         "secretary": [
             {
                 "name": "夕張",
-                "day": [
-                    true,
-                    false,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true
-                ]
+                "day": [true, false, false, false, false, true, true]
             },
             {
                 "name": "五十鈴改二",
-                "day": [
-                    false,
-                    true,
-                    false,
-                    false,
-                    true,
-                    true,
-                    false
-                ]
+                "day": [false, true, false, false, true, true, false]
             },
             {
                 "name": "時雨改二",
-                "day": [
-                    true,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true,
-                    true
-                ]
+                "day": [true, false, false, false, true, true, true]
             },
             {
                 "name": "香取改",
-                "day": [
-                    true,
-                    false,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true
-                ]
+                "day": [true, false, false, false, false, true, true]
             }
         ]
     },
     {
+        "name": "三式水中探信儀",
+        "id": 47,
         "type": "ソナー",
         "icon": "118.png",
-        "id": 47,
-        "name": "三式水中探信儀",
         "secretary": [
             {
                 "name": "夕張",
-                "day": [
-                    false,
-                    false,
-                    true,
-                    true,
-                    false,
-                    false,
-                    false
-                ]
+                "day": [false, false, true, true, false, false, false]
             },
             {
                 "name": "五十鈴改二",
-                "day": [
-                    true,
-                    false,
-                    true,
-                    true,
-                    false,
-                    false,
-                    false
-                ]
+                "day": [true, false, true, true, false, false, false]
             }
         ]
     },
     {
+        "name": "四式水中聴音機",
+        "id": 149,
         "type": "ソナー",
         "icon": "118.png",
-        "id": 149,
-        "name": "四式水中聴音機",
         "secretary": [
             {
                 "name": "香取改",
-                "day": [
-                    false,
-                    true,
-                    true,
-                    false,
-                    false,
-                    false,
-                    false
-                ]
+                "day": [false, true, true, false, false, false, false]
             },
             {
                 "name": "五十鈴改二",
-                "day": [
-                    false,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true,
-                    true
-                ]
+                "day": [false, false, false, false, true, true, true]
             },
             {
                 "name": "秋月",
-                "day": [
-                    true,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false
-                ]
+                "day": [true, false, false, false, false, false, false]
             },
             {
                 "name": "照月",
-                "day": [
-                    false,
-                    false,
-                    false,
-                    true,
-                    false,
-                    false,
-                    false
-                ]
+                "day": [false, false, false, true, false, false, false]
             }
         ]
     },
     {
+        "name": "九四式爆雷投射機",
+        "id": 44,
         "type": "爆雷",
         "icon": "117.png",
-        "id": 44,
-        "name": "九四式爆雷投射機",
         "secretary": [
             {
                 "name": "無",
-                "day": [
-                    false,
-                    false,
-                    false,
-                    true,
-                    true,
-                    false,
-                    false
-                ]
+                "day": [false, false, false, true, true, false, false]
             }
         ]
     },
     {
+        "name": "三式爆雷投射機",
+        "id": 45,
         "type": "爆雷",
         "icon": "117.png",
-        "id": 45,
-        "name": "三式爆雷投射機",
         "secretary": [
             {
                 "name": "五十鈴改二",
-                "day": [
-                    false,
-                    false,
-                    false,
-                    true,
-                    true,
-                    false,
-                    false
-                ]
+                "day": [false, false, false, true, true, false, false]
             }
         ]
     },
     {
+        "name": "九一式徹甲弾",
+        "id": 36,
         "type": "対艦強化弾",
         "icon": "113.png",
-        "id": 36,
-        "name": "九一式徹甲弾",
         "secretary": [
             {
                 "name": "比叡",
-                "day": [
-                    false,
-                    false,
-                    false,
-                    true,
-                    true,
-                    true,
-                    true
-                ]
+                "day": [false, false, false, true, true, true, true]
             },
             {
                 "name": "霧島",
-                "day": [
-                    true,
-                    true,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true
-                ]
+                "day": [true, true, false, false, false, true, true]
             }
         ]
     },
     {
+        "name": "一式徹甲弾",
+        "id": 116,
         "type": "対艦強化弾",
         "icon": "113.png",
-        "id": 116,
-        "name": "一式徹甲弾",
         "secretary": [
             {
                 "name": "金剛",
-                "day": [
-                    true,
-                    false,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true
-                ]
+                "day": [true, false, false, false, false, true, true]
             },
             {
                 "name": "榛名",
-                "day": [
-                    false,
-                    true,
-                    true,
-                    true,
-                    false,
-                    false,
-                    false
-                ]
+                "day": [false, true, true, true, false, false, false]
             }
         ]
     },
     {
-        "type": "対空機銃",
-        "icon": "115.png",
-        "id": 39,
         "name": "25mm連装機銃",
+        "id": 39,
+        "type": "対空機銃",
+        "icon": "115.png",
         "secretary": [
             {
                 "name": "五十鈴改二",
-                "day": [
-                    true,
-                    false,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true
-                ]
+                "day": [true, false, false, false, false, true, true]
             }
         ]
     },
     {
+        "name": "25mm三連装機銃",
+        "id": 40,
         "type": "対空機銃",
         "icon": "115.png",
-        "id": 40,
-        "name": "25mm三連装機銃",
         "secretary": [
             {
                 "name": "五十鈴改二",
-                "day": [
-                    false,
-                    true,
-                    true,
-                    true,
-                    false,
-                    false,
-                    false
-                ]
+                "day": [false, true, true, true, false, false, false]
             },
             {
                 "name": "摩耶",
-                "day": [
-                    false,
-                    false,
-                    true,
-                    true,
-                    true,
-                    false,
-                    false
-                ]
+                "day": [false, false, true, true, true, false, false]
             },
             {
                 "name": "摩耶改二",
-                "day": [
-                    true,
-                    true,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true
-                ]
+                "day": [true, true, false, false, false, true, true]
             }
         ]
     },
     {
+        "name": "91式高射装置",
+        "id": 120,
         "type": "高射装置",
         "icon": "130.png",
-        "id": 120,
-        "name": "91式高射装置",
         "secretary": [
             {
                 "name": "摩耶",
-                "day": [
-                    true,
-                    true,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true
-                ]
+                "day": [true, true, false, false, false, true, true]
             },
             {
                 "name": "秋月",
-                "day": [
-                    true,
-                    true,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true
-                ]
+                "day": [true, true, false, false, false, true, true]
             },
             {
                 "name": "照月",
-                "day": [
-                    true,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true,
-                    true
-                ]
+                "day": [true, false, false, false, true, true, true]
             }
         ]
     },
     {
+        "name": "94式高射装置",
+        "id": 121,
         "type": "高射装置",
         "icon": "130.png",
-        "id": 121,
-        "name": "94式高射装置",
         "secretary": [
             {
                 "name": "秋月",
-                "day": [
-                    true,
-                    true,
-                    true,
-                    true,
-                    true,
-                    true,
-                    true
-                ]
+                "day": [true, true, true, true, true, true, true]
             },
             {
                 "name": "照月",
-                "day": [
-                    true,
-                    true,
-                    true,
-                    true,
-                    true,
-                    true,
-                    true
-                ]
+                "day": [true, true, true, true, true, true, true]
             },
             {
                 "name": "吹雪改二",
-                "day": [
-                    true,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true,
-                    true
-                ]
+                "day": [true, false, false, false, true, true, true]
             },
             {
                 "name": "摩耶改二",
-                "day": [
-                    true,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true,
-                    true
-                ]
+                "day": [true, false, false, false, true, true, true]
             }
         ]
     },
     {
+        "name": "探照灯",
+        "id": 74,
         "type": "探照灯",
         "icon": "124.png",
-        "id": 74,
-        "name": "探照灯",
         "secretary": [
             {
                 "name": "暁",
-                "day": [
-                    false,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true,
-                    true
-                ]
+                "day": [false, false, false, false, true, true, true]
             },
             {
                 "name": "神通",
-                "day": [
-                    true,
-                    false,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true
-                ]
+                "day": [true, false, false, false, false, true, true]
             },
             {
                 "name": "青葉",
-                "day": [
-                    false,
-                    true,
-                    true,
-                    true,
-                    false,
-                    false,
-                    false
-                ]
+                "day": [false, true, true, true, false, false, false]
             },
             {
                 "name": "綾波",
-                "day": [
-                    false,
-                    true,
-                    true,
-                    true,
-                    false,
-                    false,
-                    false
-                ]
+                "day": [false, true, true, true, false, false, false]
             }
         ]
     },
     {
+        "name": "96式150cm探照灯",
+        "id": 140,
         "type": "探照灯",
         "icon": "124.png",
-        "id": 140,
-        "name": "96式150cm探照灯",
         "secretary": [
             {
                 "name": "比叡",
-                "day": [
-                    true,
-                    true,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true
-                ]
+                "day": [true, true, false, false, false, true, true]
             },
             {
                 "name": "霧島",
-                "day": [
-                    false,
-                    false,
-                    true,
-                    true,
-                    true,
-                    true,
-                    false
-                ]
+                "day": [false, false, true, true, true, true, false]
             }
         ]
     }
