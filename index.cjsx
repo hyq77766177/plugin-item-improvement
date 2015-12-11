@@ -33,7 +33,7 @@ module.exports =
   author: 'Dazzy Ding'
   link: 'https://github.com/yukixz'
   contributors: [{author: 'KochiyaOcean', link: 'https://github.com/kochiyaocean'}]
-  version: '1.5.0'
+  version: '2.0.0'
   description: __ "Show possible improvements of the day"
   handleClick: ->
     if not itemImprovementWindow?
