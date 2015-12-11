@@ -111,7 +111,7 @@
         "secretary": [
             {
                 "name": "最上",
-                "day": [false, false, false, true, false, true, true]
+                "day": [false, false, false, false, false, true, true]
             },
             {
                 "name": "大淀",
@@ -292,6 +292,22 @@
         ]
     },
     {
+        "name": "90mm単装高角砲",
+        "id": 135,
+        "type": "副砲",
+        "icon": "116.png",
+        "secretary": [
+            {
+                "name": "Littorio",
+                "day": [false, true, true, true, true, false, false]
+            },
+            {
+                "name": "Roma",
+                "day": [true, false, false, false, true, true, true]
+            }
+        ]
+    },
+    {
         "name": "15.2cm単装砲",
         "id": 11,
         "type": "副砲",
@@ -324,22 +340,6 @@
             {
                 "name": "Roma",
                 "day": [true, true, false, false, true, true, false]
-            }
-        ]
-    },
-    {
-        "name": "90mm単装高角砲",
-        "id": 135,
-        "type": "副砲",
-        "icon": "116.png",
-        "secretary": [
-            {
-                "name": "Littorio",
-                "day": [false, true, true, true, true, false, false]
-            },
-            {
-                "name": "Roma",
-                "day": [true, false, false, false, true, true, true]
             }
         ]
     },
