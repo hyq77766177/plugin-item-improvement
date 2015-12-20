@@ -2,17 +2,17 @@
 remote = require 'remote'
 windowManager = remote.require './lib/window'
 
-i18n = require 'i18n'
 path = require 'path-extra'
-i18n.configure
+i18n = new(require 'i18n-2')
   locales: ['en-US', 'ja-JP', 'zh-CN']
   defaultLocale: 'zh-CN'
   directory: path.join(__dirname, "i18n")
   updateFiles: false
   indent: "\t"
   extension: '.json'
+  devMode: false
 i18n.setLocale(window.language)
-{__} = i18n
+__ = i18n.__.bind(i18n)
 
 itemImprovementWindow = null
 initialItemImprovementWindow = ->

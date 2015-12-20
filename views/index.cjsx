@@ -3,16 +3,12 @@
 Divider = require './divider'
 path = require 'path-extra'
 fs = require "fs-extra"
-i18n = require 'i18n'
-{__} = i18n
-i18n.configure
-  locales: ['en-US', 'ja-JP', 'zh-CN']
-  defaultLocale: 'zh-CN'
-  directory: path.join(__dirname, '..', 'i18n')
-  updateFiles: false
-  indent: "\t"
-  extension: '.json'
-i18n.setLocale(window.language)
+__ = i18n.main.__.bind(i18n.main)
+
+try
+  require('poi-plugin-translator')
+catch error
+  console.log error
 
 DATA = fs.readJsonSync path.join(__dirname, "..", "assets", "data.json")
 
@@ -36,15 +32,15 @@ ItemInfoArea = React.createClass
       hishos = []
       for secretary in item.secretary
         if secretary.day[day]
-          hishos.push secretary.name
+          hishos.push window.i18n.resources.__ secretary.name
       highlight = item.id in @state.highlights
       if hishos.length > 0
         row =
           id: item.id
           icon: item.icon
-          type: item.type
-          name: item.name
-          hisho: hishos.join(' ')
+          type: window.i18n.resources.__ item.type
+          name: window.i18n.resources.__ item.name
+          hisho: hishos.join(' / ')
           highlight: highlight
         rows.push row
     return rows
@@ -52,7 +48,6 @@ ItemInfoArea = React.createClass
     day = (new Date).getUTCDay()
     if (new Date).getUTCHours() >= 15
       day = (day + 1) % 7
-
     day: day
     highlights: config.get('plugin.ItemImprovement.highlights', [])
   handleKeyChange: (key) ->

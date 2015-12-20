@@ -30,6 +30,21 @@ window.addEventListener 'theme.change', (e) ->
   else
     $('#bootstrap-css')?.setAttribute 'href', "file://#{ROOT}/assets/themes/#{theme}/css/#{theme}.css"
 
+# i18n configure
+window.i18n = {}
+window.i18n.main = new(require 'i18n-2')
+  locales: ['en-US', 'ja-JP', 'zh-CN']
+  defaultLocale: 'zh-CN'
+  directory: path.join(__dirname,  'i18n')
+  updateFiles: false
+  indent: "\t"
+  extension: '.json'
+  devMode: false
+i18n.main.setLocale(window.language)
+window.i18n.resources = {}
+window.i18n.resources.__ = (str) -> return str
+window.i18n.resources.translate = (locale, str) -> return str
+window.i18n.resources.setLocale = (str) -> return
 
 require 'coffee-react/register'
 require './views'
