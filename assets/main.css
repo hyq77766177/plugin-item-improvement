@@ -36,15 +36,17 @@ body {
  height: 36px;
  padding: 1px 5px;
 }
-#main-table tbody .highlight {
-  color: #FFFFBF;
-}
-#main-table tbody .highlight.light {
-  color: #7F7F00;
-}
 .item-table-name {
   padding-left: 10px;
 }
 .center {
   text-align: center;
+}
+.checkbox {
+  position: absolute;
+  margin: 0px 10px;
+}
+.checkbox > input {
+  top: 0px !important;
+  bottom: 0px !important;
 }

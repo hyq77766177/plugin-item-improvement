@@ -1,5 +1,5 @@
 {React, ReactBootstrap} = window
-{Panel, Button, Nav, NavItem, Col, Grid, Row, Table} = ReactBootstrap
+{Panel, Button, Nav, NavItem, Col, Grid, Row, Table, Input} = ReactBootstrap
 Divider = require './divider'
 path = require 'path-extra'
 fs = require "fs-extra"
@@ -13,10 +13,10 @@ catch error
 DATA = fs.readJsonSync path.join(__dirname, "..", "assets", "data.json")
 
 ItemInfoRow = React.createClass
-  HIGHLIGHT_CLASS: if window.isDarkTheme then "highlight" else "highlight light"
   render: ->
-    <tr className={if @props.highlight then @HIGHLIGHT_CLASS} onClick={@props.onClick}>
-      <td style={{paddingLeft: 10+'px'}}>
+    <tr onClick={@props.onClick}>
+      <td style={{paddingLeft: 20}}>
+        <Input type="checkbox" checked={@props.highlight} onChange={(e)=> return} />
         <img src={path.join(ROOT, 'assets', 'img', 'slotitem', @props.icon)} />
         {@props.type}
       </td>
@@ -86,7 +86,7 @@ ItemInfoArea = React.createClass
           <Table striped condensed hover id="main-table">
           <thead className="item-table">
             <tr>
-              <th width="150" >　　　{__ "Type"}</th>
+              <th width="200" ><div style={paddingLeft: '55px'}>{__ "Type"}</div></th>
               <th width="250" >{__ "Name"}</th>
               <th width="200" >{__ "2nd Ship"}</th>
             </tr>

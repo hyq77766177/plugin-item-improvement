@@ -24,7 +24,7 @@ initialItemImprovementWindow = ->
     realClose: true
   itemImprovementWindow.on 'close', ->
     itemImprovementWindow = null
-  itemImprovementWindow.loadUrl "file://#{__dirname}/index.html"
+  itemImprovementWindow.loadURL "file://#{__dirname}/index.html"
 
 module.exports =
   name: 'Item-Improvement'
