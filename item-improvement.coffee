@@ -33,12 +33,11 @@ window.addEventListener 'theme.change', (e) ->
 # i18n configure
 window.i18n = {}
 window.i18n.main = new(require 'i18n-2')
-  locales: ['en-US', 'ja-JP', 'zh-CN']
+  locales: ['en-US', 'ja-JP', 'zh-CN', 'zh-TW']
   defaultLocale: 'zh-CN'
-  directory: path.join(__dirname,  'i18n')
-  updateFiles: false
-  indent: "\t"
+  directory: path.join(__dirname, "i18n")
   extension: '.json'
+  updateFiles: false
   devMode: false
 i18n.main.setLocale(window.language)
 window.i18n.resources = {}
