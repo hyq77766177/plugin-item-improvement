@@ -1,3 +1,7 @@
+require 'coffee-react/register'
+
+
+## env.coffee
 path = require 'path-extra'
 
 # Shortcuts and Components
@@ -15,7 +19,6 @@ window.config = remote.require './lib/config'
 # language setting
 window.language = config.get 'poi.language', navigator.language
 
-
 # Custom theme
 window.theme = config.get 'poi.theme', '__default__'
 window.isDarkTheme = /(dark|black|slate|superhero|papercyan)/i.test theme
@@ -30,20 +33,33 @@ window.addEventListener 'theme.change', (e) ->
   else
     $('#bootstrap-css')?.setAttribute 'href', "file://#{ROOT}/assets/themes/#{theme}/css/#{theme}.css"
 
-# i18n configure
+
+## i18n
+{join} = require 'path-extra'
 window.i18n = {}
+
 window.i18n.main = new(require 'i18n-2')
   locales: ['en-US', 'ja-JP', 'zh-CN', 'zh-TW']
   defaultLocale: 'zh-CN'
-  directory: path.join(__dirname, "i18n")
+  directory: join(__dirname, 'i18n')
   extension: '.json'
   updateFiles: false
   devMode: false
-i18n.main.setLocale(window.language)
-window.i18n.resources = {}
-window.i18n.resources.__ = (str) -> return str
-window.i18n.resources.translate = (locale, str) -> return str
-window.i18n.resources.setLocale = (str) -> return
+window.i18n.main.setLocale(window.language)
+window.__ = window.i18n.main.__.bind(window.i18n.main)
 
-require 'coffee-react/register'
+try
+  require 'poi-plugin-translator'
+catch error
+  console.log error
+window.i18n.resources ?= {}
+window.i18n.resources.__ ?= (str) -> return str
+window.i18n.resources.translate ?= (locale, str) -> return str
+window.i18n.resources.setLocale ?= (str) -> return
+window.__r = window.i18n.resources.__.bind(window.i18n.resources)
+
+
+document.title = __ 'Equipment Improvement'
+
+
 require './views'
