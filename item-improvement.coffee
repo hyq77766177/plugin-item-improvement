@@ -33,6 +33,8 @@ window.addEventListener 'theme.change', (e) ->
   else
     $('#bootstrap-css')?.setAttribute 'href', "file://#{ROOT}/assets/themes/#{theme}/css/#{theme}.css"
 
+# User setting
+window.useSVGIcon = config.get 'poi.useSVGIcon', false
 
 ## i18n
 {join} = require 'path-extra'

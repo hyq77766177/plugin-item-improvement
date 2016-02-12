@@ -1,10 +1,11 @@
+fs = require "fs-extra"
+path = require 'path-extra'
 {React, ReactBootstrap} = window
 {Panel, Button, Nav, NavItem, Col, Grid, Row, Table, Input} = ReactBootstrap
 Divider = require './divider'
-path = require 'path-extra'
-fs = require "fs-extra"
-__ = i18n.main.__.bind(i18n.main)
+{SlotitemIcon} = require "#{ROOT}/views/components/etc/icon"
 
+__ = i18n.main.__.bind(i18n.main)
 try
   require('poi-plugin-translator')
 catch error
@@ -17,7 +18,7 @@ ItemInfoRow = React.createClass
     <tr onClick={@props.onClick}>
       <td style={{paddingLeft: 20}}>
         <Input type="checkbox" checked={@props.highlight} onChange={(e)=> return} />
-        <img src={path.join(ROOT, 'assets', 'img', 'slotitem', @props.icon)} />
+        <SlotitemIcon slotitemId={@props.icon} />
         {@props.type}
       </td>
       <td>{@props.name}</td>

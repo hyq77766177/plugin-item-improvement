@@ -50,3 +50,8 @@ body {
   top: 0px !important;
   bottom: 0px !important;
 }
+img.svg {
+  width: 26px;
+  height: 23px;
+  margin: 5px 3px 4px 3px;
+}

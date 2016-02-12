@@ -3,7 +3,7 @@
         "name": "12.7cm連装砲",
         "id": 2,
         "type": "小口径主砲",
-        "icon": "101.png",
+        "icon": 1,
         "secretary": [
             {
                 "name": "無",
@@ -15,7 +15,7 @@
         "name": "12.7cm連装砲B型改二",
         "id": 63,
         "type": "小口径主砲",
-        "icon": "101.png",
+        "icon": 1,
         "secretary": [
             {
                 "name": "夕立改二",
@@ -31,7 +31,7 @@
         "name": "10cm連装高角砲+高射装置",
         "id": 122,
         "type": "小口径主砲",
-        "icon": "116.png",
+        "icon": 16,
         "secretary": [
             {
                 "name": "秋月",
@@ -47,7 +47,7 @@
         "name": "14cm単装砲",
         "id": 4,
         "type": "中口径主砲",
-        "icon": "102.png",
+        "icon": 2,
         "secretary": [
             {
                 "name": "無",
@@ -59,7 +59,7 @@
         "name": "14cm連装砲",
         "id": 119,
         "type": "中口径主砲",
-        "icon": "102.png",
+        "icon": 2,
         "secretary": [
             {
                 "name": "夕張",
@@ -71,7 +71,7 @@
         "name": "15.2cm連装砲",
         "id": 65,
         "type": "中口径主砲",
-        "icon": "102.png",
+        "icon": 2,
         "secretary": [
             {
                 "name": "阿賀野",
@@ -91,7 +91,7 @@
         "name": "15.2cm連装砲改",
         "id": 139,
         "type": "中口径主砲",
-        "icon": "102.png",
+        "icon": 2,
         "secretary": [
             {
                 "name": "矢矧",
@@ -107,7 +107,7 @@
         "name": "15.5cm三連装砲",
         "id": 5,
         "type": "中口径主砲",
-        "icon": "102.png",
+        "icon": 2,
         "secretary": [
             {
                 "name": "最上",
@@ -123,7 +123,7 @@
         "name": "20.3cm連装砲",
         "id": 6,
         "type": "中口径主砲",
-        "icon": "102.png",
+        "icon": 2,
         "secretary": [
             {
                 "name": "青葉",
@@ -139,7 +139,7 @@
         "name": "20.3cm(2号)連装砲",
         "id": 90,
         "type": "中口径主砲",
-        "icon": "102.png",
+        "icon": 2,
         "secretary": [
             {
                 "name": "妙高",
@@ -151,7 +151,7 @@
         "name": "20.3cm(3号)連装砲",
         "id": 50,
         "type": "中口径主砲",
-        "icon": "102.png",
+        "icon": 2,
         "secretary": [
             {
                 "name": "三隈",
@@ -163,7 +163,7 @@
         "name": "35.6cm連装砲",
         "id": 7,
         "type": "大口径主砲",
-        "icon": "103.png",
+        "icon": 3,
         "secretary": [
             {
                 "name": "扶桑",
@@ -175,7 +175,7 @@
         "name": "38cm連装砲",
         "id": 76,
         "type": "大口径主砲",
-        "icon": "103.png",
+        "icon": 3,
         "secretary": [
             {
                 "name": "Bismarck",
@@ -187,7 +187,7 @@
         "name": "38cm連装砲改",
         "id": 114,
         "type": "大口径主砲",
-        "icon": "103.png",
+        "icon": 3,
         "secretary": [
             {
                 "name": "Bismarck",
@@ -199,7 +199,7 @@
         "name": "381mm/50 三連装砲",
         "id": 133,
         "type": "大口径主砲",
-        "icon": "103.png",
+        "icon": 3,
         "secretary": [
             {
                 "name": "Littorio",
@@ -215,7 +215,7 @@
         "name": "381mm/50 三連装砲改",
         "id": 137,
         "type": "大口径主砲",
-        "icon": "103.png",
+        "icon": 3,
         "secretary": [
             {
                 "name": "Littorio",
@@ -231,7 +231,7 @@
         "name": "41cm連装砲",
         "id": 8,
         "type": "大口径主砲",
-        "icon": "103.png",
+        "icon": 3,
         "secretary": [
             {
                 "name": "長門",
@@ -247,7 +247,7 @@
         "name": "試製46cm連装砲",
         "id": 117,
         "type": "大口径主砲",
-        "icon": "103.png",
+        "icon": 3,
         "secretary": [
             {
                 "name": "大和",
@@ -263,7 +263,7 @@
         "name": "46cm三連装砲",
         "id": 9,
         "type": "大口径主砲",
-        "icon": "103.png",
+        "icon": 3,
         "secretary": [
             {
                 "name": "大和",
@@ -279,7 +279,7 @@
         "name": "試製51cm連装砲",
         "id": 128,
         "type": "大口径主砲",
-        "icon": "103.png",
+        "icon": 3,
         "secretary": [
             {
                 "name": "大和改",
@@ -295,7 +295,7 @@
         "name": "90mm単装高角砲",
         "id": 135,
         "type": "副砲",
-        "icon": "116.png",
+        "icon": 16,
         "secretary": [
             {
                 "name": "Littorio",
@@ -311,7 +311,7 @@
         "name": "15.2cm単装砲",
         "id": 11,
         "type": "副砲",
-        "icon": "104.png",
+        "icon": 4,
         "secretary": [
             {
                 "name": "阿賀野",
@@ -331,7 +331,7 @@
         "name": "OTO 152mm三連装速射砲",
         "id": 134,
         "type": "副砲",
-        "icon": "104.png",
+        "icon": 4,
         "secretary": [
             {
                 "name": "Littorio",
@@ -347,7 +347,7 @@
         "name": "61cm三連装魚雷",
         "id": 13,
         "type": "魚雷",
-        "icon": "105.png",
+        "icon": 5,
         "secretary": [
             {
                 "name": "吹雪",
@@ -363,7 +363,7 @@
         "name": "61cm三連装(酸素)魚雷",
         "id": 125,
         "type": "魚雷",
-        "icon": "105.png",
+        "icon": 5,
         "secretary": [
             {
                 "name": "吹雪改二",
@@ -375,7 +375,7 @@
         "name": "61cm四連装魚雷",
         "id": 14,
         "type": "魚雷",
-        "icon": "105.png",
+        "icon": 5,
         "secretary": [
             {
                 "name": "無",
@@ -387,7 +387,7 @@
         "name": "61cm四連装(酸素)魚雷",
         "id": 15,
         "type": "魚雷",
-        "icon": "105.png",
+        "icon": 5,
         "secretary": [
             {
                 "name": "大井",
@@ -403,7 +403,7 @@
         "name": "61cm五連装(酸素)魚雷",
         "id": 58,
         "type": "魚雷",
-        "icon": "105.png",
+        "icon": 5,
         "secretary": [
             {
                 "name": "島風",
@@ -415,7 +415,7 @@
         "name": "13号対空電探",
         "id": 27,
         "type": "電探",
-        "icon": "111.png",
+        "icon": 11,
         "secretary": [
             {
                 "name": "時雨改二",
@@ -439,7 +439,7 @@
         "name": "13号対空電探改",
         "id": 106,
         "type": "電探",
-        "icon": "111.png",
+        "icon": 11,
         "secretary": [
             {
                 "name": "磯風改",
@@ -459,7 +459,7 @@
         "name": "22号対水上電探",
         "id": 28,
         "type": "電探",
-        "icon": "111.png",
+        "icon": 11,
         "secretary": [
             {
                 "name": "日向",
@@ -479,7 +479,7 @@
         "name": "22号対水上電探改四",
         "id": 88,
         "type": "電探",
-        "icon": "111.png",
+        "icon": 11,
         "secretary": [
             {
                 "name": "妙高改二",
@@ -499,7 +499,7 @@
         "name": "21号対空電探",
         "id": 30,
         "type": "電探",
-        "icon": "111.png",
+        "icon": 11,
         "secretary": [
             {
                 "name": "伊勢",
@@ -515,7 +515,7 @@
         "name": "21号対空電探改",
         "id": 89,
         "type": "電探",
-        "icon": "111.png",
+        "icon": 11,
         "secretary": [
             {
                 "name": "大和",
@@ -531,7 +531,7 @@
         "name": "32号対水上電探",
         "id": 31,
         "type": "電探",
-        "icon": "111.png",
+        "icon": 11,
         "secretary": [
             {
                 "name": "伊勢",
@@ -547,7 +547,7 @@
         "name": "32号対水上電探改",
         "id": 141,
         "type": "電探",
-        "icon": "111.png",
+        "icon": 11,
         "secretary": [
             {
                 "name": "伊勢",
@@ -563,7 +563,7 @@
         "name": "九三式水中聴音機",
         "id": 46,
         "type": "ソナー",
-        "icon": "118.png",
+        "icon": 18,
         "secretary": [
             {
                 "name": "夕張",
@@ -587,7 +587,7 @@
         "name": "三式水中探信儀",
         "id": 47,
         "type": "ソナー",
-        "icon": "118.png",
+        "icon": 18,
         "secretary": [
             {
                 "name": "夕張",
@@ -603,7 +603,7 @@
         "name": "四式水中聴音機",
         "id": 149,
         "type": "ソナー",
-        "icon": "118.png",
+        "icon": 18,
         "secretary": [
             {
                 "name": "香取改",
@@ -627,7 +627,7 @@
         "name": "九四式爆雷投射機",
         "id": 44,
         "type": "爆雷",
-        "icon": "117.png",
+        "icon": 17,
         "secretary": [
             {
                 "name": "無",
@@ -639,7 +639,7 @@
         "name": "三式爆雷投射機",
         "id": 45,
         "type": "爆雷",
-        "icon": "117.png",
+        "icon": 17,
         "secretary": [
             {
                 "name": "五十鈴改二",
@@ -651,7 +651,7 @@
         "name": "九一式徹甲弾",
         "id": 36,
         "type": "対艦強化弾",
-        "icon": "113.png",
+        "icon": 13,
         "secretary": [
             {
                 "name": "比叡",
@@ -667,7 +667,7 @@
         "name": "一式徹甲弾",
         "id": 116,
         "type": "対艦強化弾",
-        "icon": "113.png",
+        "icon": 13,
         "secretary": [
             {
                 "name": "金剛",
@@ -683,7 +683,7 @@
         "name": "25mm連装機銃",
         "id": 39,
         "type": "対空機銃",
-        "icon": "115.png",
+        "icon": 15,
         "secretary": [
             {
                 "name": "五十鈴改二",
@@ -695,7 +695,7 @@
         "name": "25mm三連装機銃",
         "id": 40,
         "type": "対空機銃",
-        "icon": "115.png",
+        "icon": 15,
         "secretary": [
             {
                 "name": "五十鈴改二",
@@ -715,7 +715,7 @@
         "name": "91式高射装置",
         "id": 120,
         "type": "高射装置",
-        "icon": "130.png",
+        "icon": 30,
         "secretary": [
             {
                 "name": "摩耶",
@@ -735,7 +735,7 @@
         "name": "94式高射装置",
         "id": 121,
         "type": "高射装置",
-        "icon": "130.png",
+        "icon": 30,
         "secretary": [
             {
                 "name": "秋月",
@@ -759,7 +759,7 @@
         "name": "探照灯",
         "id": 74,
         "type": "探照灯",
-        "icon": "124.png",
+        "icon": 24,
         "secretary": [
             {
                 "name": "暁",
@@ -783,7 +783,7 @@
         "name": "96式150cm探照灯",
         "id": 140,
         "type": "探照灯",
-        "icon": "124.png",
+        "icon": 24,
         "secretary": [
             {
                 "name": "比叡",
