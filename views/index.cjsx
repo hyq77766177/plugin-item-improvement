@@ -15,9 +15,9 @@ DATA = fs.readJsonSync path.join(__dirname, "..", "assets", "data.json")
 
 ItemInfoRow = React.createClass
   render: ->
-    <tr onClick={@props.onClick}>
+    <tr>
       <td style={{paddingLeft: 20}}>
-        <Input type="checkbox" checked={@props.highlight} onChange={(e)=> return} />
+        <Input type="checkbox" checked={@props.highlight} onClick={@props.onClick} />
         <SlotitemIcon slotitemId={@props.icon} />
         {@props.type}
       </td>
