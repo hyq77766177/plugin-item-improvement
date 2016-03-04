@@ -10,13 +10,22 @@
     "type": "git",
     "url": "git+https://github.com/poooi/plugin-item-improvement.git"
   },
-  "author": "Dazzy Ding",
-  "contributors": ["KochiyaOcean"],
+  "author": {
+    "name": "KochiyaOcean",
+    "link": "https://github.com/kochiyaocean"
+  },
+  "contributors": ["Dazzy Ding"],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/poooi/plugin-item-improvement/issues"
   },
   "homepage": "https://github.com/poooi/plugin-item-improvement#readme",
   "dependencies": {
+  },
+  "poiPlugin": {
+    "title": "Equipment Improvement",
+    "description": "Show possible improvements of the day",
+    "icon": "fa/wrench",
+    "priority": 50
   }
 }
