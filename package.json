@@ -1,7 +1,7 @@
 {
   "name": "poi-plugin-item-improvement",
   "version": "2.1.1",
-  "description": "Show improvable items of the day #### Usage Put the folder into /path/to/poi/resources/app/plugins",
+  "description": "Show improvable items of the day",
   "main": "index.cjsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
