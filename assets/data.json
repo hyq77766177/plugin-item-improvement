@@ -172,6 +172,42 @@
         ]
     },
     {
+        "name": "試製35.6cm三連装砲",
+        "id": 103,
+        "type": "大口径主砲",
+        "icon": 3,
+        "secretary": [
+            {
+                "name": "金剛改二",
+                "day": [false, false, false, true, true, false, false]
+            },
+            {
+                "name": "榛名改二",
+                "day": [false, false, false, false, true, true, false]
+            },
+            {
+                "name": "扶桑改二",
+                "day": [false, false, false, true, true, true, true]
+            },
+            {
+                "name": "山城改二",
+                "day": [true, false, false, false, true, true, true]
+            }
+        ]
+    },
+    {
+        "name": "35.6cm連装砲(ダズル迷彩)",
+        "id": 104,
+        "type": "大口径主砲",
+        "icon": 3,
+        "secretary": [
+            {
+                "name": "榛名改二",
+                "day": [true, true, true, true, false, false, true]
+            }
+        ]
+    },
+    {
         "name": "38cm連装砲",
         "id": 76,
         "type": "大口径主砲",
@@ -240,6 +276,22 @@
             {
                 "name": "陸奥",
                 "day": [true, true, false, false, true, false, false]
+            }
+        ]
+    },
+    {
+        "name": "試製41cm三連装砲",
+        "id": 105,
+        "type": "大口径主砲",
+        "icon": 3,
+        "secretary": [
+            {
+                "name": "長門改",
+                "day": [true, true, false, true, true, false, false]
+            },
+            {
+                "name": "陸奥改",
+                "day": [false, false, true, true, false, true, true]
             }
         ]
     },
@@ -408,6 +460,42 @@
             {
                 "name": "島風",
                 "day": [false, false, false, true, true, false, false]
+            }
+        ]
+    },
+    {
+        "name": "零式水上観測機",
+        "id": 59,
+        "type": "水上偵察機",
+        "icon": 10,
+        "secretary": [
+            {
+                "name": "瑞穂",
+                "day": [true, true, true, true, false, false, true]
+            },
+            {
+                "name": "武蔵",
+                "day": [false, false, false, false, true, true, true]
+            }
+        ]
+    },
+    {
+        "name": "Ro.43水偵",
+        "id": 163,
+        "type": "水上偵察機",
+        "icon": 10,
+        "secretary": [
+            {
+                "name": "Zara改",
+                "day": [false, true, true, true, true, true, false]
+            },
+            {
+                "name": "Italia",
+                "day": [true, false, false, false, false, false, true]
+            },
+            {
+                "name": "Roma改",
+                "day": [false, false, true, true, false, false, false]
             }
         ]
     },
