@@ -5,10 +5,13 @@
   <title>装备改修</title>
   <link rel="stylesheet" id="bootstrap-css" href="">
   <link rel="stylesheet" href="./assets/main.css">
-  <script src="./env-loader.js"></script>
-  <script type="text/coffeescript" src="./item-improvement.coffee"></script>
 </head>
 <body>
 	<item-improvement />
+    <script>
+      require("./env-loader.js");
+      require('coffee-script/register');
+      require("./item-improvement");
+    </script>
 </body>
 </html>
