@@ -1,6 +1,6 @@
 {
   "name": "poi-plugin-item-improvement",
-  "version": "2.1.2",
+  "version": "2.2.0",
   "description": "Show improvable items of the day",
   "main": "index.cjsx",
   "scripts": {
