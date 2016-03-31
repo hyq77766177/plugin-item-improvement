@@ -38,6 +38,10 @@
                 "day": [false, true, true, true, true, false, false]
             },
             {
+                "name": "初月",
+                "day": [false, true, true, true, true, false, false]
+            },
+            {
                 "name": "照月",
                 "day": [true, false, false, false, true, true, true]
             }
@@ -464,6 +468,30 @@
         ]
     },
     {
+        "name": "零式水上偵察機",
+        "id": 25,
+        "type": "水上偵察機",
+        "icon": 10,
+        "secretary": [
+            {
+                "name": "千歳甲",
+                "day": [false, false, false, false, false, true, true]
+            },
+            {
+                "name": "千代田甲",
+                "day": [false, false, false, true, true, false, false]
+            },
+            {
+                "name": "秋津洲改",
+                "day": [true, false, false, false, true, true, true]
+            },
+            {
+                "name": "瑞穂",
+                "day": [true, true, true, false, false, true, true]
+            }
+        ]
+    },
+    {
         "name": "零式水上観測機",
         "id": 59,
         "type": "水上偵察機",
@@ -768,6 +796,22 @@
         ]
     },
     {
+        "name": "25mm単装機銃",
+        "id": 49,
+        "type": "対空機銃",
+        "icon": 15,
+        "secretary": [
+            {
+                "name": "皐月",
+                "day": [true, false, false, false, false, true, true]
+            },
+            {
+                "name": "文月",
+                "day": [false, false, false, true, true, true, true]
+            }
+        ]
+    },
+    {
         "name": "25mm連装機銃",
         "id": 39,
         "type": "対空機銃",
@@ -834,12 +878,76 @@
                 "day": [true, true, true, true, true, true, true]
             },
             {
+                "name": "初月",
+                "day": [true, false, false, false, false, true, true]
+            },
+            {
                 "name": "吹雪改二",
                 "day": [true, false, false, false, true, true, true]
             },
             {
                 "name": "摩耶改二",
                 "day": [true, false, false, false, true, true, true]
+            }
+        ]
+    },
+    {
+        "name": "大発動艇",
+        "id": 68,
+        "type": "上陸用舟艇",
+        "icon": 20,
+        "secretary": [
+            {
+                "name": "あきつ丸",
+                "day": [true, true, true, true, true, true, true]
+            },
+            {
+                "name": "皐月改二",
+                "day": [true, true, true, true, false, false, false]
+            },
+            {
+                "name": "阿武隈改二",
+                "day": [true, true, false, false, false, true, true]
+            }
+        ]
+    },
+    {
+        "name": "大発動艇(八九式中戦車&陸戦隊)",
+        "id": 166,
+        "type": "上陸用舟艇",
+        "icon": 20,
+        "secretary": [
+            {
+                "name": "あきつ丸",
+                "day": [true, true, false, false, false, true, true]
+            },
+            {
+                "name": "皐月改二",
+                "day": [false, false, false, false, true, true, true]
+            },
+            {
+                "name": "阿武隈改二",
+                "day": [false, false, true, true, true, false, false]
+            }
+        ]
+    },
+    {
+        "name": "特二式内火艇",
+        "id": 167,
+        "type": "上陸用舟艇",
+        "icon": 36,
+        "secretary": [
+            {
+                "name": "伊58",
+                "day": [true, true, false, false, false, true, true]
+            },
+            {
+                "name": "伊8",
+                "day": [false, false, false, true, true, true, true]
+            },
+            {
+                "name": "伊401",
+                "day": [false, true, true, true, true, false, false]
             }
         ]
     },
