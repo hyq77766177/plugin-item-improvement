@@ -46,6 +46,10 @@ body {
   position: absolute;
   margin: 0px 10px;
 }
+.new-checkbox {
+  position: absolute;
+  margin: 0px -15px;
+}
 .checkbox > input {
   top: 0px !important;
   bottom: 0px !important;

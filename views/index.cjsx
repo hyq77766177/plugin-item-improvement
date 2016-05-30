@@ -1,9 +1,14 @@
 fs = require "fs-extra"
 path = require 'path-extra'
 {React, ReactBootstrap} = window
-{Panel, Button, Nav, NavItem, Col, Grid, Row, Table, Input} = ReactBootstrap
+{Panel, Button, Nav, NavItem, Col, Grid, Row, Table} = ReactBootstrap
 Divider = require './divider'
 {SlotitemIcon} = require "#{ROOT}/views/components/etc/icon"
+inputDepreacted = ReactBootstrap.Checkbox?
+if inputDepreacted
+  Input = ReactBootstrap.Checkbox
+else
+  Input = ReactBootstrap.Input
 
 __ = i18n.main.__.bind(i18n.main)
 try
@@ -17,7 +22,10 @@ ItemInfoRow = React.createClass
   render: ->
     <tr>
       <td style={{paddingLeft: 20}}>
-        <Input type="checkbox" checked={@props.highlight} onClick={@props.onClick} />
+        <Input type="checkbox"
+               className={if inputDepreacted then 'new-checkbox' else ''}
+               checked={@props.highlight}
+               onChange={@props.clickCheckbox} />
         <SlotitemIcon slotitemId={@props.icon} />
         {@props.type}
       </td>
@@ -105,7 +113,7 @@ ItemInfoArea = React.createClass
                     name = {row.name}
                     hisho = {row.hisho}
                     highlight = {row.highlight}
-                    onClick = {@handleClickItem.bind(@, row.id)}
+                    clickCheckbox = {@handleClickItem.bind(@, row.id)}
                   />
               for row, index in rows
                 if not row.highlight
@@ -116,7 +124,7 @@ ItemInfoArea = React.createClass
                     name = {row.name}
                     hisho = {row.hisho}
                     highlight = {row.highlight}
-                    onClick = {@handleClickItem.bind(@, row.id)}
+                    clickCheckbox = {@handleClickItem.bind(@, row.id)}
                   />
               results
             }
