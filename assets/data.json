@@ -508,6 +508,18 @@
         ]
     },
     {
+        "name": "九八式水上偵察機(夜偵)",
+        "id": 102,
+        "type": "水上偵察機",
+        "icon": 10,
+        "secretary": [
+            {
+                "name": "川内改二",
+                "day": [true, true, false, false, true, true, true]
+            }
+        ]
+    },
+    {
         "name": "Ro.43水偵",
         "id": 163,
         "type": "水上偵察機",
