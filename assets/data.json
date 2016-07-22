@@ -316,6 +316,30 @@
         ]
     },
     {
+        "name": "16inch三連装砲Mk.7",
+        "id": 161,
+        "type": "大口径主砲",
+        "icon": 3,
+        "secretary": [
+            {
+                "name": "Iowa",
+                "day": [true, true, true, true, true, true, true]
+            }
+        ]
+    },
+    {
+        "name": "16inch三連装砲Mk.7＋GFCS",
+        "id": 183,
+        "type": "大口径主砲",
+        "icon": 3,
+        "secretary": [
+            {
+                "name": "Iowa",
+                "day": [true, false, false, false, true, true, true]
+            }
+        ]
+    },
+    {
         "name": "46cm三連装砲",
         "id": 9,
         "type": "大口径主砲",
@@ -468,6 +492,22 @@
         ]
     },
     {
+        "name": "試製61cm六連装(酸素)魚雷",
+        "id": 179,
+        "type": "魚雷",
+        "icon": 5,
+        "secretary": [
+            {
+                "name": "島風",
+                "day": [true, false, false, false, false, false, true]
+            },
+            {
+                "name": "初月",
+                "day": [false, false, false, true, true, true, true]
+            }
+        ]
+    },
+    {
         "name": "零式水上偵察機",
         "id": 25,
         "type": "水上偵察機",
@@ -536,6 +576,178 @@
             {
                 "name": "Roma改",
                 "day": [false, false, true, true, false, false, false]
+            }
+        ]
+    },
+    {
+        "name": "九六式艦戦",
+        "id": 19,
+        "type": "艦上戰鬥機",
+        "icon": 6,
+        "secretary": [
+            {
+                "name": "鳳翔",
+                "day": [true, true, true, true, true, true, true]
+            }
+        ]
+    },
+    {
+        "name": "零式舰戦21型",
+        "id": 20,
+        "type": "艦上戰鬥機",
+        "icon": 6,
+        "secretary": [
+            {
+                "name": "赤城",
+                "day": [false, false, false, false, true, true, true]
+            },
+            {
+                "name": "加賀",
+                "day": [true, true, true, false, false, false, false]
+            }
+        ]
+    },
+    {
+        "name": "零式舰戦32型",
+        "id": 181,
+        "type": "艦上戰鬥機",
+        "icon": 6,
+        "secretary": [
+            {
+                "name": "赤城",
+                "day": [true, true, false, false, false, false, false]
+            },
+            {
+                "name": "加賀",
+                "day": [false, false, false, true, true, false, false]
+            }
+        ]
+    },
+    {
+        "name": "零式舰戦32型(熟练)",
+        "id": 182,
+        "type": "艦上戰鬥機",
+        "icon": 6,
+        "secretary": [
+            {
+                "name": "赤城",
+                "day": [true, true, false, false, false, false, false]
+            },
+            {
+                "name": "加賀",
+                "day": [false, false, false, true, true, false, false]
+            }
+        ]
+    },
+    {
+        "name": "零式舰戦52型",
+        "id": 21,
+        "type": "艦上戰鬥機",
+        "icon": 6,
+        "secretary": [
+            {
+                "name": "翔鶴",
+                "day": [false, false, false, false, true, true, true]
+            },
+            {
+                "name": "瑞鶴",
+                "day": [true, true, false, true, false, false, false]
+            }
+        ]
+    },
+    {
+        "name": "零式舰戦52型(熟练)",
+        "id": 152,
+        "type": "艦上戰鬥機",
+        "icon": 6,
+        "secretary": [
+            {
+                "name": "翔鶴",
+                "day": [false, false, false, false, true, true, true]
+            },
+            {
+                "name": "瑞鶴",
+                "day": [true, true, false, true, false, false, false]
+            }
+        ]
+    },
+    {
+        "name": "零式舰戦52型丙(六〇一空)",
+        "id": 109,
+        "type": "艦上戰鬥機",
+        "icon": 6,
+        "secretary": [
+            {
+                "name": "大鳳",
+                "day": [true, true, true, true, true, true, true]
+            },
+            {
+                "name": "雲龍",
+                "day": [false, false, false, true, true, true, true]
+            }
+        ]
+    },
+    {
+        "name": "零式舰戦52型丙(付岩井小隊)",
+        "id": 153,
+        "type": "艦上戰鬥機",
+        "icon": 6,
+        "secretary": [
+            {
+                "name": "瑞鶴",
+                "day": [false, false, true, false, true, false, false]
+            }
+        ]
+    },
+    {
+        "name": "零式舰戦52型甲(付岩本小隊)",
+        "id": 156,
+        "type": "艦上戰鬥機",
+        "icon": 6,
+        "secretary": [
+            {
+                "name": "瑞鶴",
+                "day": [false, false, false, false, false, true, true]
+            }
+        ]
+    },
+    {
+        "name": "零式舰戦53型(岩本隊)",
+        "id": 157,
+        "type": "艦上戰鬥機",
+        "icon": 6,
+        "secretary": [
+            {
+                "name": "瑞鶴",
+                "day": [false, false, false, false, false, true, true]
+            }
+        ]
+    },
+    {
+        "name": "零式舰戦62型(爆戦)",
+        "id": 60,
+        "type": "艦上爆撃機",
+        "icon": 7,
+        "secretary": [
+            {
+                "name": "隼鷹",
+                "day": [true, false, false, false, false, true, true]
+            },
+            {
+                "name": "翔鶴",
+                "day": [true, true, false, false, false, false, false]
+            }
+        ]
+    },
+    {
+        "name": "零式舰戦62型(爆戦/岩井隊)",
+        "id": 154,
+        "type": "艦上爆撃機",
+        "icon": 7,
+        "secretary": [
+            {
+                "name": "瑞鶴",
+                "day": [false, false, true, false, true, false, false]
             }
         ]
     },
@@ -1003,4 +1215,5 @@
             }
         ]
     }
+
 ]
