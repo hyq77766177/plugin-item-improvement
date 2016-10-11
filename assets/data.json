@@ -280,6 +280,18 @@
         ]
     },
     {
+        "name": "38.1cm Mk.I/N連装砲改",
+        "id": 192,
+        "type": "大口径主砲",
+        "icon": 3,
+        "secretary": [
+            {
+                "name": "Warspite",
+                "day": [false, false, true, true, true, true, false]
+            }
+        ]
+    },
+    {
         "name": "41cm連装砲",
         "id": 8,
         "type": "大口径主砲",
