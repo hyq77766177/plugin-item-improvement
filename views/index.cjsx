@@ -4,6 +4,7 @@ path = require 'path-extra'
 {Panel, Button, Nav, NavItem, Col, Grid, Row, Table} = ReactBootstrap
 Divider = require './divider'
 {SlotitemIcon} = require "#{ROOT}/views/components/etc/icon"
+{sortBy} = require 'lodash'
 inputDepreacted = ReactBootstrap.Checkbox?
 if inputDepreacted
   Input = ReactBootstrap.Checkbox
@@ -17,6 +18,7 @@ catch error
   console.log error
 
 DATA = fs.readJsonSync path.join(__dirname, "..", "assets", "data.json")
+DATA = sortBy DATA, ['icon', 'id']
 
 ItemInfoRow = React.createClass
   render: ->
@@ -39,10 +41,17 @@ ItemInfoArea = React.createClass
     rows = []
     for item in DATA
       hishos = []
-      for secretary in item.secretary
-        if secretary.day[day]
-          hishos.push window.i18n.resources.__ secretary.name
+      for improvement in item.improvement
+        console.log improvement
+        for req in improvement.req
+          console.log req
+          for secretary in req.secretary
+            console.log secretary
+            if req.day[day]
+              hishos.push __ window.i18n.resources.__ secretary
       highlight = item.id in @state.highlights
+      console.log hishos
+      console.log item.name
       if hishos.length > 0
         row =
           id: item.id
