@@ -19,6 +19,8 @@ catch error
 
 DATA = fs.readJsonSync path.join(__dirname, "..", "assets", "data.json")
 DATA = sortBy DATA, ['icon', 'id']
+DATA = keyBy DATA, 'id'
+console.log(DATA)
 
 WEEKDATE = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
 
@@ -66,7 +68,7 @@ ItemInfoArea = React.createClass
   getRows: ->
     {day} = @state
     rows = []
-    for item in DATA
+    for id, item of DATA
       hishos = []
       for improvement in item.improvement
         for req in improvement.req
