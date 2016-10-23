@@ -1,10 +1,10 @@
 fs = require "fs-extra"
 path = require 'path-extra'
 {React, ReactBootstrap} = window
-{Panel, Button, Nav, NavItem, Col, Grid, Row, Table} = ReactBootstrap
+{Panel, Button, Nav, NavItem, Col, Grid, Row, Table, Collapse} = ReactBootstrap
 Divider = require './divider'
 {SlotitemIcon} = require "#{ROOT}/views/components/etc/icon"
-{sortBy} = require 'lodash'
+{sortBy, clone} = require 'lodash'
 inputDepreacted = ReactBootstrap.Checkbox?
 if inputDepreacted
   Input = ReactBootstrap.Checkbox
@@ -21,6 +21,8 @@ DATA = fs.readJsonSync path.join(__dirname, "..", "assets", "data.json")
 DATA = sortBy DATA, ['icon', 'id']
 
 ItemInfoRow = React.createClass
+  handleExpanded: ->
+    @props.setExpanded(!@props.rowExpanded)
   render: ->
     <tr>
       <td style={{paddingLeft: 20}}>
@@ -31,9 +33,19 @@ ItemInfoRow = React.createClass
         <SlotitemIcon slotitemId={@props.icon} />
         {@props.type}
       </td>
-      <td>{@props.name}</td>
-      <td>{@props.hisho}</td>
+      <td onClick = {@handleExpanded}>{@props.name}</td>
+      <td>{@props.hisho unless @props.rowExpanded}</td>
     </tr>
+
+DetailRow = React.createClass
+  render: ->
+    <Collapse in = {@props.rowExpanded}>
+      <tr>
+        <td colSpan = 3>
+          Test!
+        </td>
+      </tr>
+    </Collapse>
 
 ItemInfoArea = React.createClass
   getRows: ->
@@ -42,16 +54,11 @@ ItemInfoArea = React.createClass
     for item in DATA
       hishos = []
       for improvement in item.improvement
-        console.log improvement
         for req in improvement.req
-          console.log req
           for secretary in req.secretary
-            console.log secretary
             if req.day[day]
               hishos.push __ window.i18n.resources.__ secretary
       highlight = item.id in @state.highlights
-      console.log hishos
-      console.log item.name
       if hishos.length > 0
         row =
           id: item.id
@@ -68,6 +75,7 @@ ItemInfoArea = React.createClass
       day = (day + 1) % 7
     day: day
     highlights: config.get('plugin.ItemImprovement.highlights', [])
+    rowsExpanded: {}
   handleKeyChange: (key) ->
     @setState
       day: key
@@ -80,6 +88,11 @@ ItemInfoArea = React.createClass
     config.set('plugin.ItemImprovement.highlights', highlights)
     @setState
       highlights: highlights
+  handleRowExpanded: (id, expanded) ->
+    rowsExpanded = clone(@state.rowsExpanded)
+    rowsExpanded[id] = expanded
+    @setState
+      rowsExpanded: rowsExpanded 
 
   render: ->
     rows = @getRows()
@@ -101,7 +114,7 @@ ItemInfoArea = React.createClass
         </Grid>
         <Divider text={__ "Improvement information"} />
         <Grid>
-          <Table striped condensed hover id="main-table">
+          <Table bordered condensed hover id="main-table">
           <thead className="item-table">
             <tr>
               <th width="200" ><div style={paddingLeft: '55px'}>{__ "Type"}</div></th>
@@ -110,11 +123,12 @@ ItemInfoArea = React.createClass
             </tr>
           </thead>
           <tbody>
-          {
+          { 
             if rows?
               results = []
               for row, index in rows
                 if row.highlight
+                  rowExpanded = @state.rowsExpanded[row.id] or false
                   results.push <ItemInfoRow
                     key = {row.id}
                     icon = {row.icon}
@@ -123,9 +137,16 @@ ItemInfoArea = React.createClass
                     hisho = {row.hisho}
                     highlight = {row.highlight}
                     clickCheckbox = {@handleClickItem.bind(@, row.id)}
+                    rowExpanded = {rowExpanded}
+                    setExpanded = {@handleRowExpanded.bind(@, row.id)}
+                  />
+                  results.push <DetailRow
+                    key = {"detail-#{row.id}"}
+                    rowExpanded = {rowExpanded}
                   />
               for row, index in rows
                 if not row.highlight
+                  rowExpanded = @state.rowsExpanded[row.id] or false
                   results.push <ItemInfoRow
                     key = {row.id}
                     icon = {row.icon}
@@ -134,6 +155,12 @@ ItemInfoArea = React.createClass
                     hisho = {row.hisho}
                     highlight = {row.highlight}
                     clickCheckbox = {@handleClickItem.bind(@, row.id)}
+                    rowExpanded = {rowExpanded}
+                    setExpanded = {@handleRowExpanded.bind(@, row.id)}
+                  />
+                  results.push <DetailRow
+                    key = {"detail-#{row.id}"}
+                    rowExpanded = {rowExpanded}
                   />
               results
             }
