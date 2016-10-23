@@ -1,10 +1,10 @@
 fs = require "fs-extra"
 path = require 'path-extra'
 {React, ReactBootstrap} = window
-{Panel, Button, Nav, NavItem, Col, Grid, Row, Table, Collapse} = ReactBootstrap
+{Panel, Button, Nav, NavItem, Col, Grid, Row, Table, Collapse, ButtonGroup} = ReactBootstrap
 Divider = require './divider'
 {SlotitemIcon} = require "#{ROOT}/views/components/etc/icon"
-{sortBy, clone} = require 'lodash'
+{sortBy, clone, keyBy} = require 'lodash'
 inputDepreacted = ReactBootstrap.Checkbox?
 if inputDepreacted
   Input = ReactBootstrap.Checkbox
@@ -19,6 +19,8 @@ catch error
 
 DATA = fs.readJsonSync path.join(__dirname, "..", "assets", "data.json")
 DATA = sortBy DATA, ['icon', 'id']
+
+WEEKDATE = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
 
 ItemInfoRow = React.createClass
   handleExpanded: ->
@@ -42,10 +44,23 @@ DetailRow = React.createClass
     <Collapse in = {@props.rowExpanded}>
       <tr>
         <td colSpan = 3>
-          Test!
+          <div>
+          </div>
         </td>
       </tr>
     </Collapse>
+
+Weekday = React.createClass
+  render: ->
+    <ButtonGroup bsSize="small">
+      {
+        @props.day.map (v,i) ->
+          <Button bsStyle={if v then 'success'} active>
+            {__ WEEKDATE[i]}
+          </Button>
+      }
+    </ButtonGroup>
+
 
 ItemInfoArea = React.createClass
   getRows: ->
@@ -142,6 +157,10 @@ ItemInfoArea = React.createClass
                   />
                   results.push <DetailRow
                     key = {"detail-#{row.id}"}
+                    id = {row.id}
+                    icon = {row.icon}
+                    type = {row.type}
+                    name = {row.name}
                     rowExpanded = {rowExpanded}
                   />
               for row, index in rows
@@ -160,6 +179,10 @@ ItemInfoArea = React.createClass
                   />
                   results.push <DetailRow
                     key = {"detail-#{row.id}"}
+                    id = {row.id}
+                    icon = {row.icon}
+                    type = {row.type}
+                    name = {row.name}
                     rowExpanded = {rowExpanded}
                   />
               results
