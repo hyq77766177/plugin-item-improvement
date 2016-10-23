@@ -8,7 +8,8 @@
       {
         "upgrade": {
           "level": 0,
-          "name": "12.7cm連装砲B型改二"
+          "name": "12.7cm連装砲B型改二",
+          "icon": 1
         },
         "req": [
           {
@@ -172,7 +173,8 @@
       {
         "upgrade": {
           "level": 0,
-          "name": "14cm連装砲"
+          "name": "14cm連装砲",
+          "icon": 2
         },
         "req": [
           {
@@ -349,7 +351,8 @@
       {
         "upgrade": {
           "level": 0,
-          "name": "20.3cm(2号)連装砲"
+          "name": "20.3cm(2号)連装砲",
+          "icon": 2
         },
         "req": [
           {
@@ -526,7 +529,8 @@
       {
         "upgrade": {
           "level": 0,
-          "name": "15.2cm連装砲改"
+          "name": "15.2cm連装砲改",
+          "icon": 2
         },
         "req": [
           {
@@ -637,7 +641,8 @@
       {
         "upgrade": {
           "level": 0,
-          "name": "20.3cm(3号)連装砲"
+          "name": "20.3cm(3号)連装砲",
+          "icon": 2
         },
         "req": [
           {
@@ -894,7 +899,8 @@
       {
         "upgrade": {
           "level": 0,
-          "name": "試製35.6cm三連装砲"
+          "name": "試製35.6cm三連装砲",
+          "icon": 3
         },
         "req": [
           {
@@ -1165,7 +1171,8 @@
       {
         "upgrade": {
           "level": 3,
-          "name": "38cm連装砲改"
+          "name": "38cm連装砲改",
+          "icon": 3
         },
         "req": [
           {
@@ -1624,7 +1631,8 @@
       {
         "upgrade": {
           "level": 5,
-          "name": "46cm三連装砲"
+          "name": "46cm三連装砲",
+          "icon": 3
         },
         "req": [
           {
@@ -1815,7 +1823,8 @@
       {
         "upgrade": {
           "level": 3,
-          "name": "381mm/50 三連装砲改"
+          "name": "381mm/50 三連装砲改",
+          "icon": 3
         },
         "req": [
           {
@@ -2006,7 +2015,8 @@
       {
         "upgrade": {
           "level": 0,
-          "name": "16inch三連装砲 Mk.7+GFCS"
+          "name": "16inch三連装砲 Mk.7+GFCS",
+          "icon": 3
         },
         "req": [
           {
@@ -2169,7 +2179,8 @@
       {
         "upgrade": {
           "level": 0,
-          "name": "38.1cm Mk.I/N連装砲改"
+          "name": "38.1cm Mk.I/N連装砲改",
+          "icon": 3
         },
         "req": [
           {
@@ -2225,11 +2236,11 @@
             },
             {
               "development": [
-                -1,
-                -1
+                8,
+                15
               ],
               "improvement": [
-                8,
+                6,
                 12
               ],
               "item": {
@@ -2256,10 +2267,10 @@
             "day": [
               false,
               false,
-              false,
               true,
               true,
-              false,
+              true,
+              true,
               false
             ],
             "secretary": [
@@ -2332,7 +2343,8 @@
       {
         "upgrade": {
           "level": 0,
-          "name": "15.2cm連装砲"
+          "name": "15.2cm連装砲",
+          "icon": 2
         },
         "req": [
           {
@@ -2537,7 +2549,8 @@
       {
         "upgrade": {
           "level": 0,
-          "name": "61cm三連装(酸素)魚雷"
+          "name": "61cm三連装(酸素)魚雷",
+          "icon": 5
         },
         "req": [
           {
@@ -2634,7 +2647,8 @@
       {
         "upgrade": {
           "level": 3,
-          "name": "61cm四連装(酸素)魚雷"
+          "name": "61cm四連装(酸素)魚雷",
+          "icon": 5
         },
         "req": [
           {
@@ -2717,7 +2731,8 @@
       {
         "upgrade": {
           "level": 0,
-          "name": "61cm五連装(酸素)魚雷"
+          "name": "61cm五連装(酸素)魚雷",
+          "icon": 5
         },
         "req": [
           {
@@ -2881,7 +2896,8 @@
       {
         "upgrade": {
           "level": 5,
-          "name": "61cm四連装(酸素)魚雷"
+          "name": "61cm四連装(酸素)魚雷",
+          "icon": 5
         },
         "req": [
           {
@@ -3058,7 +3074,8 @@
       {
         "upgrade": {
           "level": 3,
-          "name": "零式艦戦21型"
+          "name": "零式艦戦21型",
+          "icon": 6
         },
         "req": [
           {
@@ -3141,7 +3158,8 @@
       {
         "upgrade": {
           "level": 3,
-          "name": "零式艦戦32型"
+          "name": "零式艦戦32型",
+          "icon": 6
         },
         "req": [
           {
@@ -3332,7 +3350,8 @@
       {
         "upgrade": {
           "level": 3,
-          "name": "零式艦戦32型(熟練)"
+          "name": "零式艦戦32型(熟練)",
+          "icon": 6
         },
         "req": [
           {
@@ -3857,7 +3876,8 @@
       {
         "upgrade": {
           "level": 3,
-          "name": "零式艦戦52型"
+          "name": "零式艦戦52型",
+          "icon": 6
         },
         "req": [
           {
@@ -3954,7 +3974,8 @@
       {
         "upgrade": {
           "level": 3,
-          "name": "零式艦戦52型(熟練)"
+          "name": "零式艦戦52型(熟練)",
+          "icon": 6
         },
         "req": [
           {
@@ -4225,7 +4246,8 @@
       {
         "upgrade": {
           "level": 0,
-          "name": "二式水戦改"
+          "name": "二式水戦改",
+          "icon": 10
         },
         "req": [
           {
@@ -4524,7 +4546,8 @@
       {
         "upgrade": {
           "level": 0,
-          "name": "Ro.44水上戦闘機"
+          "name": "Ro.44水上戦闘機",
+          "icon": 10
         },
         "req": [
           {
@@ -4635,7 +4658,8 @@
       {
         "upgrade": {
           "level": 0,
-          "name": "13号対空電探改"
+          "name": "13号対空電探改",
+          "icon": 11
         },
         "req": [
           {
@@ -4760,7 +4784,8 @@
       {
         "upgrade": {
           "level": 0,
-          "name": "22号対水上電探改四"
+          "name": "22号対水上電探改四",
+          "icon": 11
         },
         "req": [
           {
@@ -4871,7 +4896,8 @@
       {
         "upgrade": {
           "level": 0,
-          "name": "21号対空電探改"
+          "name": "21号対空電探改",
+          "icon": 11
         },
         "req": [
           {
@@ -4968,7 +4994,8 @@
       {
         "upgrade": {
           "level": 0,
-          "name": "32号対水上電探改"
+          "name": "32号対水上電探改",
+          "icon": 11
         },
         "req": [
           {
@@ -5469,7 +5496,8 @@
       {
         "upgrade": {
           "level": 0,
-          "name": "一式徹甲弾"
+          "name": "一式徹甲弾",
+          "icon": 13
         },
         "req": [
           {
@@ -5660,7 +5688,8 @@
       {
         "upgrade": {
           "level": 3,
-          "name": "25mm三連装機銃"
+          "name": "25mm三連装機銃",
+          "icon": 15
         },
         "req": [
           {
@@ -5843,7 +5872,8 @@
       {
         "upgrade": {
           "level": 0,
-          "name": "25mm三連装機銃 集中配備"
+          "name": "25mm三連装機銃 集中配備",
+          "icon": 15
         },
         "req": [
           {
@@ -5954,7 +5984,8 @@
       {
         "upgrade": {
           "level": 5,
-          "name": "25mm連装機銃"
+          "name": "25mm連装機銃",
+          "icon": 15
         },
         "req": [
           {
@@ -6240,7 +6271,8 @@
       {
         "upgrade": {
           "level": 3,
-          "name": "三式爆雷投射機"
+          "name": "三式爆雷投射機",
+          "icon": 17
         },
         "req": [
           {
@@ -6403,7 +6435,8 @@
       {
         "upgrade": {
           "level": 3,
-          "name": "三式水中探信儀"
+          "name": "三式水中探信儀",
+          "icon": 18
         },
         "req": [
           {
@@ -6492,7 +6525,8 @@
       {
         "upgrade": {
           "level": 0,
-          "name": "四式水中聴音機"
+          "name": "四式水中聴音機",
+          "icon": 18
         },
         "req": [
           {
@@ -6819,7 +6853,8 @@
       {
         "upgrade": {
           "level": 0,
-          "name": "大発動艇(八九式中戦車&陸戦隊)"
+          "name": "大発動艇(八九式中戦車&陸戦隊)",
+          "icon": 20
         },
         "req": [
           {
@@ -6930,7 +6965,8 @@
       {
         "upgrade": {
           "level": 0,
-          "name": "特二式内火艇"
+          "name": "特二式内火艇",
+          "icon": 36
         },
         "req": [
           {
@@ -7041,7 +7077,8 @@
       {
         "upgrade": {
           "level": 0,
-          "name": "96式150cm探照灯"
+          "name": "96式150cm探照灯",
+          "icon": 24
         },
         "req": [
           {
@@ -7247,7 +7284,8 @@
       {
         "upgrade": {
           "level": 0,
-          "name": "94式高射装置"
+          "name": "94式高射装置",
+          "icon": 30
         },
         "req": [
           {
@@ -7345,7 +7383,8 @@
       {
         "upgrade": {
           "level": 0,
-          "name": "10cm連装高角砲+高射装置"
+          "name": "10cm連装高角砲+高射装置",
+          "icon": 16
         },
         "req": [
           {
@@ -7449,7 +7488,8 @@
       {
         "upgrade": {
           "level": 0,
-          "name": "12.7cm高角砲+高射装置"
+          "name": "12.7cm高角砲+高射装置",
+          "icon": 16
         },
         "req": [
           {

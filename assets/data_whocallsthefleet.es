@@ -19,6 +19,7 @@ const parseImprovement = (data, items, ships) => {
       ;[upgradeId,
       upg.upgrade.level] = upgrade.upgrade
       upg.upgrade.name = items[upgradeId].api_name
+      upg.upgrade.icon = items[upgradeId].api_type[3]
     }
     else {
       upg.upgrade = upgrade.upgrade
