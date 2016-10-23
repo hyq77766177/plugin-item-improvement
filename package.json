@@ -1,7 +1,7 @@
 {
   "name": "poi-plugin-item-improvement",
   "version": "2.3.5",
-  "description": "Show improvable items of the day",
+  "description": "Show improvable items of the day based on data from WhoCallsTheFleet and KCWiki",
   "main": "index.cjsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,7 +14,7 @@
     "name": "KochiyaOcean",
     "link": "https://github.com/kochiyaocean"
   },
-  "contributors": ["Dazzy Ding"],
+  "contributors": ["Dazzy Ding", "Kagami Seki"],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/poooi/plugin-item-improvement/issues"
@@ -24,7 +24,7 @@
   },
   "poiPlugin": {
     "title": "Equipment Improvement",
-    "description": "Show possible improvements of the day",
+    "description": "Show possible improvements of the day based on data from WhoCallsTheFleet and KCWiki",
     "icon": "fa/wrench",
     "priority": 50
   }
