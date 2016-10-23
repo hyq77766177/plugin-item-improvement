@@ -5,7 +5,7 @@ path = require 'path-extra'
 Divider = require './divider'
 {SlotitemIcon} = require "#{ROOT}/views/components/etc/icon"
 { MaterialIcon } = require "#{ROOT}/views/components/etc/icon"
-{sortBy, clone, keyBy} = require 'lodash'
+{sortBy, clone, find} = require 'lodash'
 inputDepreacted = ReactBootstrap.Checkbox?
 if inputDepreacted
   Input = ReactBootstrap.Checkbox
@@ -20,7 +20,9 @@ catch error
 
 DATA = fs.readJsonSync path.join(__dirname, "..", "assets", "data.json")
 DATA = sortBy DATA, ['icon', 'id']
-LABELED_DATA = keyBy DATA, 'id'
+
+queryData = (id) ->
+  find DATA, (item) => item.id == id
 
 WEEKDATE = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
 
@@ -54,7 +56,8 @@ DetailRow = React.createClass
             <tbody>
               {
                 result =[]
-                for improvement in LABELED_DATA[@props.id].improvement
+                data = queryData(@props.id)
+                for improvement in data.improvement
                   hishos = []
                   for req in improvement.req
                     for secretary in req.secretary
@@ -106,7 +109,7 @@ Weekday = React.createClass
 UpgradeRow = React.createClass
   render: ->
     <tr>
-      <td colSpan={2} className="cell-header">{__ "upgrade to: "}
+      <td colSpan={2} className="cell-header">{__ "upgrade to"}:
         <SlotitemIcon slotitemId={@props.icon} />
         {@props.name}
         <span>{"★#{@props.level}" if @props.level}</span>

@@ -21,5 +21,8 @@
   "Type": "裝備類型",
   "Name": "裝備名稱",
   "2nd Ship": "二號艦娘",
-  "None": "無"
+  "None": "無",
+  "upgrade to": "升級爲",
+  "Resource to consume": "需要資材",
+  "upgrade": "升級"
 }

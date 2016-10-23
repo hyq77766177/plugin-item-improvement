@@ -21,5 +21,8 @@
   "Type": "分類",
   "Name": "装備名",
   "2nd Ship": "二番艦",
-  "None": "無し"
+  "None": "無し",
+  "upgrade to": "上位の装備へ更新",
+  "Resource to consume": "必要資材",
+  "upgrade": "更新"
 }
