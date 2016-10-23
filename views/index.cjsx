@@ -4,6 +4,7 @@ path = require 'path-extra'
 {Panel, Button, Nav, NavItem, Col, Grid, Row, Table, Collapse, ButtonGroup} = ReactBootstrap
 Divider = require './divider'
 {SlotitemIcon} = require "#{ROOT}/views/components/etc/icon"
+{ MaterialIcon } = require "#{ROOT}/views/components/etc/icon"
 {sortBy, clone, keyBy} = require 'lodash'
 inputDepreacted = ReactBootstrap.Checkbox?
 if inputDepreacted
@@ -47,6 +48,24 @@ DetailRow = React.createClass
       <tr>
         <td colSpan = 3>
           <div>
+            <div>
+              { 
+                result =[]
+                for improvement in DATA[@props.id].improvement
+                  if improvement.upgrade
+                    result.push <UpgradeRow
+                      icon = {improvement.upgrade.icon}
+                      name = {improvement.upgrade.name}
+                      level = {improvement.upgrade.level}
+                    />
+                  result.push <ConsumeTable consume = {improvement.consume}/>
+                  for req in improvement.req
+                    secretary = req.secretary.map (name) => __ window.i18n.resources.__ name
+                    result.push <div><Weekday day={req.day}/><div>{secretary.join("/")}</div></div>
+               
+                result
+              }
+            </div>
           </div>
         </td>
       </tr>
@@ -63,6 +82,44 @@ Weekday = React.createClass
       }
     </ButtonGroup>
 
+UpgradeRow = React.createClass
+  render: ->
+    <div>{__ "upgrade to: "} 
+      <SlotitemIcon slotitemId={@props.icon} /> 
+      {@props.name}
+      <span>{"★#{@props.level}" if @props.level}</span>
+    </div>
+
+ConsumeTable = React.createClass
+  render: ->
+    <div>
+      <span><MaterialIcon materialId={1}/>{@props.consume.fuel}</span>
+      <span><MaterialIcon materialId={2}/>{@props.consume.ammo}</span>
+      <span><MaterialIcon materialId={3}/>{@props.consume.steel}</span>
+      <span><MaterialIcon materialId={4}/>{@props.consume.bauxite}</span>
+      {
+        matTable = []
+        stage = ['Lv1 ~ Lv6', 'Lv6 ~ LvMax', 'upgrade']
+        for mat, index in @props.consume.material
+          matTable.push <StageRow
+            stage = {__ stage[index]}
+            development = {mat.development}
+            improvement = {mat.improvement}
+            item = {mat.item}
+          />
+        matTable
+      }
+    </div>
+
+StageRow = React.createClass
+  render: ->
+    <div>
+      <span>{@props.stage}:</span>
+      <span><MaterialIcon materialId={7}/>{@props.development[0]}({@props.development[1]})</span>
+      <span><MaterialIcon materialId={8}/>{@props.improvement[0]}({@props.improvement[1]})</span>
+      { <SlotitemIcon slotitemId={@props.item.icon} /> if @props.item.icon}
+      { <span>{@props.item.name} × {@props.item.count}</span> if @props.item.icon}
+    </div>
 
 ItemInfoArea = React.createClass
   getRows: ->
@@ -96,6 +153,7 @@ ItemInfoArea = React.createClass
   handleKeyChange: (key) ->
     @setState
       day: key
+      rowsExpanded: {}
   handleClickItem: (id) ->
     {highlights} = @state
     if id in highlights
