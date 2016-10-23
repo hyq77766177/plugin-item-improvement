@@ -20,8 +20,7 @@ catch error
 
 DATA = fs.readJsonSync path.join(__dirname, "..", "assets", "data.json")
 DATA = sortBy DATA, ['icon', 'id']
-DATA = keyBy DATA, 'id'
-console.log(DATA)
+LABELED_DATA = keyBy DATA, 'id'
 
 WEEKDATE = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
 
@@ -39,7 +38,7 @@ ItemInfoRow = React.createClass
         {@props.type}
       </td>
       <td onClick = {@handleExpanded}>{@props.name}</td>
-      <td>{@props.hisho unless @props.rowExpanded}</td>
+      <td>{@props.hisho}</td>
     </tr>
 
 DetailRow = React.createClass
@@ -47,79 +46,99 @@ DetailRow = React.createClass
     <Collapse in = {@props.rowExpanded}>
       <tr>
         <td colSpan = 3>
-          <div>
-            <div>
-              { 
+          <table width ="100%">
+          <colgroup>
+            <col width="40%"></col>
+            <col width="60%"></col>
+          </colgroup>
+            <tbody>
+              {
                 result =[]
-                for improvement in DATA[@props.id].improvement
+                for improvement in LABELED_DATA[@props.id].improvement
+                  hishos = []
+                  for req in improvement.req
+                    for secretary in req.secretary
+                      if req.day[@props.day]
+                        hishos.push __ window.i18n.resources.__ secretary
+                  continue unless hishos.length
                   if improvement.upgrade
                     result.push <UpgradeRow
                       icon = {improvement.upgrade.icon}
                       name = {improvement.upgrade.name}
                       level = {improvement.upgrade.level}
+                      hishos = {hishos.join(" / ")}
                     />
-                  result.push <ConsumeTable consume = {improvement.consume}/>
-                  for req in improvement.req
-                    secretary = req.secretary.map (name) => __ window.i18n.resources.__ name
-                    result.push <div><Weekday day={req.day}/><div>{secretary.join("/")}</div></div>
-               
+                  result.push <ConsumeRow consume = {improvement.consume}/>
+
+                  stage = ['Lv1 ~ Lv6', 'Lv6 ~ LvMax', 'upgrade']
+                  for mat, index in improvement.consume.material
+                    if mat.development[0]
+                      result.push <MatRow
+                        stage = {__ stage[index]}
+                        development = {mat.development}
+                        improvement = {mat.improvement}
+                        item = {mat.item}
+                      />
+
+                  # for req in improvement.req
+                  #   secretary = req.secretary.map (name) => __ window.i18n.resources.__ name
+                  #   result.push <tr><td colSpan={2} className="cell-center"><span>{secretary.join("/")}</span><Weekday day={req.day}/></td></tr>
+
                 result
               }
-            </div>
-          </div>
+            </tbody>
+          </table>
         </td>
       </tr>
     </Collapse>
 
 Weekday = React.createClass
   render: ->
-    <ButtonGroup bsSize="small">
-      {
-        @props.day.map (v,i) ->
-          <Button bsStyle={if v then 'success'} active>
-            {__ WEEKDATE[i]}
-          </Button>
-      }
-    </ButtonGroup>
+   <ButtonGroup bsSize="small">
+     {
+       @props.day.map (v,i) ->
+         <Button bsStyle={if v then 'success'} active>
+           {__ WEEKDATE[i]}
+         </Button>
+     }
+   </ButtonGroup>
 
 UpgradeRow = React.createClass
   render: ->
-    <div>{__ "upgrade to: "} 
-      <SlotitemIcon slotitemId={@props.icon} /> 
-      {@props.name}
-      <span>{"★#{@props.level}" if @props.level}</span>
-    </div>
+    <tr>
+      <td colSpan={2} className="cell-header">{__ "upgrade to: "}
+        <SlotitemIcon slotitemId={@props.icon} />
+        {@props.name}
+        <span>{"★#{@props.level}" if @props.level}</span>
+        <span> [{@props.hishos}]</span>
+      </td>
+    </tr>
 
-ConsumeTable = React.createClass
+ConsumeRow = React.createClass
   render: ->
-    <div>
-      <span><MaterialIcon materialId={1}/>{@props.consume.fuel}</span>
-      <span><MaterialIcon materialId={2}/>{@props.consume.ammo}</span>
-      <span><MaterialIcon materialId={3}/>{@props.consume.steel}</span>
-      <span><MaterialIcon materialId={4}/>{@props.consume.bauxite}</span>
-      {
-        matTable = []
-        stage = ['Lv1 ~ Lv6', 'Lv6 ~ LvMax', 'upgrade']
-        for mat, index in @props.consume.material
-          matTable.push <StageRow
-            stage = {__ stage[index]}
-            development = {mat.development}
-            improvement = {mat.improvement}
-            item = {mat.item}
-          />
-        matTable
-      }
-    </div>
+    <tr>
+      <td className="cell-left">{__ "Resource to consume"}</td>
+      <td className="cell-right">
+        <span><MaterialIcon materialId={1}/>{@props.consume.fuel}</span>
+        <span><MaterialIcon materialId={2}/>{@props.consume.ammo}</span>
+        <span><MaterialIcon materialId={3}/>{@props.consume.steel}</span>
+        <span><MaterialIcon materialId={4}/>{@props.consume.bauxite}</span>
+      </td>
+    </tr>
 
-StageRow = React.createClass
+MatRow = React.createClass
   render: ->
-    <div>
-      <span>{@props.stage}:</span>
-      <span><MaterialIcon materialId={7}/>{@props.development[0]}({@props.development[1]})</span>
-      <span><MaterialIcon materialId={8}/>{@props.improvement[0]}({@props.improvement[1]})</span>
-      { <SlotitemIcon slotitemId={@props.item.icon} /> if @props.item.icon}
-      { <span>{@props.item.name} × {@props.item.count}</span> if @props.item.icon}
-    </div>
+    <tr>
+      <td className="cell-left">
+        <span>{@props.stage}:</span>
+      </td>
+      <td className="cell-right">
+        <span><MaterialIcon materialId={7}/>{@props.development[0]}({@props.development[1]})</span>
+        <span><MaterialIcon materialId={8}/>{@props.improvement[0]}({@props.improvement[1]})</span>
+        { <SlotitemIcon slotitemId={@props.item.icon} /> if @props.item.icon}
+        { <i>{@props.item.name} × {@props.item.count}</i> if @props.item.icon}
+      </td>
+    </tr>
 
 ItemInfoArea = React.createClass
   getRows: ->
@@ -167,7 +186,7 @@ ItemInfoArea = React.createClass
     rowsExpanded = clone(@state.rowsExpanded)
     rowsExpanded[id] = expanded
     @setState
-      rowsExpanded: rowsExpanded 
+      rowsExpanded: rowsExpanded
 
   render: ->
     rows = @getRows()
@@ -198,7 +217,7 @@ ItemInfoArea = React.createClass
             </tr>
           </thead>
           <tbody>
-          { 
+          {
             if rows?
               results = []
               for row, index in rows
@@ -222,6 +241,7 @@ ItemInfoArea = React.createClass
                     type = {row.type}
                     name = {row.name}
                     rowExpanded = {rowExpanded}
+                    day = {@state.day}
                   />
               for row, index in rows
                 if not row.highlight
@@ -244,6 +264,7 @@ ItemInfoArea = React.createClass
                     type = {row.type}
                     name = {row.name}
                     rowExpanded = {rowExpanded}
+                    day = {@state.day}
                   />
               results
             }
