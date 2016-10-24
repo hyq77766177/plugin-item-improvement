@@ -5,23 +5,22 @@ const {Component} = React
 const {Panel, Button, Nav, NavItem, Col, Grid, Row, Table, Collapse, ButtonGroup} = ReactBootstrap
 import {Divider} from './divider'
 const {SlotitemIcon, MaterialIcon} = require(`${ROOT}/views/components/etc/icon`)
-import {sortBy, clone, find} from 'lodash'
+const _ = require('lodash')
 const inputDepreacted = ReactBootstrap.Checkbox
-let Input
 if (inputDepreacted){
-  Input = ReactBootstrap.Checkbox
+  const Input = ReactBootstrap.Checkbox
 }
 else{
-  Input = ReactBootstrap.Input
+  const Input = ReactBootstrap.Input
 }
 
-let DATA = fs.readJsonSync(path.join(__dirname, "..", "assets", "data.json"))
-DATA = sortBy(DATA, ['icon', 'id'])
-
-const queryData = (id) => find(DATA, (item) => item.id == id)
-
+let data_json = fs.readJsonSync(path.join(__dirname, "..", "assets", "data.json"))
+const DATA = _.sortBy(data_json, ['icon', 'id'])
 const WEEKDATE = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
 
+const queryData = (id) => _.find(DATA, (item) => item.id == id)
+
+// React Elements
 class ItemInfoRow extends Component {
   handleExpanded = () => {
     return this.props.setExpanded(!this.props.rowExpanded)
@@ -248,7 +247,7 @@ class ItemInfoArea extends Component{
   }
 
   handleRowExpanded = (id, expanded) =>{
-    let rowsExpanded = clone(this.state.rowsExpanded)
+    let rowsExpanded = _.clone(this.state.rowsExpanded)
     rowsExpanded[id] = expanded
     this.setState({
       rowsExpanded: rowsExpanded,
@@ -257,69 +256,44 @@ class ItemInfoArea extends Component{
 
   renderRows = () => {
     let rows = this.getRows()
-    let results =[]
+    let highlighted = []
+    let normal = []
+    let result = []
     if (rows != null){
       for (let row of rows){
-        if (row.highlight){
-          let rowExpanded = this.state.rowsExpanded[row.id] || false
-          results.push (
-            <ItemInfoRow
-              key = {row.id}
-              icon = {row.icon}
-              type = {row.type}
-              name = {row.name}
-              hisho = {row.hisho}
-              highlight = {row.highlight}
-              clickCheckbox = {this.handleClickItem.bind(this, row.id)}
-              rowExpanded = {rowExpanded}
-              setExpanded = {this.handleRowExpanded.bind(this, row.id)}
-            />
-          )
-          results.push (
-            <DetailRow
-              key = {"detail-"+row.id}
-              id = {row.id}
-              icon = {row.icon}
-              type = {row.type}
-              name = {row.name}
-              rowExpanded = {rowExpanded}
-              day = {this.state.day}
-            />
-          )
-        }
-      }
-      for (let row of rows){
-        if (!row.highlight){
-          let rowExpanded = this.state.rowsExpanded[row.id] || false
-          results.push (
-            <ItemInfoRow
-              key = {row.id}
-              icon = {row.icon}
-              type = {row.type}
-              name = {row.name}
-              hisho = {row.hisho}
-              highlight = {row.highlight}
-              clickCheckbox = {this.handleClickItem.bind(this, row.id)}
-              rowExpanded = {rowExpanded}
-              setExpanded = {this.handleRowExpanded.bind(this, row.id)}
-            />
-          )
-          results.push (
-            <DetailRow
-              key = {"detail-"+row.id}
-              id = {row.id}
-              icon = {row.icon}
-              type = {row.type}
-              name = {row.name}
-              rowExpanded = {rowExpanded}
-              day = {this.state.day}
-            />
-          )
-        }
-      }
 
+        let ref = row.highlight ? highlighted : normal
+
+        let rowExpanded = this.state.rowsExpanded[row.id] || false
+        ref.push (
+          <ItemInfoRow
+            key = {row.id}
+            icon = {row.icon}
+            type = {row.type}
+            name = {row.name}
+            hisho = {row.hisho}
+            highlight = {row.highlight}
+            clickCheckbox = {this.handleClickItem.bind(this, row.id)}
+            rowExpanded = {rowExpanded}
+            setExpanded = {this.handleRowExpanded.bind(this, row.id)}
+          />
+        )
+        ref.push (
+          <DetailRow
+            key = {"detail-"+row.id}
+            id = {row.id}
+            icon = {row.icon}
+            type = {row.type}
+            name = {row.name}
+            rowExpanded = {rowExpanded}
+            day = {this.state.day}
+          />
+        )
+      }
+      result = _.concat(highlighted, normal)
     }
-    return results
+
+    return (result)
   }
 
 
@@ -363,5 +337,5 @@ class ItemInfoArea extends Component{
   }
 }
 
-remote.getGlobal('windows')[6].openDevTools({detach: true})
+
 ReactDOM.render(<ItemInfoArea />, $('item-improvement'))

@@ -3,7 +3,6 @@ require('coffee-react/register')
 
 // env.coffee
 const path = require('path-extra')
-let ref
 
 // Shortcuts and Components
 window._ = require('lodash')
