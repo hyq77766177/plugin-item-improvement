@@ -1,4 +1,3 @@
-
 import path from 'path-extra'
 
 // Shortcuts and Components
@@ -44,10 +43,23 @@ window.addEventListener('theme.change', (e) => {
   }
 })
 
-// if ($('#fontawesome-css')) {
-//   $('#fontawesome-css').setAttribute('href', require.resolve('font-awesome/css/font-awesome.css'))
-// }
+if ($('#fontawesome-css')) {
+  $('#fontawesome-css').setAttribute('href', require.resolve('font-awesome/css/font-awesome.css'))
+}
 
+// augment font size with poi zoom level
+const zoomLevel = config.get('poi.zoomLevel', 1)
+const additionalStyle = document.createElement('style')
+
+remote.getCurrentWindow().webContents.on('dom-ready', (e) => {
+  document.body.appendChild(additionalStyle)
+})
+
+additionalStyle.innerHTML = `
+  item-improvement {
+    font-size: ${zoomLevel * 100}%;
+  }
+`
 
 // User setting
 window.useSVGIcon = config.get('poi.useSVGIcon', false)
@@ -67,17 +79,8 @@ const i18n = new i18n2({
 })
 i18n.setLocale(window.language)
 
-window.__ = i18n.__.bind(i18n)
-
 if(i18n.resources == null){
   i18n.resources = {}
-}
-
-try{
-  require('poi-plugin-translator').pluginDidLoad()
-}
-catch(error){
-  console.log(error)
 }
 
 if(i18n.resources.__ == null){
@@ -90,6 +93,17 @@ if(i18n.resources.setLocale == null){
   i18n.resources.setLocale = (str) => {}
 }
 
+window.i18n = i18n
+
+try{
+  require('poi-plugin-translator').pluginDidLoad()
+}
+catch(error){
+  console.log('plugin-translator',error)
+}
+
+
+window.__ = i18n.__.bind(i18n)
 window.__r = i18n.resources.__.bind(i18n.resources)
 
 window.i18n = i18n

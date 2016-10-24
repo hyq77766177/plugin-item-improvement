@@ -16,6 +16,11 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.divider h5{
+  font-size: 120%;
+}
+
 .divider hr {
   margin-bottom: 15.5px;
 }
@@ -66,7 +71,7 @@ img.svg {
 
 .cell-right span{
   display: block;
-  min-width: 80px;
+  min-width: 6em;
   float: left;
 }
 
@@ -85,7 +90,7 @@ img.svg {
 }
 
 .cell-center span{
-  min-width: 120px;
+  min-width: 4em;
   display: inline-block;
 }
 
