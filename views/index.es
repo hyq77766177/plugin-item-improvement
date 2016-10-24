@@ -50,6 +50,11 @@ const DetailRow = (props) =>{
       }
     }
 
+    // skip the entry if no secretary availbale for chosen day
+    if (hishos.length ==0){
+      continue
+    }
+
     if(improvement.upgrade){
       result.push(
         <UpgradeRow
@@ -62,12 +67,12 @@ const DetailRow = (props) =>{
     }
 
     result.push(<ConsumeRow consume = {improvement.consume}/>)
-    let stage = ['★ 1 ~ ★ 6', '★ 6 ~ ★ MAX', 'upgrade']
+
     improvement.consume.material.forEach((mat, index) =>{
-      if (mat.development[0]){
+      if (mat.improvement[0]){
         result.push(
           <MatRow
-          stage = {__ (stage[index])}
+          stage = {index}
           development = {mat.development}
           improvement = {mat.improvement}
           item = {mat.item}
@@ -83,8 +88,8 @@ const DetailRow = (props) =>{
         <td colSpan = {3}>
           <table width ="100%">
           <colgroup>
-            <col width="40%"></col>
-            <col width="60%"></col>
+            <col width="25%"></col>
+            <col></col>
           </colgroup>
             <tbody>
               {result}
@@ -111,12 +116,16 @@ const Weekday = (props) => {
 }
 
 const UpgradeRow = (props) => {
+  let star = ''
+  if (props.level){
+    star = <span> <FontAwesome name='star' />{` ${props.level}`}</span>
+  }
   return(
     <tr>
       <td colSpan={2} className="cell-header">{__("upgrade to")}:
         <SlotitemIcon slotitemId={props.icon} />
         {props.name}
-        <span> {props.level ? `★${props.level}` : ''}</span>
+        {star}
         <span> [{props.hishos}]</span>
       </td>
     </tr>
@@ -139,6 +148,20 @@ const ConsumeRow = (props) => {
 
 const MatRow = (props) => {
   let result = []
+  let stage = ''
+
+  switch (props.stage){
+    case 0:
+      stage = <span><FontAwesome name='star' /> 1 ~ <FontAwesome name='star' /> 6 </span>
+      break
+    case 1:
+      stage = <span><FontAwesome name='star' /> 6 ~ <FontAwesome name='star' /> MAX </span>
+      break
+    case 2:
+      stage = <span>{__("upgrade")}</span>
+      break
+  }
+
   if (props.item.icon){
     result.push(
       <SlotitemIcon
@@ -153,7 +176,7 @@ const MatRow = (props) => {
   return(
     <tr>
       <td className="cell-left">
-        <span>{props.stage}:</span>
+        {stage}
       </td>
       <td className="cell-right">
         <span><MaterialIcon materialId={7}/>{props.development[0]}({props.development[1]})</span>
