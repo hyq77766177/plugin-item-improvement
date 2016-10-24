@@ -1,8 +1,5 @@
-require('coffee-react/register')
 
-
-// env.coffee
-const path = require('path-extra')
+import path from 'path-extra'
 
 // Shortcuts and Components
 window._ = require('lodash')
@@ -46,6 +43,10 @@ window.addEventListener('theme.change', (e) => {
     }
   }
 })
+
+// if ($('#fontawesome-css')) {
+//   $('#fontawesome-css').setAttribute('href', require.resolve('font-awesome/css/font-awesome.css'))
+// }
 
 
 // User setting

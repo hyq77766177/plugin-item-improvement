@@ -1,6 +1,6 @@
 {
   "Equipment Improvement": "装備改修表",
-  "Show possible improvements of the day based on data from WhoCallsTheFleet and KCWiki": "簡易装備改修表",
+  "Show possible improvements of the day based on data from [WhoCallsTheFleet](http://fleet.moe) and [Kcwiki](https://zh.kcwiki.moe)": "簡易装備改修表、データは[WhoCallsTheFleet](http://fleet.moe)と[kcwiki](https://zh.kcwiki.moe)によって提供されている。",
   "Weekday setting": "曜日設定",
   "Choose weekday": "曜日選択",
   "Sunday": "日曜日",

@@ -1,19 +1,11 @@
-const fs = require('fs-extra')
-const path = require('path-extra')
-const {React, ReactBootstrap} = window
-const {Component} = React
-const {Panel, Button, Nav, NavItem, Col, Grid, Row, Table, Collapse, ButtonGroup} = ReactBootstrap
+import fs from 'fs-extra'
+import path from 'path-extra'
+import React, { Component } from 'react'
+import {Panel, Button, Nav, NavItem, Col, Grid, Row, Table, Collapse, ButtonGroup, Checkbox} from 'react-bootstrap'
 import {Divider} from './divider'
-const {SlotitemIcon, MaterialIcon} = require(`${ROOT}/views/components/etc/icon`)
-const _ = require('lodash')
-const inputDepreacted = ReactBootstrap.Checkbox
-let Input
-if (inputDepreacted){
-  Input = ReactBootstrap.Checkbox
-}
-else{
-  Input = ReactBootstrap.Input
-}
+import {SlotitemIcon, MaterialIcon} from 'views/components/etc/icon'
+import _ from 'lodash'
+
 
 let data_json = fs.readJsonSync(path.join(__dirname, "..", "assets", "data.json"))
 const DATA = _.sortBy(data_json, ['icon', 'id'])
@@ -31,8 +23,8 @@ class ItemInfoRow extends Component {
     return(
       <tr>
         <td style={{paddingLeft: 20}}>
-          <Input type="checkbox"
-                 className={inputDepreacted ? 'new-checkbox' : ''}
+          <Checkbox type="checkbox"
+                 className={'new-checkbox'}
                  checked={this.props.highlight}
                  onChange={this.props.clickCheckbox} />
           <SlotitemIcon slotitemId={this.props.icon} />
@@ -70,7 +62,7 @@ const DetailRow = (props) =>{
     }
 
     result.push(<ConsumeRow consume = {improvement.consume}/>)
-    let stage = ['Lv1 ~ Lv6', 'Lv6 ~ LvMax', 'upgrade']
+    let stage = ['★ 1 ~ ★ 6', '★ 6 ~ ★ MAX', 'upgrade']
     improvement.consume.material.forEach((mat, index) =>{
       if (mat.development[0]){
         result.push(
@@ -231,7 +223,6 @@ class ItemInfoArea extends Component{
 
   handleClickItem = (id) => {
     let highlights = _.clone(this.state.highlights)
-    console.log(highlights)
     if (_.includes(highlights,id)) {
       highlights = highlights.filter((v) => v != id)
     }
@@ -244,7 +235,6 @@ class ItemInfoArea extends Component{
     this.setState({
       highlights: highlights,
     })
-    console.log(this.state.highlights)
   }
 
   handleRowExpanded = (id, expanded) =>{

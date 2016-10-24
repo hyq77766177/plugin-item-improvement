@@ -1,7 +1,7 @@
 {
   "name": "poi-plugin-item-improvement",
-  "version": "2.3.5",
-  "description": "Show improvable items of the day based on data from WhoCallsTheFleet and KCWiki",
+  "version": "2.4.0",
+  "description": "Show improvable items of the day based on data from [WhoCallsTheFleet](http://fleet.moe) and [KCWiki](https://zh.kcwiki.moe)",
   "main": "index.es",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,10 +22,20 @@
   "homepage": "https://github.com/poooi/plugin-item-improvement#readme",
   "dependencies": {
   },
+  "devDependencies": {
+    "lodash": ">=4.16.4",
+    "bluebird": ">=3.4.6",
+    "request": ">=2.75.0",
+    "babel-preset-es2017": ">=6.16.0",
+    "fs-extra": ">=0.30.0"
+  },
   "poiPlugin": {
     "title": "Equipment Improvement",
-    "description": "Show possible improvements of the day based on data from WhoCallsTheFleet and KCWiki",
+    "description": "Show possible improvements of the day based on data from [WhoCallsTheFleet](http://fleet.moe) and [Kcwiki](https://zh.kcwiki.moe)",
     "icon": "fa/wrench",
-    "priority": 50
+    "priority": 50,
+    "apiVer": {
+      "6.99.99": "2.3.5"
+    }
   }
 }
