@@ -2,7 +2,7 @@ fs = require "fs-extra"
 path = require 'path-extra'
 {React, ReactBootstrap} = window
 {Panel, Button, Nav, NavItem, Col, Grid, Row, Table, Collapse, ButtonGroup} = ReactBootstrap
-Divider = require './divider'
+{Divider} = require './divider'
 {SlotitemIcon} = require "#{ROOT}/views/components/etc/icon"
 { MaterialIcon } = require "#{ROOT}/views/components/etc/icon"
 {sortBy, clone, find} = require 'lodash'
@@ -12,11 +12,11 @@ if inputDepreacted
 else
   Input = ReactBootstrap.Input
 
-__ = i18n.main.__.bind(i18n.main)
-try
-  require('poi-plugin-translator')
-catch error
-  console.log error
+# __ = i18n.main.__.bind(i18n.main)
+# try
+#   require('poi-plugin-translator')
+# catch error
+#   console.log error
 
 DATA = fs.readJsonSync path.join(__dirname, "..", "assets", "data.json")
 DATA = sortBy DATA, ['icon', 'id']
