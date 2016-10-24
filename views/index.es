@@ -59,7 +59,7 @@ const DetailRow = (props) =>{
       result.push(
         <UpgradeRow
         icon = {improvement.upgrade.icon}
-        name = {improvement.upgrade.name}
+        name = {__r(improvement.upgrade.name)}
         level = {improvement.upgrade.level}
         hishos = {hishos.join(" / ")}
         />
@@ -169,7 +169,7 @@ const MatRow = (props) => {
       />
     )
     result.push(
-      <i>{props.item.name} × {props.item.count}</i>
+      <i>{__r(props.item.name)} × {props.item.count}</i>
     )
   }
 
