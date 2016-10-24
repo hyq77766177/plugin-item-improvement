@@ -38,7 +38,7 @@ class ItemInfoRow extends Component {
           <SlotitemIcon slotitemId={this.props.icon} />
           {this.props.type}
         </td>
-        <td onClick = {this.handleExpanded}>{this.props.name}</td>
+        <td onClick = {this.handleExpanded} className="expandable">{this.props.name}</td>
         <td>{this.props.hisho}</td>
       </tr>
     )

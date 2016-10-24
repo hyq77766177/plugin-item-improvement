@@ -88,3 +88,7 @@ img.svg {
   min-width: 120px;
   display: inline-block;
 }
+
+.expandable:hover {
+  cursor: pointer;
+}
