@@ -7,11 +7,12 @@ import {Divider} from './divider'
 const {SlotitemIcon, MaterialIcon} = require(`${ROOT}/views/components/etc/icon`)
 const _ = require('lodash')
 const inputDepreacted = ReactBootstrap.Checkbox
+let Input
 if (inputDepreacted){
-  const Input = ReactBootstrap.Checkbox
+  Input = ReactBootstrap.Checkbox
 }
 else{
-  const Input = ReactBootstrap.Input
+  Input = ReactBootstrap.Input
 }
 
 let data_json = fs.readJsonSync(path.join(__dirname, "..", "assets", "data.json"))

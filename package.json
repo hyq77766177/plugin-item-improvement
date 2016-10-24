@@ -2,7 +2,7 @@
   "name": "poi-plugin-item-improvement",
   "version": "2.3.5",
   "description": "Show improvable items of the day based on data from WhoCallsTheFleet and KCWiki",
-  "main": "index.cjsx",
+  "main": "index.es",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
