@@ -41,6 +41,7 @@ module.exports = {
     'import/core-modules': [
       'electron',
       'react',
+      'react-dom',
       'react-redux',
       'redux-observers',
       'reselect',

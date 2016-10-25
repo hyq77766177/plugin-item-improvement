@@ -1,11 +1,14 @@
 import fs from 'fs-extra'
 import path from 'path-extra'
 import React, { Component } from 'react'
-import {Panel, Button, Nav, NavItem, Col, Grid, Row, Table, Collapse, ButtonGroup, Checkbox} from 'react-bootstrap'
-import {Divider} from './divider'
-import {SlotitemIcon, MaterialIcon} from 'views/components/etc/icon'
+import ReactDOM from 'react-dom'
+import FontAwesome from 'react-fontawesome'
+import { Button, Nav, NavItem, Col, Grid, Table, Collapse, ButtonGroup, Checkbox } from 'react-bootstrap'
+import { Divider } from './divider'
+import { SlotitemIcon, MaterialIcon } from 'views/components/etc/icon'
 import _ from 'lodash'
 
+const {$, __, __r, config} = window
 
 let data_json = fs.readJsonSync(path.join(__dirname, "..", "assets", "data.json"))
 const DATA = _.sortBy(data_json, ['icon', 'id'])
@@ -151,15 +154,15 @@ const MatRow = (props) => {
   let stage = ''
 
   switch (props.stage){
-    case 0:
-      stage = <span><FontAwesome name='star' /> 1 ~ <FontAwesome name='star' /> 6 </span>
-      break
-    case 1:
-      stage = <span><FontAwesome name='star' /> 6 ~ <FontAwesome name='star' /> MAX </span>
-      break
-    case 2:
-      stage = <span>{__("upgrade")}</span>
-      break
+  case 0:
+    stage = <span><FontAwesome name='star' /> 1 ~ <FontAwesome name='star' /> 6 </span>
+    break
+  case 1:
+    stage = <span><FontAwesome name='star' /> 6 ~ <FontAwesome name='star' /> MAX </span>
+    break
+  case 2:
+    stage = <span>{__("upgrade")}</span>
+    break
   }
 
   if (props.item.icon){

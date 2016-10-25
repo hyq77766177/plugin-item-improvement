@@ -14,20 +14,26 @@
     "name": "KochiyaOcean",
     "link": "https://github.com/kochiyaocean"
   },
-  "contributors": ["Dazzy Ding", "Kagami Seki"],
+  "contributors": [
+    "Dazzy Ding",
+    "Kagami Seki"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/poooi/plugin-item-improvement/issues"
   },
   "homepage": "https://github.com/poooi/plugin-item-improvement#readme",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "lodash": ">=4.16.4",
-    "bluebird": ">=3.4.6",
-    "request": ">=2.75.0",
+    "babel-eslint": "^7.0.0",
     "babel-preset-es2017": ">=6.16.0",
-    "fs-extra": ">=0.30.0"
+    "bluebird": ">=3.4.6",
+    "eslint": "^3.8.1",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-react": "^6.4.1",
+    "fs-extra": ">=0.30.0",
+    "lodash": ">=4.16.4",
+    "request": ">=2.75.0"
   },
   "poiPlugin": {
     "title": "Equipment Improvement",

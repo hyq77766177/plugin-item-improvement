@@ -1,3 +1,4 @@
+const {config} = window
 export const windowOptions = {
   x: config.get ('poi.window.x', 0),
   y: config.get ('poi.window.y', 0),

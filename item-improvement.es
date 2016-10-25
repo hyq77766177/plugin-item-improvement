@@ -1,51 +1,20 @@
-import path from 'path-extra'
+import { remote } from 'electron'
+import {join} from 'path-extra'
+import i18n2 from 'i18n-2'
+
+window.config = remote.require('./lib/config')
+const {ROOT, config} = window
 
 // Shortcuts and Components
-window._ = require('lodash')
 window.$ = (param) => document.querySelector(param)
 window.$$ = (param) => document.querySelectorAll(param)
-window.React = require('react')
-window.ReactDOM = require('react-dom')
-window.ReactBootstrap = require('react-bootstrap')
-window.FontAwesome = require('react-fontawesome')
-
  // Node modules
-window.config = remote.require('./lib/config')
 
  // language setting
 window.language = config.get('poi.language', navigator.language)
 
  // Custom theme
-window.theme = config.get('poi.theme', '__default__')
-window.isDarkTheme = /(dark|black|slate|superhero|papercyan)/i.test(theme)
-if(theme == '__default__'){
-  if($('#bootstrap-css')){
-    $('#bootstrap-css').setAttribute('href', "file://" + require.resolve('bootstrap/dist/css/bootstrap.css'))
-  }
-}
-else{
-  if($('#bootstrap-css')){
-    $('#bootstrap-css').setAttribute('href', `file://${ROOT}/assets/themes/${theme}/css/${theme}.css`)
-  }
-}
-
-window.addEventListener('theme.change', (e) => {
-  window.theme = e.detail.theme
-  if(theme == '__default__'){
-    if($('#bootstrap-css')){
-      $('#bootstrap-css').setAttribute('href', "file://" + require.resolve('bootstrap/dist/css/bootstrap.css'))
-    }
-  }
-  else{
-    if($('#bootstrap-css')){
-      $('#bootstrap-css').setAttribute('href', `file://${ROOT}/assets/themes/${theme}/css/${theme}.css`)
-    }
-  }
-})
-
-if ($('#fontawesome-css')) {
-  $('#fontawesome-css').setAttribute('href', require.resolve('font-awesome/css/font-awesome.css'))
-}
+require(`${ROOT}/views/env-parts/theme`)
 
 // augment font size with poi zoom level
 const zoomLevel = config.get('poi.zoomLevel', 1)
@@ -65,10 +34,6 @@ additionalStyle.innerHTML = `
 window.useSVGIcon = config.get('poi.useSVGIcon', false)
 
 // i18n
-import {join} from 'path-extra'
-
-import i18n2 from 'i18n-2'
-
 const i18n = new i18n2({
   locales: ['en-US', 'ja-JP', 'zh-CN', 'zh-TW'],
   defaultLocale: 'zh-CN',
@@ -99,7 +64,7 @@ try{
   require('poi-plugin-translator').pluginDidLoad()
 }
 catch(error){
-  console.log('plugin-translator',error)
+  console.warn('plugin-translator',error)
 }
 
 
@@ -108,7 +73,7 @@ window.__r = i18n.resources.__.bind(i18n.resources)
 
 window.i18n = i18n
 
-document.title = __('Equipment Improvement')
+document.title = window.__('Equipment Improvement')
 
 
 require('./views')
