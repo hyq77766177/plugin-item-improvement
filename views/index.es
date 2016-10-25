@@ -86,21 +86,23 @@ const DetailRow = (props) =>{
   }
 
   return(
-    <Collapse in = {props.rowExpanded}>
-      <tr>
-        <td colSpan = {3}>
-          <table width ="100%">
-          <colgroup>
-            <col width="25%"></col>
-            <col></col>
-          </colgroup>
-            <tbody>
-              {result}
-            </tbody>
-          </table>
-        </td>
-      </tr>
-    </Collapse>
+    <tr>
+      <td colSpan = {3} className='detail-td'>
+        <Collapse in = {props.rowExpanded}>
+          <div>
+            <table width ="100%">
+            <colgroup>
+              <col width="25%"></col>
+              <col></col>
+            </colgroup>
+              <tbody>
+                {result}
+              </tbody>
+            </table>
+          </div>
+        </Collapse>
+      </td>
+    </tr>
   )
 }
 
