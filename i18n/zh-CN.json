@@ -1,6 +1,6 @@
 {
   "Equipment Improvement": "装备改修",
-  "Show possible improvements of the day": "查看装备改修信息",
+  "Show possible improvements of the day based on data from [WhoCallsTheFleet](http://fleet.moe) and [Kcwiki](https://zh.kcwiki.moe)": "查看装备改修信息，基于[是谁呼叫舰队](http://fleet.moe)与[舰娘百科](https://zh.kcwiki.moe)数据",
   "Weekday setting": "日期设置",
   "Choose weekday": "选择日期",
   "Sunday": "星期日",
@@ -10,8 +10,19 @@
   "Thursday": "星期四",
   "Friday": "星期五",
   "Saturday": "星期六",
+  "Sun": "日",
+  "Mon": "一",
+  "Tue": "二",
+  "Wed": "三",
+  "Thu": "四",
+  "Fri": "五",
+  "Sat": "六",
   "Improvement information": "改修信息",
   "Type": "装备类型",
   "Name": "装备名称",
-  "2nd Ship": "二号舰娘"
+  "2nd Ship": "二号舰娘",
+  "None": "无",
+  "upgrade to": "升级为",
+  "Resource to consume": "需要资材",
+  "upgrade": "升级"
 }

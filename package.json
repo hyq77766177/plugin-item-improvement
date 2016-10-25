@@ -1,8 +1,8 @@
 {
   "name": "poi-plugin-item-improvement",
-  "version": "2.3.2",
-  "description": "Show improvable items of the day",
-  "main": "index.cjsx",
+  "version": "2.4.0",
+  "description": "Show improvable items of the day based on data from [WhoCallsTheFleet](http://fleet.moe) and [KCWiki](https://zh.kcwiki.moe)",
+  "main": "index.es",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,18 +14,34 @@
     "name": "KochiyaOcean",
     "link": "https://github.com/kochiyaocean"
   },
-  "contributors": ["Dazzy Ding"],
+  "contributors": [
+    "Dazzy Ding",
+    "Kagami Seki"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/poooi/plugin-item-improvement/issues"
   },
   "homepage": "https://github.com/poooi/plugin-item-improvement#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "^7.0.0",
+    "babel-preset-es2017": ">=6.16.0",
+    "bluebird": ">=3.4.6",
+    "eslint": "^3.8.1",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-react": "^6.4.1",
+    "fs-extra": ">=0.30.0",
+    "lodash": ">=4.16.4",
+    "request": ">=2.75.0"
   },
   "poiPlugin": {
     "title": "Equipment Improvement",
-    "description": "Show possible improvements of the day",
+    "description": "Show possible improvements of the day based on data from [WhoCallsTheFleet](http://fleet.moe) and [Kcwiki](https://zh.kcwiki.moe)",
     "icon": "fa/wrench",
-    "priority": 50
+    "priority": 50,
+    "apiVer": {
+      "6.99.99": "2.3.5"
+    }
   }
 }
