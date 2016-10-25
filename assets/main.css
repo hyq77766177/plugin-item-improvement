@@ -16,6 +16,11 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.divider h5{
+  font-size: 120%;
+}
+
 .divider hr {
   margin-bottom: 15.5px;
 }
@@ -58,4 +63,37 @@ img.svg {
   width: 26px;
   height: 23px;
   margin: 5px 3px 4px 3px;
+}
+
+.cell-left{
+  text-align: left;
+}
+
+.cell-right span{
+  display: block;
+  min-width: 6em;
+  float: left;
+}
+
+.cell-right i{
+  font-style: normal;
+}
+
+.cell-header{
+  text-align: center;
+  font-size: 110%;
+  border-top: 1px solid;
+}
+
+.cell-center{
+  text-align: center;
+}
+
+.cell-center span{
+  min-width: 4em;
+  display: inline-block;
+}
+
+.expandable:hover {
+  cursor: pointer;
 }

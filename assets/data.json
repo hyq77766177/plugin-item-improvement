@@ -1,1243 +1,7674 @@
 [
-    {
-        "name": "12.7cm連装砲",
-        "id": 2,
-        "type": "小口径主砲",
-        "icon": 1,
-        "secretary": [
-            {
-                "name": "無",
-                "day": [true, true, true, true, true, true, true]
-            }
-        ]
-    },
-    {
-        "name": "12.7cm連装砲B型改二",
-        "id": 63,
-        "type": "小口径主砲",
-        "icon": 1,
-        "secretary": [
-            {
-                "name": "夕立改二",
-                "day": [false, true, true, true, false, false, false]
-            },
-            {
-                "name": "绫波改二",
-                "day": [false, true, true, true, false, false, false]
-            }
-        ]
-    },
-    {
-        "name": "10cm連装高角砲+高射装置",
-        "id": 122,
-        "type": "小口径主砲",
-        "icon": 16,
-        "secretary": [
-            {
-                "name": "秋月",
-                "day": [false, true, true, true, true, false, false]
-            },
-            {
-                "name": "初月",
-                "day": [false, true, true, true, true, false, false]
-            },
-            {
-                "name": "照月",
-                "day": [true, false, false, false, true, true, true]
-            }
-        ]
-    },
-    {
-        "name": "14cm単装砲",
-        "id": 4,
-        "type": "中口径主砲",
-        "icon": 2,
-        "secretary": [
-            {
-                "name": "無",
-                "day": [true, true, true, true, true, true, true]
-            }
-        ]
-    },
-    {
-        "name": "14cm連装砲",
-        "id": 119,
-        "type": "中口径主砲",
-        "icon": 2,
-        "secretary": [
-            {
-                "name": "夕張",
-                "day": [false, true, false, false, true, false, false]
-            }
-        ]
-    },
-    {
-        "name": "15.2cm連装砲",
-        "id": 65,
-        "type": "中口径主砲",
-        "icon": 2,
-        "secretary": [
-            {
-                "name": "阿賀野",
-                "day": [false, false, false, false, true, true, true]
-            },
-            {
-                "name": "能代",
-                "day": [true, true, false, false, false, true, true]
-            },
-            {
-                "name": "矢矧",
-                "day": [false, true, true, true, true, false, false]
-            }
-        ]
-    },
-    {
-        "name": "15.2cm連装砲改",
-        "id": 139,
-        "type": "中口径主砲",
-        "icon": 2,
-        "secretary": [
-            {
-                "name": "矢矧",
-                "day": [false, false, false, true, true, true, true]
-            },
-            {
-                "name": "酒匂",
-                "day": [true, true, true, false, false, false, true]
-            }
-        ]
-    },
-    {
-        "name": "15.5cm三連装砲",
-        "id": 5,
-        "type": "中口径主砲",
-        "icon": 2,
-        "secretary": [
-            {
-                "name": "最上",
-                "day": [false, false, false, false, false, true, true]
-            },
-            {
-                "name": "大淀",
-                "day": [true, true, false, false, false, false, false]
-            }
-        ]
-    },
-    {
-        "name": "20.3cm連装砲",
-        "id": 6,
-        "type": "中口径主砲",
-        "icon": 2,
-        "secretary": [
-            {
-                "name": "青葉",
-                "day": [true, false, false, false, true, true, true]
-            },
-            {
-                "name": "衣笠",
-                "day": [true, true, true, true, true, true, true]
-            }
-        ]
-    },
-    {
-        "name": "20.3cm(2号)連装砲",
-        "id": 90,
-        "type": "中口径主砲",
-        "icon": 2,
-        "secretary": [
-            {
-                "name": "妙高",
-                "day": [true, true, true, false, false, false, false]
-            }
-        ]
-    },
-    {
-        "name": "20.3cm(3号)連装砲",
-        "id": 50,
-        "type": "中口径主砲",
-        "icon": 2,
-        "secretary": [
-            {
-                "name": "三隈",
-                "day": [false, false, true, true, false, false, false]
-            }
-        ]
-    },
-    {
-        "name": "35.6cm連装砲",
-        "id": 7,
-        "type": "大口径主砲",
-        "icon": 3,
-        "secretary": [
-            {
-                "name": "扶桑",
-                "day": [true, false, false, false, false, true, true]
-            }
-        ]
-    },
-    {
-        "name": "試製35.6cm三連装砲",
-        "id": 103,
-        "type": "大口径主砲",
-        "icon": 3,
-        "secretary": [
-            {
-                "name": "金剛改二",
-                "day": [false, false, false, true, true, false, false]
-            },
-            {
-                "name": "榛名改二",
-                "day": [false, false, false, false, true, true, false]
-            },
-            {
-                "name": "扶桑改二",
-                "day": [false, false, false, true, true, true, true]
-            },
-            {
-                "name": "山城改二",
-                "day": [true, false, false, false, true, true, true]
-            }
-        ]
-    },
-    {
-        "name": "35.6cm連装砲(ダズル迷彩)",
-        "id": 104,
-        "type": "大口径主砲",
-        "icon": 3,
-        "secretary": [
-            {
-                "name": "榛名改二",
-                "day": [true, true, true, true, false, false, true]
-            }
-        ]
-    },
-    {
-        "name": "38cm連装砲",
-        "id": 76,
-        "type": "大口径主砲",
-        "icon": 3,
-        "secretary": [
-            {
-                "name": "Bismarck",
-                "day": [false, false, false, false, true, true, true]
-            }
-        ]
-    },
-    {
-        "name": "38cm連装砲改",
-        "id": 114,
-        "type": "大口径主砲",
-        "icon": 3,
-        "secretary": [
-            {
-                "name": "Bismarck",
-                "day": [true, true, true, false, false, false, false]
-            }
-        ]
-    },
-    {
-        "name": "381mm/50 三連装砲",
-        "id": 133,
-        "type": "大口径主砲",
-        "icon": 3,
-        "secretary": [
-            {
-                "name": "Littorio",
-                "day": [false, false, true, true, true, true, false]
-            },
-            {
-                "name": "Roma",
-                "day": [true, true, false, false, false, false, true]
-            }
-        ]
-    },
-    {
-        "name": "381mm/50 三連装砲改",
-        "id": 137,
-        "type": "大口径主砲",
-        "icon": 3,
-        "secretary": [
-            {
-                "name": "Littorio",
-                "day": [true, true, false, false, false, false, true]
-            },
-            {
-                "name": "Roma",
-                "day": [false, false, true, true, true, true, false]
-            }
-        ]
-    },
-    {
-        "name": "38.1cm Mk.I連装砲",
-        "id": 190,
-        "type": "大口径主砲",
-        "icon": 3,
-        "secretary": [
-            {
-                "name": "Warspite",
-                "day": [true, false, false, false, true, true, true]
-            }
-        ]
-    },
-    {
-        "name": "38.1cm Mk.I/N連装砲改",
-        "id": 192,
-        "type": "大口径主砲",
-        "icon": 3,
-        "secretary": [
-            {
-                "name": "Warspite",
-                "day": [false, false, true, true, true, true, false]
-            }
-        ]
-    },
-    {
-        "name": "41cm連装砲",
-        "id": 8,
-        "type": "大口径主砲",
-        "icon": 3,
-        "secretary": [
-            {
-                "name": "長門",
-                "day": [false, false, true, false, false, true, true]
-            },
-            {
-                "name": "陸奥",
-                "day": [true, true, false, false, true, false, false]
-            }
-        ]
-    },
-    {
-        "name": "試製41cm三連装砲",
-        "id": 105,
-        "type": "大口径主砲",
-        "icon": 3,
-        "secretary": [
-            {
-                "name": "長門改",
-                "day": [true, true, false, true, true, false, false]
-            },
-            {
-                "name": "陸奥改",
-                "day": [false, false, true, true, false, true, true]
-            }
-        ]
-    },
-    {
-        "name": "試製46cm連装砲",
-        "id": 117,
-        "type": "大口径主砲",
-        "icon": 3,
-        "secretary": [
-            {
-                "name": "大和",
-                "day": [true, true, false, false, false, false, false]
-            },
-            {
-                "name": "武蔵",
-                "day": [false, false, true, true, false, false, false]
-            }
-        ]
-    },
-    {
-        "name": "16inch三連装砲Mk.7",
-        "id": 161,
-        "type": "大口径主砲",
-        "icon": 3,
-        "secretary": [
-            {
-                "name": "Iowa",
-                "day": [true, true, true, true, true, true, true]
-            }
-        ]
-    },
-    {
-        "name": "16inch三連装砲Mk.7＋GFCS",
-        "id": 183,
-        "type": "大口径主砲",
-        "icon": 3,
-        "secretary": [
-            {
-                "name": "Iowa",
-                "day": [true, false, false, false, true, true, true]
-            }
-        ]
-    },
-    {
-        "name": "46cm三連装砲",
-        "id": 9,
-        "type": "大口径主砲",
-        "icon": 3,
-        "secretary": [
-            {
-                "name": "大和",
-                "day": [false, false, false, false, false, true, true]
-            },
-            {
-                "name": "武蔵",
-                "day": [true, true, false, false, false, false, false]
-            }
-        ]
-    },
-    {
-        "name": "試製51cm連装砲",
-        "id": 128,
-        "type": "大口径主砲",
-        "icon": 3,
-        "secretary": [
-            {
-                "name": "大和改",
-                "day": [false, true, true, false, false, false, false]
-            },
-            {
-                "name": "武蔵改",
-                "day": [false, true, false, true, false, false, false]
-            }
-        ]
-    },
-    {
-        "name": "90mm単装高角砲",
-        "id": 135,
-        "type": "副砲",
-        "icon": 16,
-        "secretary": [
-            {
-                "name": "Littorio",
-                "day": [false, true, true, true, true, false, false]
-            },
-            {
-                "name": "Roma",
-                "day": [true, false, false, false, true, true, true]
-            }
-        ]
-    },
-    {
-        "name": "15.2cm単装砲",
-        "id": 11,
-        "type": "副砲",
-        "icon": 4,
-        "secretary": [
-            {
-                "name": "阿賀野",
-                "day": [true, true, true, false, false, false, false]
-            },
-            {
-                "name": "金剛",
-                "day": [true, true, false, false, false, false, true]
-            },
-            {
-                "name": "山城",
-                "day": [false, true, true, true, false, false, false]
-            }
-        ]
-    },
-    {
-        "name": "OTO 152mm三連装速射砲",
-        "id": 134,
-        "type": "副砲",
-        "icon": 4,
-        "secretary": [
-            {
-                "name": "Littorio",
-                "day": [true, false, true, true, false, false, true]
-            },
-            {
-                "name": "Roma",
-                "day": [true, true, false, false, true, true, false]
-            }
-        ]
-    },
-    {
-        "name": "61cm三連装魚雷",
-        "id": 13,
-        "type": "魚雷",
-        "icon": 5,
-        "secretary": [
-            {
-                "name": "吹雪",
-                "day": [false, false, false, false, true, true, true]
-            },
-            {
-                "name": "叢雲",
-                "day": [true, true, true, false, false, false, false]
-            }
-        ]
-    },
-    {
-        "name": "61cm三連装(酸素)魚雷",
-        "id": 125,
-        "type": "魚雷",
-        "icon": 5,
-        "secretary": [
-            {
-                "name": "吹雪改二",
-                "day": [false, false, false, false, true, true, true]
-            }
-        ]
-    },
-    {
-        "name": "61cm四連装魚雷",
-        "id": 14,
-        "type": "魚雷",
-        "icon": 5,
-        "secretary": [
-            {
-                "name": "無",
-                "day": [true, true, true, false, false, true, true]
-            }
-        ]
-    },
-    {
-        "name": "61cm四連装(酸素)魚雷",
-        "id": 15,
-        "type": "魚雷",
-        "icon": 5,
-        "secretary": [
-            {
-                "name": "大井",
-                "day": [true, true, true, true, true, true, true]
-            },
-            {
-                "name": "北上",
-                "day": [true, true, true, true, true, true, true]
-            }
-        ]
-    },
-    {
-        "name": "61cm五連装(酸素)魚雷",
-        "id": 58,
-        "type": "魚雷",
-        "icon": 5,
-        "secretary": [
-            {
-                "name": "島風",
-                "day": [false, false, false, true, true, false, false]
-            }
-        ]
-    },
-    {
-        "name": "試製61cm六連装(酸素)魚雷",
-        "id": 179,
-        "type": "魚雷",
-        "icon": 5,
-        "secretary": [
-            {
-                "name": "島風",
-                "day": [true, false, false, false, false, false, true]
-            },
-            {
-                "name": "初月",
-                "day": [false, false, false, true, true, true, true]
-            }
-        ]
-    },
-    {
-        "name": "零式水上偵察機",
-        "id": 25,
-        "type": "水上偵察機",
-        "icon": 10,
-        "secretary": [
-            {
-                "name": "千歳甲",
-                "day": [false, false, false, false, false, true, true]
-            },
-            {
-                "name": "千代田甲",
-                "day": [false, false, false, true, true, false, false]
-            },
-            {
-                "name": "秋津洲改",
-                "day": [true, false, false, false, true, true, true]
-            },
-            {
-                "name": "瑞穂",
-                "day": [true, true, true, false, false, true, true]
-            }
-        ]
-    },
-    {
-        "name": "零式水上観測機",
-        "id": 59,
-        "type": "水上偵察機",
-        "icon": 10,
-        "secretary": [
-            {
-                "name": "瑞穂",
-                "day": [true, true, true, true, false, false, true]
-            },
-            {
-                "name": "武蔵",
-                "day": [false, false, false, false, true, true, true]
-            }
-        ]
-    },
-    {
-        "name": "九八式水上偵察機(夜偵)",
-        "id": 102,
-        "type": "水上偵察機",
-        "icon": 10,
-        "secretary": [
-            {
-                "name": "川内改二",
-                "day": [true, true, false, false, true, true, true]
-            }
-        ]
-    },
-    {
-        "name": "Ro.43水偵",
-        "id": 163,
-        "type": "水上偵察機",
-        "icon": 10,
-        "secretary": [
-            {
-                "name": "Zara改",
-                "day": [false, true, true, true, true, true, false]
-            },
-            {
-                "name": "Italia",
-                "day": [true, false, false, false, false, false, true]
-            },
-            {
-                "name": "Roma改",
-                "day": [false, false, true, true, false, false, false]
-            }
-        ]
-    },
-    {
-        "name": "九六式艦戦",
-        "id": 19,
-        "type": "艦上戰鬥機",
-        "icon": 6,
-        "secretary": [
-            {
-                "name": "鳳翔",
-                "day": [true, true, true, true, true, true, true]
-            }
-        ]
-    },
-    {
-        "name": "零式舰戦21型",
-        "id": 20,
-        "type": "艦上戰鬥機",
-        "icon": 6,
-        "secretary": [
-            {
-                "name": "赤城",
-                "day": [false, false, false, false, true, true, true]
-            },
-            {
-                "name": "加賀",
-                "day": [true, true, true, false, false, false, false]
-            }
-        ]
-    },
-    {
-        "name": "零式舰戦32型",
-        "id": 181,
-        "type": "艦上戰鬥機",
-        "icon": 6,
-        "secretary": [
-            {
-                "name": "赤城",
-                "day": [true, true, false, false, false, false, false]
-            },
-            {
-                "name": "加賀",
-                "day": [false, false, false, true, true, false, false]
-            }
-        ]
-    },
-    {
-        "name": "零式舰戦32型(熟练)",
-        "id": 182,
-        "type": "艦上戰鬥機",
-        "icon": 6,
-        "secretary": [
-            {
-                "name": "赤城",
-                "day": [true, true, false, false, false, false, false]
-            },
-            {
-                "name": "加賀",
-                "day": [false, false, false, true, true, false, false]
-            }
-        ]
-    },
-    {
-        "name": "零式舰戦52型",
-        "id": 21,
-        "type": "艦上戰鬥機",
-        "icon": 6,
-        "secretary": [
-            {
-                "name": "翔鶴",
-                "day": [false, false, false, false, true, true, true]
-            },
-            {
-                "name": "瑞鶴",
-                "day": [true, true, false, true, false, false, false]
-            }
-        ]
-    },
-    {
-        "name": "零式舰戦52型(熟练)",
-        "id": 152,
-        "type": "艦上戰鬥機",
-        "icon": 6,
-        "secretary": [
-            {
-                "name": "翔鶴",
-                "day": [false, false, false, false, true, true, true]
-            },
-            {
-                "name": "瑞鶴",
-                "day": [true, true, false, true, false, false, false]
-            }
-        ]
-    },
-    {
-        "name": "零式舰戦52型丙(六〇一空)",
-        "id": 109,
-        "type": "艦上戰鬥機",
-        "icon": 6,
-        "secretary": [
-            {
-                "name": "大鳳",
-                "day": [true, true, true, true, true, true, true]
-            },
-            {
-                "name": "雲龍",
-                "day": [false, false, false, true, true, true, true]
-            }
-        ]
-    },
-    {
-        "name": "零式舰戦52型丙(付岩井小隊)",
-        "id": 153,
-        "type": "艦上戰鬥機",
-        "icon": 6,
-        "secretary": [
-            {
-                "name": "瑞鶴",
-                "day": [false, false, true, false, true, false, false]
-            }
-        ]
-    },
-    {
-        "name": "零式舰戦52型甲(付岩本小隊)",
-        "id": 156,
-        "type": "艦上戰鬥機",
-        "icon": 6,
-        "secretary": [
-            {
-                "name": "瑞鶴",
-                "day": [false, false, false, false, false, true, true]
-            }
-        ]
-    },
-    {
-        "name": "零式舰戦53型(岩本隊)",
-        "id": 157,
-        "type": "艦上戰鬥機",
-        "icon": 6,
-        "secretary": [
-            {
-                "name": "瑞鶴",
-                "day": [false, false, false, false, false, true, true]
-            }
-        ]
-    },
-    {
-        "name": "零式舰戦62型(爆戦)",
-        "id": 60,
-        "type": "艦上爆撃機",
-        "icon": 7,
-        "secretary": [
-            {
-                "name": "隼鷹",
-                "day": [true, false, false, false, false, true, true]
-            },
-            {
-                "name": "翔鶴",
-                "day": [true, true, false, false, false, false, false]
-            }
-        ]
-    },
-    {
-        "name": "零式舰戦62型(爆戦/岩井隊)",
-        "id": 154,
-        "type": "艦上爆撃機",
-        "icon": 7,
-        "secretary": [
-            {
-                "name": "瑞鶴",
-                "day": [false, false, true, false, true, false, false]
-            }
-        ]
-    },
-    {
-        "name": "13号対空電探",
-        "id": 27,
-        "type": "電探",
-        "icon": 11,
-        "secretary": [
-            {
-                "name": "時雨改二",
-                "day": [true, false, false, false, true, true, true]
-            },
-            {
-                "name": "五十鈴改二",
-                "day": [true, true, false, false, false, true, true]
-            },
-            {
-                "name": "秋月",
-                "day": [false, false, true, true, true, false, false]
-            },
-            {
-                "name": "照月",
-                "day": [false, true, true, true, false, false, false]
-            }
-        ]
-    },
-    {
-        "name": "13号対空電探改",
-        "id": 106,
-        "type": "電探",
-        "icon": 11,
-        "secretary": [
-            {
-                "name": "磯風改",
-                "day": [false, false, false, false, true, true, true]
-            },
-            {
-                "name": "初霜改二",
-                "day": [true, false, false, false, false, true, true]
-            },
-            {
-                "name": "雪風",
-                "day": [true, true, true, true, false, false, false]
-            }
-        ]
-    },
-    {
-        "name": "22号対水上電探",
-        "id": 28,
-        "type": "電探",
-        "icon": 11,
-        "secretary": [
-            {
-                "name": "日向",
-                "day": [true, true, false, false, false, true, true]
-            },
-            {
-                "name": "夕雲",
-                "day": [false, true, true, false, false, true, true]
-            },
-            {
-                "name": "島風",
-                "day": [false, false, false, true, true, true, true]
-            }
-        ]
-    },
-    {
-        "name": "22号対水上電探改四",
-        "id": 88,
-        "type": "電探",
-        "icon": 11,
-        "secretary": [
-            {
-                "name": "妙高改二",
-                "day": [true, false, false, false, true, true, true]
-            },
-            {
-                "name": "羽黒改二",
-                "day": [true, true, false, false, false, true, true]
-            },
-            {
-                "name": "金剛改二",
-                "day": [false, false, true, true, true, true, false]
-            }
-        ]
-    },
-    {
-        "name": "21号対空電探",
-        "id": 30,
-        "type": "電探",
-        "icon": 11,
-        "secretary": [
-            {
-                "name": "伊勢",
-                "day": [true, true, false, false, false, true, true]
-            },
-            {
-                "name": "日向",
-                "day": [false, false, false, true, true, true, true]
-            }
-        ]
-    },
-    {
-        "name": "21号対空電探改",
-        "id": 89,
-        "type": "電探",
-        "icon": 11,
-        "secretary": [
-            {
-                "name": "大和",
-                "day": [true, false, false, false, true, true, true]
-            },
-            {
-                "name": "武蔵",
-                "day": [false, false, true, true, true, true, false]
-            }
-        ]
-    },
-    {
-        "name": "32号対水上電探",
-        "id": 31,
-        "type": "電探",
-        "icon": 11,
-        "secretary": [
-            {
-                "name": "伊勢",
-                "day": [false, false, false, true, true, true, true]
-            },
-            {
-                "name": "日向",
-                "day": [true, true, true, false, false, false, false]
-            }
-        ]
-    },
-    {
-        "name": "32号対水上電探改",
-        "id": 141,
-        "type": "電探",
-        "icon": 11,
-        "secretary": [
-            {
-                "name": "伊勢",
-                "day": [true, true, true, false, false, false, false]
-            },
-            {
-                "name": "日向",
-                "day": [false, false, false, true, true, true, true]
-            }
-        ]
-    },
-    {
-        "name": "九三式水中聴音機",
-        "id": 46,
-        "type": "ソナー",
-        "icon": 18,
-        "secretary": [
-            {
-                "name": "夕張",
-                "day": [true, false, false, false, false, true, true]
-            },
-            {
-                "name": "五十鈴改二",
-                "day": [false, true, false, false, true, true, false]
-            },
-            {
-                "name": "時雨改二",
-                "day": [true, false, false, false, true, true, true]
-            },
-            {
-                "name": "香取改",
-                "day": [true, false, false, false, false, true, true]
-            }
-        ]
-    },
-    {
-        "name": "三式水中探信儀",
-        "id": 47,
-        "type": "ソナー",
-        "icon": 18,
-        "secretary": [
-            {
-                "name": "夕張",
-                "day": [false, false, true, true, false, false, false]
-            },
-            {
-                "name": "五十鈴改二",
-                "day": [true, false, true, true, false, false, false]
-            }
-        ]
-    },
-    {
-        "name": "四式水中聴音機",
-        "id": 149,
-        "type": "ソナー",
-        "icon": 18,
-        "secretary": [
-            {
-                "name": "香取改",
-                "day": [false, true, true, false, false, false, false]
-            },
-            {
-                "name": "五十鈴改二",
-                "day": [false, false, false, false, true, true, true]
-            },
-            {
-                "name": "秋月",
-                "day": [true, false, false, false, false, false, false]
-            },
-            {
-                "name": "照月",
-                "day": [false, false, false, true, false, false, false]
-            }
-        ]
-    },
-    {
-        "name": "九四式爆雷投射機",
-        "id": 44,
-        "type": "爆雷",
-        "icon": 17,
-        "secretary": [
-            {
-                "name": "無",
-                "day": [false, false, false, true, true, false, false]
-            }
-        ]
-    },
-    {
-        "name": "三式爆雷投射機",
-        "id": 45,
-        "type": "爆雷",
-        "icon": 17,
-        "secretary": [
-            {
-                "name": "五十鈴改二",
-                "day": [false, false, false, true, true, false, false]
-            }
-        ]
-    },
-    {
-        "name": "九一式徹甲弾",
-        "id": 36,
-        "type": "対艦強化弾",
-        "icon": 13,
-        "secretary": [
-            {
-                "name": "比叡",
-                "day": [false, false, false, true, true, true, true]
-            },
-            {
-                "name": "霧島",
-                "day": [true, true, false, false, false, true, true]
-            }
-        ]
-    },
-    {
-        "name": "一式徹甲弾",
-        "id": 116,
-        "type": "対艦強化弾",
-        "icon": 13,
-        "secretary": [
-            {
-                "name": "金剛",
-                "day": [true, false, false, false, false, true, true]
-            },
-            {
-                "name": "榛名",
-                "day": [false, true, true, true, false, false, false]
-            }
-        ]
-    },
-    {
-        "name": "25mm単装機銃",
-        "id": 49,
-        "type": "対空機銃",
-        "icon": 15,
-        "secretary": [
-            {
-                "name": "皐月",
-                "day": [true, false, false, false, false, true, true]
-            },
-            {
-                "name": "文月",
-                "day": [false, false, false, true, true, true, true]
-            }
-        ]
-    },
-    {
-        "name": "25mm連装機銃",
-        "id": 39,
-        "type": "対空機銃",
-        "icon": 15,
-        "secretary": [
-            {
-                "name": "五十鈴改二",
-                "day": [true, false, false, false, false, true, true]
-            }
-        ]
-    },
-    {
-        "name": "25mm三連装機銃",
-        "id": 40,
-        "type": "対空機銃",
-        "icon": 15,
-        "secretary": [
-            {
-                "name": "五十鈴改二",
-                "day": [false, true, true, true, false, false, false]
-            },
-            {
-                "name": "摩耶",
-                "day": [false, false, true, true, true, false, false]
-            },
-            {
-                "name": "摩耶改二",
-                "day": [true, true, false, false, false, true, true]
-            }
-        ]
-    },
-    {
-        "name": "91式高射装置",
-        "id": 120,
-        "type": "高射装置",
-        "icon": 30,
-        "secretary": [
-            {
-                "name": "摩耶",
-                "day": [true, true, false, false, false, true, true]
-            },
-            {
-                "name": "秋月",
-                "day": [true, true, false, false, false, true, true]
-            },
-            {
-                "name": "照月",
-                "day": [true, false, false, false, true, true, true]
-            }
-        ]
-    },
-    {
-        "name": "94式高射装置",
-        "id": 121,
-        "type": "高射装置",
-        "icon": 30,
-        "secretary": [
-            {
-                "name": "秋月",
-                "day": [true, true, true, true, true, true, true]
-            },
-            {
-                "name": "照月",
-                "day": [true, true, true, true, true, true, true]
-            },
-            {
-                "name": "初月",
-                "day": [true, false, false, false, false, true, true]
-            },
-            {
-                "name": "吹雪改二",
-                "day": [true, false, false, false, true, true, true]
-            },
-            {
-                "name": "摩耶改二",
-                "day": [true, false, false, false, true, true, true]
-            }
-        ]
-    },
-    {
-        "name": "大発動艇",
-        "id": 68,
-        "type": "上陸用舟艇",
-        "icon": 20,
-        "secretary": [
-            {
-                "name": "あきつ丸",
-                "day": [true, true, true, true, true, true, true]
-            },
-            {
-                "name": "皐月改二",
-                "day": [true, true, true, true, false, false, false]
-            },
-            {
-                "name": "阿武隈改二",
-                "day": [true, true, false, false, false, true, true]
-            }
-        ]
-    },
-    {
-        "name": "大発動艇(八九式中戦車&陸戦隊)",
-        "id": 166,
-        "type": "上陸用舟艇",
-        "icon": 20,
-        "secretary": [
-            {
-                "name": "あきつ丸",
-                "day": [true, true, false, false, false, true, true]
-            },
-            {
-                "name": "皐月改二",
-                "day": [false, false, false, false, true, true, true]
-            },
-            {
-                "name": "阿武隈改二",
-                "day": [false, false, true, true, true, false, false]
-            }
-        ]
-    },
-    {
-        "name": "特二式内火艇",
-        "id": 167,
-        "type": "上陸用舟艇",
-        "icon": 36,
-        "secretary": [
-            {
-                "name": "伊58",
-                "day": [true, true, false, false, false, true, true]
-            },
-            {
-                "name": "伊8",
-                "day": [false, false, false, true, true, true, true]
-            },
-            {
-                "name": "伊401",
-                "day": [false, true, true, true, true, false, false]
-            }
-        ]
-    },
-    {
-        "name": "探照灯",
-        "id": 74,
-        "type": "探照灯",
-        "icon": 24,
-        "secretary": [
-            {
-                "name": "暁",
-                "day": [false, false, false, false, true, true, true]
-            },
-            {
-                "name": "神通",
-                "day": [true, false, false, false, false, true, true]
-            },
-            {
-                "name": "青葉",
-                "day": [false, true, true, true, false, false, false]
-            },
-            {
-                "name": "綾波",
-                "day": [false, true, true, true, false, false, false]
-            }
-        ]
-    },
-    {
-        "name": "96式150cm探照灯",
-        "id": 140,
-        "type": "探照灯",
-        "icon": 24,
-        "secretary": [
-            {
-                "name": "比叡",
-                "day": [true, true, false, false, false, true, true]
-            },
-            {
-                "name": "霧島",
-                "day": [false, false, true, true, true, true, false]
-            }
-        ]
-    }
-
+  {
+    "id": 2,
+    "type": "小口径主砲",
+    "icon": 1,
+    "name": "12.7cm連装砲",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 0,
+          "name": "12.7cm連装砲B型改二",
+          "icon": 1
+        },
+        "req": [
+          {
+            "day": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "None"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 10,
+          "ammo": 30,
+          "steel": 60,
+          "bauxite": 0,
+          "material": [
+            {
+              "development": [
+                1,
+                2
+              ],
+              "improvement": [
+                1,
+                2
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                1,
+                2
+              ],
+              "improvement": [
+                1,
+                2
+              ],
+              "item": {
+                "icon": 1,
+                "name": "12.7cm連装砲",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                2,
+                3
+              ],
+              "improvement": [
+                3,
+                6
+              ],
+              "item": {
+                "icon": 1,
+                "name": "12.7cm連装砲",
+                "count": 2
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "type": "小口径主砲",
+    "icon": 1,
+    "name": "12.7cm連装砲B型改二",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              false,
+              true,
+              true,
+              true,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "夕立改二",
+              "綾波改二"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 10,
+          "ammo": 40,
+          "steel": 70,
+          "bauxite": 0,
+          "material": [
+            {
+              "development": [
+                2,
+                2
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                2,
+                2
+              ],
+              "improvement": [
+                2,
+                4
+              ],
+              "item": {
+                "icon": 1,
+                "name": "12.7cm連装砲B型改二",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "type": "中口径主砲",
+    "icon": 2,
+    "name": "14cm単装砲",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 0,
+          "name": "14cm連装砲",
+          "icon": 2
+        },
+        "req": [
+          {
+            "day": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "None"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 10,
+          "ammo": 50,
+          "steel": 80,
+          "bauxite": 0,
+          "material": [
+            {
+              "development": [
+                1,
+                2
+              ],
+              "improvement": [
+                1,
+                2
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                1,
+                2
+              ],
+              "improvement": [
+                1,
+                2
+              ],
+              "item": {
+                "icon": 2,
+                "name": "14cm単装砲",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                3,
+                4
+              ],
+              "improvement": [
+                3,
+                6
+              ],
+              "item": {
+                "icon": 2,
+                "name": "14cm単装砲",
+                "count": 2
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "type": "中口径主砲",
+    "icon": 2,
+    "name": "15.5cm三連装砲",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "最上"
+            ]
+          },
+          {
+            "day": [
+              true,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "大淀"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 10,
+          "ammo": 90,
+          "steel": 120,
+          "bauxite": 0,
+          "material": [
+            {
+              "development": [
+                2,
+                2
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                2,
+                3
+              ],
+              "improvement": [
+                2,
+                4
+              ],
+              "item": {
+                "icon": 2,
+                "name": "15.5cm三連装砲",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "type": "中口径主砲",
+    "icon": 2,
+    "name": "20.3cm連装砲",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 0,
+          "name": "20.3cm(2号)連装砲",
+          "icon": 2
+        },
+        "req": [
+          {
+            "day": [
+              true,
+              false,
+              false,
+              false,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "青葉"
+            ]
+          },
+          {
+            "day": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "衣笠"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 10,
+          "ammo": 90,
+          "steel": 120,
+          "bauxite": 0,
+          "material": [
+            {
+              "development": [
+                1,
+                2
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                2,
+                3
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 2,
+                "name": "20.3cm連装砲",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                2,
+                5
+              ],
+              "improvement": [
+                4,
+                10
+              ],
+              "item": {
+                "icon": 2,
+                "name": "20.3cm連装砲",
+                "count": 2
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "type": "中口径主砲",
+    "icon": 2,
+    "name": "20.3cm(3号)連装砲",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              true,
+              true,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "三隈"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 10,
+          "ammo": 110,
+          "steel": 140,
+          "bauxite": 0,
+          "material": [
+            {
+              "development": [
+                3,
+                4
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                3,
+                5
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 2,
+                "name": "20.3cm(3号)連装砲",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "type": "中口径主砲",
+    "icon": 2,
+    "name": "15.2cm連装砲",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 0,
+          "name": "15.2cm連装砲改",
+          "icon": 2
+        },
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              false,
+              false,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "阿賀野"
+            ]
+          },
+          {
+            "day": [
+              true,
+              true,
+              false,
+              false,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "能代"
+            ]
+          },
+          {
+            "day": [
+              false,
+              true,
+              true,
+              true,
+              true,
+              false,
+              false
+            ],
+            "secretary": [
+              "矢矧"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 10,
+          "ammo": 70,
+          "steel": 100,
+          "bauxite": 0,
+          "material": [
+            {
+              "development": [
+                2,
+                2
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                2,
+                3
+              ],
+              "improvement": [
+                2,
+                4
+              ],
+              "item": {
+                "icon": 2,
+                "name": "15.2cm連装砲",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                5,
+                8
+              ],
+              "improvement": [
+                4,
+                10
+              ],
+              "item": {
+                "icon": 11,
+                "name": "22号対水上電探",
+                "count": 1
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "type": "中口径主砲",
+    "icon": 2,
+    "name": "20.3cm(2号)連装砲",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 0,
+          "name": "20.3cm(3号)連装砲",
+          "icon": 2
+        },
+        "req": [
+          {
+            "day": [
+              true,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "妙高"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 10,
+          "ammo": 100,
+          "steel": 130,
+          "bauxite": 0,
+          "material": [
+            {
+              "development": [
+                2,
+                3
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                2,
+                4
+              ],
+              "improvement": [
+                2,
+                4
+              ],
+              "item": {
+                "icon": 2,
+                "name": "20.3cm(2号)連装砲",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                4,
+                8
+              ],
+              "improvement": [
+                4,
+                11
+              ],
+              "item": {
+                "icon": 2,
+                "name": "20.3cm(2号)連装砲",
+                "count": 1
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 119,
+    "type": "中口径主砲",
+    "icon": 2,
+    "name": "14cm連装砲",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              false,
+              true,
+              false,
+              false,
+              true,
+              false,
+              false
+            ],
+            "secretary": [
+              "夕張"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 10,
+          "ammo": 60,
+          "steel": 100,
+          "bauxite": 0,
+          "material": [
+            {
+              "development": [
+                2,
+                2
+              ],
+              "improvement": [
+                1,
+                2
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                2,
+                4
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 2,
+                "name": "14cm連装砲",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 139,
+    "type": "中口径主砲",
+    "icon": 2,
+    "name": "15.2cm連装砲改",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              false,
+              true,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "矢矧"
+            ]
+          },
+          {
+            "day": [
+              true,
+              true,
+              true,
+              false,
+              false,
+              false,
+              true
+            ],
+            "secretary": [
+              "酒匂"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 20,
+          "ammo": 80,
+          "steel": 100,
+          "bauxite": 30,
+          "material": [
+            {
+              "development": [
+                3,
+                4
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 2,
+                "name": "15.2cm連装砲",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                4,
+                6
+              ],
+              "improvement": [
+                3,
+                6
+              ],
+              "item": {
+                "icon": 2,
+                "name": "15.2cm連装砲",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "type": "大口径主砲",
+    "icon": 3,
+    "name": "35.6cm連装砲",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 0,
+          "name": "試製35.6cm三連装砲",
+          "icon": 3
+        },
+        "req": [
+          {
+            "day": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "扶桑"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 20,
+          "ammo": 240,
+          "steel": 300,
+          "bauxite": 0,
+          "material": [
+            {
+              "development": [
+                2,
+                3
+              ],
+              "improvement": [
+                1,
+                2
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                3,
+                4
+              ],
+              "improvement": [
+                2,
+                4
+              ],
+              "item": {
+                "icon": 3,
+                "name": "35.6cm連装砲",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                6,
+                12
+              ],
+              "improvement": [
+                5,
+                12
+              ],
+              "item": {
+                "icon": 3,
+                "name": "35.6cm連装砲",
+                "count": 3
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "type": "大口径主砲",
+    "icon": 3,
+    "name": "41cm連装砲",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              true,
+              false,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "長門"
+            ]
+          },
+          {
+            "day": [
+              true,
+              true,
+              false,
+              false,
+              true,
+              false,
+              false
+            ],
+            "secretary": [
+              "陸奥"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 30,
+          "ammo": 350,
+          "steel": 480,
+          "bauxite": 0,
+          "material": [
+            {
+              "development": [
+                3,
+                4
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 3,
+                "name": "41cm連装砲",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                4,
+                7
+              ],
+              "improvement": [
+                3,
+                6
+              ],
+              "item": {
+                "icon": 3,
+                "name": "41cm連装砲",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "type": "大口径主砲",
+    "icon": 3,
+    "name": "46cm三連装砲",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "大和"
+            ]
+          },
+          {
+            "day": [
+              true,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "武蔵"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 50,
+          "ammo": 480,
+          "steel": 800,
+          "bauxite": 50,
+          "material": [
+            {
+              "development": [
+                6,
+                8
+              ],
+              "improvement": [
+                4,
+                6
+              ],
+              "item": {
+                "icon": 3,
+                "name": "46cm三連装砲",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                8,
+                10
+              ],
+              "improvement": [
+                5,
+                8
+              ],
+              "item": {
+                "icon": 3,
+                "name": "46cm三連装砲",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "type": "大口径主砲",
+    "icon": 3,
+    "name": "38cm連装砲",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 3,
+          "name": "38cm連装砲改",
+          "icon": 3
+        },
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              false,
+              false,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "Bismarck"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 20,
+          "ammo": 380,
+          "steel": 450,
+          "bauxite": 20,
+          "material": [
+            {
+              "development": [
+                4,
+                5
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 3,
+                "name": "35.6cm連装砲",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                5,
+                8
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 3,
+                "name": "35.6cm連装砲",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                10,
+                20
+              ],
+              "improvement": [
+                6,
+                13
+              ],
+              "item": {
+                "icon": 3,
+                "name": "41cm連装砲",
+                "count": 2
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 103,
+    "type": "大口径主砲",
+    "icon": 3,
+    "name": "試製35.6cm三連装砲",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              false,
+              true,
+              true,
+              false,
+              false
+            ],
+            "secretary": [
+              "金剛改二"
+            ]
+          },
+          {
+            "day": [
+              false,
+              false,
+              false,
+              false,
+              true,
+              true,
+              false
+            ],
+            "secretary": [
+              "榛名改二"
+            ]
+          },
+          {
+            "day": [
+              false,
+              false,
+              false,
+              true,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "扶桑改二"
+            ]
+          },
+          {
+            "day": [
+              true,
+              false,
+              false,
+              false,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "山城改二"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 30,
+          "ammo": 330,
+          "steel": 390,
+          "bauxite": 30,
+          "material": [
+            {
+              "development": [
+                4,
+                6
+              ],
+              "improvement": [
+                3,
+                4
+              ],
+              "item": {
+                "icon": 3,
+                "name": "35.6cm連装砲",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                6,
+                9
+              ],
+              "improvement": [
+                4,
+                7
+              ],
+              "item": {
+                "icon": 3,
+                "name": "35.6cm連装砲",
+                "count": 3
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 104,
+    "type": "大口径主砲",
+    "icon": 3,
+    "name": "35.6cm連装砲(ダズル迷彩)",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              true,
+              true,
+              true,
+              true,
+              false,
+              false,
+              true
+            ],
+            "secretary": [
+              "榛名改二"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 30,
+          "ammo": 250,
+          "steel": 300,
+          "bauxite": 30,
+          "material": [
+            {
+              "development": [
+                3,
+                4
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 3,
+                "name": "35.6cm連装砲",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                4,
+                5
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 3,
+                "name": "35.6cm連装砲",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 105,
+    "type": "大口径主砲",
+    "icon": 3,
+    "name": "試製41cm三連装砲",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              true,
+              true,
+              false,
+              true,
+              true,
+              false,
+              false
+            ],
+            "secretary": [
+              "長門改"
+            ]
+          },
+          {
+            "day": [
+              false,
+              false,
+              true,
+              true,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "陸奥改"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 40,
+          "ammo": 440,
+          "steel": 620,
+          "bauxite": 40,
+          "material": [
+            {
+              "development": [
+                5,
+                7
+              ],
+              "improvement": [
+                4,
+                6
+              ],
+              "item": {
+                "icon": 3,
+                "name": "41cm連装砲",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                8,
+                10
+              ],
+              "improvement": [
+                5,
+                8
+              ],
+              "item": {
+                "icon": 3,
+                "name": "41cm連装砲",
+                "count": 3
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 114,
+    "type": "大口径主砲",
+    "icon": 3,
+    "name": "38cm連装砲改",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              true,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "Bismarck"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 30,
+          "ammo": 390,
+          "steel": 470,
+          "bauxite": 30,
+          "material": [
+            {
+              "development": [
+                5,
+                7
+              ],
+              "improvement": [
+                3,
+                4
+              ],
+              "item": {
+                "icon": 3,
+                "name": "41cm連装砲",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                6,
+                9
+              ],
+              "improvement": [
+                4,
+                6
+              ],
+              "item": {
+                "icon": 3,
+                "name": "41cm連装砲",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 117,
+    "type": "大口径主砲",
+    "icon": 3,
+    "name": "試製46cm連装砲",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 5,
+          "name": "46cm三連装砲",
+          "icon": 3
+        },
+        "req": [
+          {
+            "day": [
+              true,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "大和"
+            ]
+          },
+          {
+            "day": [
+              false,
+              false,
+              true,
+              true,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "武蔵"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 40,
+          "ammo": 420,
+          "steel": 650,
+          "bauxite": 40,
+          "material": [
+            {
+              "development": [
+                5,
+                6
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 3,
+                "name": "41cm連装砲",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                6,
+                8
+              ],
+              "improvement": [
+                4,
+                7
+              ],
+              "item": {
+                "icon": 3,
+                "name": "41cm連装砲",
+                "count": 3
+              }
+            },
+            {
+              "development": [
+                12,
+                18
+              ],
+              "improvement": [
+                8,
+                14
+              ],
+              "item": {
+                "icon": 3,
+                "name": "41cm連装砲",
+                "count": 4
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 128,
+    "type": "大口径主砲",
+    "icon": 3,
+    "name": "試製51cm連装砲",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              false,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "大和改"
+            ]
+          },
+          {
+            "day": [
+              false,
+              true,
+              false,
+              true,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "武蔵改"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 50,
+          "ammo": 550,
+          "steel": 950,
+          "bauxite": 80,
+          "material": [
+            {
+              "development": [
+                7,
+                9
+              ],
+              "improvement": [
+                5,
+                7
+              ],
+              "item": {
+                "icon": 3,
+                "name": "46cm三連装砲",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                10,
+                15
+              ],
+              "improvement": [
+                7,
+                10
+              ],
+              "item": {
+                "icon": 3,
+                "name": "46cm三連装砲",
+                "count": 3
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 133,
+    "type": "大口径主砲",
+    "icon": 3,
+    "name": "381mm/50 三連装砲",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 3,
+          "name": "381mm/50 三連装砲改",
+          "icon": 3
+        },
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "secretary": [
+              "Littorio"
+            ]
+          },
+          {
+            "day": [
+              true,
+              true,
+              false,
+              false,
+              false,
+              false,
+              true
+            ],
+            "secretary": [
+              "Roma"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 30,
+          "ammo": 400,
+          "steel": 480,
+          "bauxite": 20,
+          "material": [
+            {
+              "development": [
+                4,
+                5
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 3,
+                "name": "35.6cm連装砲",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                5,
+                8
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 3,
+                "name": "35.6cm連装砲",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                12,
+                20
+              ],
+              "improvement": [
+                7,
+                14
+              ],
+              "item": {
+                "icon": 15,
+                "name": "25mm連装機銃",
+                "count": 2
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 137,
+    "type": "大口径主砲",
+    "icon": 3,
+    "name": "381mm/50 三連装砲改",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              true,
+              true,
+              false,
+              false,
+              false,
+              false,
+              true
+            ],
+            "secretary": [
+              "Littorio"
+            ]
+          },
+          {
+            "day": [
+              false,
+              false,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "secretary": [
+              "Roma"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 40,
+          "ammo": 440,
+          "steel": 500,
+          "bauxite": 40,
+          "material": [
+            {
+              "development": [
+                5,
+                7
+              ],
+              "improvement": [
+                3,
+                4
+              ],
+              "item": {
+                "icon": 3,
+                "name": "41cm連装砲",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                7,
+                10
+              ],
+              "improvement": [
+                4,
+                6
+              ],
+              "item": {
+                "icon": 3,
+                "name": "41cm連装砲",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 161,
+    "type": "大口径主砲",
+    "icon": 3,
+    "name": "16inch三連装砲 Mk.7",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 0,
+          "name": "16inch三連装砲 Mk.7+GFCS",
+          "icon": 3
+        },
+        "req": [
+          {
+            "day": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "Iowa"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 45,
+          "ammo": 450,
+          "steel": 750,
+          "bauxite": 100,
+          "material": [
+            {
+              "development": [
+                10,
+                15
+              ],
+              "improvement": [
+                6,
+                8
+              ],
+              "item": {
+                "icon": 3,
+                "name": "41cm連装砲",
+                "count": 3
+              }
+            },
+            {
+              "development": [
+                16,
+                24
+              ],
+              "improvement": [
+                8,
+                12
+              ],
+              "item": {
+                "icon": 3,
+                "name": "46cm三連装砲",
+                "count": 3
+              }
+            },
+            {
+              "development": [
+                20,
+                28
+              ],
+              "improvement": [
+                12,
+                20
+              ],
+              "item": {
+                "icon": 11,
+                "name": "32号対水上電探",
+                "count": 2
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 183,
+    "type": "大口径主砲",
+    "icon": 3,
+    "name": "16inch三連装砲 Mk.7+GFCS",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              true,
+              false,
+              false,
+              false,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "Iowa"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 45,
+          "ammo": 500,
+          "steel": 770,
+          "bauxite": 500,
+          "material": [
+            {
+              "development": [
+                16,
+                24
+              ],
+              "improvement": [
+                8,
+                12
+              ],
+              "item": {
+                "icon": 11,
+                "name": "22号対水上電探",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                16,
+                24
+              ],
+              "improvement": [
+                8,
+                16
+              ],
+              "item": {
+                "icon": 11,
+                "name": "32号対水上電探",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 190,
+    "type": "大口径主砲",
+    "icon": 3,
+    "name": "38.1cm Mk.I連装砲",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 0,
+          "name": "38.1cm Mk.I/N連装砲改",
+          "icon": 3
+        },
+        "req": [
+          {
+            "day": [
+              true,
+              false,
+              false,
+              false,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "Warspite"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 24,
+          "ammo": 280,
+          "steel": 380,
+          "bauxite": 0,
+          "material": [
+            {
+              "development": [
+                3,
+                4
+              ],
+              "improvement": [
+                3,
+                4
+              ],
+              "item": {
+                "icon": 3,
+                "name": "35.6cm連装砲",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                4,
+                6
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 3,
+                "name": "41cm連装砲",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                8,
+                15
+              ],
+              "improvement": [
+                6,
+                12
+              ],
+              "item": {
+                "icon": 15,
+                "name": "25mm単装機銃",
+                "count": 2
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 192,
+    "type": "大口径主砲",
+    "icon": 3,
+    "name": "38.1cm Mk.I/N連装砲改",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "secretary": [
+              "Warspite"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 28,
+          "ammo": 320,
+          "steel": 420,
+          "bauxite": 40,
+          "material": [
+            {
+              "development": [
+                4,
+                6
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 3,
+                "name": "41cm連装砲",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                6,
+                8
+              ],
+              "improvement": [
+                4,
+                7
+              ],
+              "item": {
+                "icon": 3,
+                "name": "41cm連装砲",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "type": "副砲",
+    "icon": 4,
+    "name": "15.2cm単装砲",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 0,
+          "name": "15.2cm連装砲",
+          "icon": 2
+        },
+        "req": [
+          {
+            "day": [
+              true,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "阿賀野"
+            ]
+          },
+          {
+            "day": [
+              true,
+              true,
+              false,
+              false,
+              false,
+              false,
+              true
+            ],
+            "secretary": [
+              "金剛"
+            ]
+          },
+          {
+            "day": [
+              false,
+              true,
+              true,
+              true,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "山城"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 10,
+          "ammo": 60,
+          "steel": 90,
+          "bauxite": 0,
+          "material": [
+            {
+              "development": [
+                2,
+                2
+              ],
+              "improvement": [
+                1,
+                2
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                2,
+                3
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 4,
+                "name": "15.2cm単装砲",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                3,
+                4
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 4,
+                "name": "15.2cm単装砲",
+                "count": 2
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 134,
+    "type": "副砲",
+    "icon": 4,
+    "name": "OTO 152mm三連装速射砲",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              true,
+              false,
+              true,
+              true,
+              false,
+              false,
+              true
+            ],
+            "secretary": [
+              "Littorio"
+            ]
+          },
+          {
+            "day": [
+              true,
+              true,
+              false,
+              false,
+              true,
+              true,
+              false
+            ],
+            "secretary": [
+              "Roma"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 10,
+          "ammo": 90,
+          "steel": 120,
+          "bauxite": 0,
+          "material": [
+            {
+              "development": [
+                2,
+                3
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                3,
+                4
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 2,
+                "name": "15.5cm三連装砲",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "type": "魚雷",
+    "icon": 5,
+    "name": "61cm三連装魚雷",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 0,
+          "name": "61cm三連装(酸素)魚雷",
+          "icon": 5
+        },
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              false,
+              false,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "吹雪"
+            ]
+          },
+          {
+            "day": [
+              true,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "叢雲"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 50,
+          "ammo": 70,
+          "steel": 60,
+          "bauxite": 20,
+          "material": [
+            {
+              "development": [
+                1,
+                2
+              ],
+              "improvement": [
+                1,
+                1
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                2,
+                3
+              ],
+              "improvement": [
+                1,
+                2
+              ],
+              "item": {
+                "icon": 5,
+                "name": "61cm三連装魚雷",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                3,
+                5
+              ],
+              "improvement": [
+                2,
+                4
+              ],
+              "item": {
+                "icon": 5,
+                "name": "61cm三連装魚雷",
+                "count": 2
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "type": "魚雷",
+    "icon": 5,
+    "name": "61cm四連装魚雷",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 3,
+          "name": "61cm四連装(酸素)魚雷",
+          "icon": 5
+        },
+        "req": [
+          {
+            "day": [
+              true,
+              true,
+              true,
+              false,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "None"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 70,
+          "ammo": 100,
+          "steel": 70,
+          "bauxite": 20,
+          "material": [
+            {
+              "development": [
+                1,
+                2
+              ],
+              "improvement": [
+                1,
+                2
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                2,
+                3
+              ],
+              "improvement": [
+                1,
+                2
+              ],
+              "item": {
+                "icon": 5,
+                "name": "61cm四連装魚雷",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                3,
+                5
+              ],
+              "improvement": [
+                3,
+                6
+              ],
+              "item": {
+                "icon": 5,
+                "name": "61cm四連装魚雷",
+                "count": 2
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "type": "魚雷",
+    "icon": 5,
+    "name": "61cm四連装(酸素)魚雷",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 0,
+          "name": "61cm五連装(酸素)魚雷",
+          "icon": 5
+        },
+        "req": [
+          {
+            "day": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "北上",
+              "大井"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 80,
+          "ammo": 120,
+          "steel": 80,
+          "bauxite": 20,
+          "material": [
+            {
+              "development": [
+                2,
+                3
+              ],
+              "improvement": [
+                1,
+                2
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                4,
+                8
+              ],
+              "improvement": [
+                2,
+                4
+              ],
+              "item": {
+                "icon": 5,
+                "name": "61cm四連装(酸素)魚雷",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                5,
+                10
+              ],
+              "improvement": [
+                5,
+                11
+              ],
+              "item": {
+                "icon": 5,
+                "name": "61cm四連装(酸素)魚雷",
+                "count": 3
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "type": "魚雷",
+    "icon": 5,
+    "name": "61cm五連装(酸素)魚雷",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              false,
+              true,
+              true,
+              false,
+              false
+            ],
+            "secretary": [
+              "島風"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 100,
+          "ammo": 150,
+          "steel": 90,
+          "bauxite": 30,
+          "material": [
+            {
+              "development": [
+                3,
+                4
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                5,
+                9
+              ],
+              "improvement": [
+                3,
+                7
+              ],
+              "item": {
+                "icon": 5,
+                "name": "61cm五連装(酸素)魚雷",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 125,
+    "type": "魚雷",
+    "icon": 5,
+    "name": "61cm三連装(酸素)魚雷",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 5,
+          "name": "61cm四連装(酸素)魚雷",
+          "icon": 5
+        },
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              false,
+              false,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "吹雪改二"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 60,
+          "ammo": 90,
+          "steel": 60,
+          "bauxite": 20,
+          "material": [
+            {
+              "development": [
+                1,
+                2
+              ],
+              "improvement": [
+                1,
+                1
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                3,
+                5
+              ],
+              "improvement": [
+                1,
+                3
+              ],
+              "item": {
+                "icon": 5,
+                "name": "61cm三連装魚雷",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                4,
+                8
+              ],
+              "improvement": [
+                3,
+                6
+              ],
+              "item": {
+                "icon": 5,
+                "name": "61cm四連装魚雷",
+                "count": 2
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 179,
+    "type": "魚雷",
+    "icon": 5,
+    "name": "試製61cm六連装(酸素)魚雷",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              false,
+              true,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "初月"
+            ]
+          },
+          {
+            "day": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              true
+            ],
+            "secretary": [
+              "島風"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 120,
+          "ammo": 180,
+          "steel": 120,
+          "bauxite": 40,
+          "material": [
+            {
+              "development": [
+                6,
+                8
+              ],
+              "improvement": [
+                5,
+                6
+              ],
+              "item": {
+                "icon": 5,
+                "name": "61cm四連装(酸素)魚雷",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                9,
+                12
+              ],
+              "improvement": [
+                6,
+                12
+              ],
+              "item": {
+                "icon": 5,
+                "name": "61cm五連装(酸素)魚雷",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "type": "艦上戦闘機",
+    "icon": 6,
+    "name": "九六式艦戦",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 3,
+          "name": "零式艦戦21型",
+          "icon": 6
+        },
+        "req": [
+          {
+            "day": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "鳳翔"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 70,
+          "ammo": 50,
+          "steel": 0,
+          "bauxite": 170,
+          "material": [
+            {
+              "development": [
+                1,
+                3
+              ],
+              "improvement": [
+                1,
+                2
+              ],
+              "item": {
+                "icon": 6,
+                "name": "九六式艦戦",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                2,
+                4
+              ],
+              "improvement": [
+                1,
+                3
+              ],
+              "item": {
+                "icon": 15,
+                "name": "7.7mm機銃",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                3,
+                6
+              ],
+              "improvement": [
+                2,
+                4
+              ],
+              "item": {
+                "icon": 6,
+                "name": "九六式艦戦",
+                "count": 2
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "type": "艦上戦闘機",
+    "icon": 6,
+    "name": "零式艦戦21型",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 3,
+          "name": "零式艦戦32型",
+          "icon": 6
+        },
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              false,
+              false,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "赤城"
+            ]
+          },
+          {
+            "day": [
+              true,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "加賀"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 100,
+          "ammo": 80,
+          "steel": 0,
+          "bauxite": 250,
+          "material": [
+            {
+              "development": [
+                2,
+                4
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 6,
+                "name": "零式艦戦21型",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                3,
+                5
+              ],
+              "improvement": [
+                2,
+                4
+              ],
+              "item": {
+                "icon": 6,
+                "name": "零式艦戦21型",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                4,
+                7
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 15,
+                "name": "7.7mm機銃",
+                "count": 2
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "type": "艦上戦闘機",
+    "icon": 6,
+    "name": "零式艦戦52型",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              false,
+              false,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "翔鶴"
+            ]
+          },
+          {
+            "day": [
+              true,
+              true,
+              false,
+              true,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "瑞鶴"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 120,
+          "ammo": 120,
+          "steel": 0,
+          "bauxite": 280,
+          "material": [
+            {
+              "development": [
+                3,
+                5
+              ],
+              "improvement": [
+                3,
+                4
+              ],
+              "item": {
+                "icon": 6,
+                "name": "零式艦戦52型",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                5,
+                8
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 6,
+                "name": "零式艦戦52型",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "type": "艦上戦闘機",
+    "icon": 6,
+    "name": "零式艦戦21型(熟練)",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 3,
+          "name": "零式艦戦32型(熟練)",
+          "icon": 6
+        },
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              false,
+              false,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "赤城"
+            ]
+          },
+          {
+            "day": [
+              true,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "加賀"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 100,
+          "ammo": 80,
+          "steel": 0,
+          "bauxite": 250,
+          "material": [
+            {
+              "development": [
+                2,
+                4
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 6,
+                "name": "零式艦戦21型",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                3,
+                5
+              ],
+              "improvement": [
+                2,
+                5
+              ],
+              "item": {
+                "icon": 6,
+                "name": "零式艦戦21型",
+                "count": 3
+              }
+            },
+            {
+              "development": [
+                4,
+                7
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 15,
+                "name": "7.7mm機銃",
+                "count": 3
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 109,
+    "type": "艦上戦闘機",
+    "icon": 6,
+    "name": "零戦52型丙(六〇一空)",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "大鳳"
+            ]
+          },
+          {
+            "day": [
+              false,
+              false,
+              false,
+              true,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "雲龍"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 120,
+          "ammo": 120,
+          "steel": 0,
+          "bauxite": 280,
+          "material": [
+            {
+              "development": [
+                4,
+                6
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 6,
+                "name": "零式艦戦52型",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                5,
+                9
+              ],
+              "improvement": [
+                4,
+                6
+              ],
+              "item": {
+                "icon": 8,
+                "name": "天山",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 152,
+    "type": "艦上戦闘機",
+    "icon": 6,
+    "name": "零式艦戦52型(熟練)",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              false,
+              false,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "翔鶴"
+            ]
+          },
+          {
+            "day": [
+              true,
+              true,
+              false,
+              true,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "瑞鶴"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 120,
+          "ammo": 120,
+          "steel": 0,
+          "bauxite": 280,
+          "material": [
+            {
+              "development": [
+                4,
+                6
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 6,
+                "name": "零式艦戦52型",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                5,
+                9
+              ],
+              "improvement": [
+                4,
+                6
+              ],
+              "item": {
+                "icon": 6,
+                "name": "零式艦戦52型",
+                "count": 3
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 153,
+    "type": "艦上戦闘機",
+    "icon": 6,
+    "name": "零戦52型丙(付岩井小隊)",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              true,
+              false,
+              true,
+              false,
+              false
+            ],
+            "secretary": [
+              "瑞鶴"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 120,
+          "ammo": 120,
+          "steel": 0,
+          "bauxite": 280,
+          "material": [
+            {
+              "development": [
+                4,
+                6
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 6,
+                "name": "零式艦戦52型",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                5,
+                9
+              ],
+              "improvement": [
+                4,
+                6
+              ],
+              "item": {
+                "icon": 6,
+                "name": "零式艦戦52型",
+                "count": 3
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 156,
+    "type": "艦上戦闘機",
+    "icon": 6,
+    "name": "零戦52型甲(付岩本小隊)",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "瑞鶴"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 120,
+          "ammo": 120,
+          "steel": 0,
+          "bauxite": 280,
+          "material": [
+            {
+              "development": [
+                4,
+                6
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 6,
+                "name": "零式艦戦52型",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                5,
+                9
+              ],
+              "improvement": [
+                4,
+                6
+              ],
+              "item": {
+                "icon": 6,
+                "name": "零式艦戦52型",
+                "count": 3
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 157,
+    "type": "艦上戦闘機",
+    "icon": 6,
+    "name": "零式艦戦53型(岩本隊)",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "瑞鶴"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 120,
+          "ammo": 120,
+          "steel": 0,
+          "bauxite": 280,
+          "material": [
+            {
+              "development": [
+                4,
+                6
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 6,
+                "name": "零式艦戦52型",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                5,
+                9
+              ],
+              "improvement": [
+                4,
+                6
+              ],
+              "item": {
+                "icon": 6,
+                "name": "零式艦戦52型",
+                "count": 3
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 181,
+    "type": "艦上戦闘機",
+    "icon": 6,
+    "name": "零式艦戦32型",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 3,
+          "name": "零式艦戦52型",
+          "icon": 6
+        },
+        "req": [
+          {
+            "day": [
+              true,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "赤城"
+            ]
+          },
+          {
+            "day": [
+              false,
+              false,
+              false,
+              true,
+              true,
+              false,
+              false
+            ],
+            "secretary": [
+              "加賀"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 90,
+          "ammo": 100,
+          "steel": 0,
+          "bauxite": 260,
+          "material": [
+            {
+              "development": [
+                3,
+                5
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 6,
+                "name": "零式艦戦21型",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                4,
+                6
+              ],
+              "improvement": [
+                3,
+                4
+              ],
+              "item": {
+                "icon": 6,
+                "name": "零式艦戦21型",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                5,
+                8
+              ],
+              "improvement": [
+                4,
+                6
+              ],
+              "item": {
+                "icon": 6,
+                "name": "零式艦戦32型",
+                "count": 1
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 182,
+    "type": "艦上戦闘機",
+    "icon": 6,
+    "name": "零式艦戦32型(熟練)",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 3,
+          "name": "零式艦戦52型(熟練)",
+          "icon": 6
+        },
+        "req": [
+          {
+            "day": [
+              true,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "赤城"
+            ]
+          },
+          {
+            "day": [
+              false,
+              false,
+              false,
+              true,
+              true,
+              false,
+              false
+            ],
+            "secretary": [
+              "加賀"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 90,
+          "ammo": 100,
+          "steel": 0,
+          "bauxite": 260,
+          "material": [
+            {
+              "development": [
+                3,
+                5
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 6,
+                "name": "零式艦戦21型",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                4,
+                6
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 6,
+                "name": "零式艦戦21型",
+                "count": 3
+              }
+            },
+            {
+              "development": [
+                5,
+                8
+              ],
+              "improvement": [
+                4,
+                6
+              ],
+              "item": {
+                "icon": 6,
+                "name": "零式艦戦32型",
+                "count": 2
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "type": "艦上爆撃機",
+    "icon": 7,
+    "name": "零式艦戦62型(爆戦)",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "隼鷹"
+            ]
+          },
+          {
+            "day": [
+              true,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "翔鶴"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 120,
+          "ammo": 120,
+          "steel": 0,
+          "bauxite": 280,
+          "material": [
+            {
+              "development": [
+                4,
+                6
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 6,
+                "name": "零式艦戦52型",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                5,
+                9
+              ],
+              "improvement": [
+                4,
+                6
+              ],
+              "item": {
+                "icon": 7,
+                "name": "彗星",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 154,
+    "type": "艦上爆撃機",
+    "icon": 7,
+    "name": "零戦62型(爆戦/岩井隊)",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              true,
+              false,
+              true,
+              false,
+              false
+            ],
+            "secretary": [
+              "瑞鶴"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 120,
+          "ammo": 120,
+          "steel": 0,
+          "bauxite": 280,
+          "material": [
+            {
+              "development": [
+                4,
+                6
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 6,
+                "name": "零式艦戦52型",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                5,
+                9
+              ],
+              "improvement": [
+                4,
+                6
+              ],
+              "item": {
+                "icon": 7,
+                "name": "彗星",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "type": "水上偵察機",
+    "icon": 10,
+    "name": "零式水上偵察機",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 0,
+          "name": "二式水戦改",
+          "icon": 10
+        },
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "千歳甲"
+            ]
+          },
+          {
+            "day": [
+              false,
+              false,
+              false,
+              true,
+              true,
+              false,
+              false
+            ],
+            "secretary": [
+              "千代田甲"
+            ]
+          },
+          {
+            "day": [
+              true,
+              false,
+              false,
+              false,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "秋津洲改"
+            ]
+          },
+          {
+            "day": [
+              true,
+              true,
+              true,
+              false,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "瑞穂"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 90,
+          "ammo": 20,
+          "steel": 0,
+          "bauxite": 300,
+          "material": [
+            {
+              "development": [
+                4,
+                6
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 10,
+                "name": "零式水上偵察機",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                5,
+                8
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 10,
+                "name": "零式水上偵察機",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                9,
+                15
+              ],
+              "improvement": [
+                5,
+                10
+              ],
+              "item": {
+                "icon": 6,
+                "name": "零式艦戦21型",
+                "count": 3
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "type": "水上偵察機",
+    "icon": 10,
+    "name": "零式水上観測機",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              true,
+              true,
+              true,
+              true,
+              false,
+              false,
+              true
+            ],
+            "secretary": [
+              "瑞穂"
+            ]
+          },
+          {
+            "day": [
+              false,
+              false,
+              false,
+              false,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "武蔵"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 90,
+          "ammo": 40,
+          "steel": 0,
+          "bauxite": 270,
+          "material": [
+            {
+              "development": [
+                4,
+                6
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 10,
+                "name": "瑞雲",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                6,
+                9
+              ],
+              "improvement": [
+                4,
+                7
+              ],
+              "item": {
+                "icon": 10,
+                "name": "零式水上観測機",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "type": "水上偵察機",
+    "icon": 10,
+    "name": "九八式水上偵察機(夜偵)",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              true,
+              true,
+              false,
+              false,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "川内改二"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 100,
+          "ammo": 30,
+          "steel": 0,
+          "bauxite": 480,
+          "material": [
+            {
+              "development": [
+                4,
+                7
+              ],
+              "improvement": [
+                3,
+                4
+              ],
+              "item": {
+                "icon": 10,
+                "name": "零式水上偵察機",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                5,
+                9
+              ],
+              "improvement": [
+                4,
+                8
+              ],
+              "item": {
+                "icon": 10,
+                "name": "零式水上偵察機",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 163,
+    "type": "水上偵察機",
+    "icon": 10,
+    "name": "Ro.43水偵",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 0,
+          "name": "Ro.44水上戦闘機",
+          "icon": 10
+        },
+        "req": [
+          {
+            "day": [
+              false,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "secretary": [
+              "Zara改"
+            ]
+          },
+          {
+            "day": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              true
+            ],
+            "secretary": [
+              "Italia"
+            ]
+          },
+          {
+            "day": [
+              false,
+              false,
+              true,
+              true,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "Roma改"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 60,
+          "ammo": 30,
+          "steel": 0,
+          "bauxite": 180,
+          "material": [
+            {
+              "development": [
+                3,
+                5
+              ],
+              "improvement": [
+                1,
+                2
+              ],
+              "item": {
+                "icon": 10,
+                "name": "零式水上偵察機",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                4,
+                6
+              ],
+              "improvement": [
+                2,
+                4
+              ],
+              "item": {
+                "icon": 10,
+                "name": "瑞雲",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                5,
+                10
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 10,
+                "name": "零式水上偵察機",
+                "count": 2
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "type": "小型電探",
+    "icon": 11,
+    "name": "13号対空電探",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 0,
+          "name": "13号対空電探改",
+          "icon": 11
+        },
+        "req": [
+          {
+            "day": [
+              true,
+              false,
+              false,
+              false,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "時雨改二"
+            ]
+          },
+          {
+            "day": [
+              true,
+              true,
+              false,
+              false,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "五十鈴改二"
+            ]
+          },
+          {
+            "day": [
+              false,
+              false,
+              true,
+              true,
+              true,
+              false,
+              false
+            ],
+            "secretary": [
+              "秋月"
+            ]
+          },
+          {
+            "day": [
+              false,
+              true,
+              true,
+              true,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "照月"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 10,
+          "ammo": 0,
+          "steel": 20,
+          "bauxite": 30,
+          "material": [
+            {
+              "development": [
+                4,
+                5
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                5,
+                7
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 11,
+                "name": "13号対空電探",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                10,
+                15
+              ],
+              "improvement": [
+                5,
+                12
+              ],
+              "item": {
+                "icon": 11,
+                "name": "21号対空電探",
+                "count": 1
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "type": "小型電探",
+    "icon": 11,
+    "name": "22号対水上電探",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 0,
+          "name": "22号対水上電探改四",
+          "icon": 11
+        },
+        "req": [
+          {
+            "day": [
+              true,
+              true,
+              false,
+              false,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "日向"
+            ]
+          },
+          {
+            "day": [
+              false,
+              true,
+              true,
+              false,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "夕雲"
+            ]
+          },
+          {
+            "day": [
+              false,
+              false,
+              false,
+              true,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "島風"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 10,
+          "ammo": 0,
+          "steel": 30,
+          "bauxite": 30,
+          "material": [
+            {
+              "development": [
+                4,
+                5
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 11,
+                "name": "22号対水上電探",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                7,
+                10
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 11,
+                "name": "22号対水上電探",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                10,
+                20
+              ],
+              "improvement": [
+                8,
+                14
+              ],
+              "item": {
+                "icon": 11,
+                "name": "22号対水上電探",
+                "count": 3
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "type": "大型電探",
+    "icon": 11,
+    "name": "21号対空電探",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 0,
+          "name": "21号対空電探改",
+          "icon": 11
+        },
+        "req": [
+          {
+            "day": [
+              true,
+              true,
+              false,
+              false,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "伊勢"
+            ]
+          },
+          {
+            "day": [
+              false,
+              false,
+              false,
+              true,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "日向"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 10,
+          "ammo": 0,
+          "steel": 40,
+          "bauxite": 50,
+          "material": [
+            {
+              "development": [
+                5,
+                6
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                6,
+                8
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 11,
+                "name": "21号対空電探",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                12,
+                16
+              ],
+              "improvement": [
+                5,
+                13
+              ],
+              "item": {
+                "icon": 11,
+                "name": "21号対空電探",
+                "count": 2
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "type": "大型電探",
+    "icon": 11,
+    "name": "32号対水上電探",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 0,
+          "name": "32号対水上電探改",
+          "icon": 11
+        },
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              false,
+              true,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "伊勢"
+            ]
+          },
+          {
+            "day": [
+              true,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "日向"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 10,
+          "ammo": 0,
+          "steel": 60,
+          "bauxite": 50,
+          "material": [
+            {
+              "development": [
+                6,
+                10
+              ],
+              "improvement": [
+                3,
+                4
+              ],
+              "item": {
+                "icon": 11,
+                "name": "22号対水上電探",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                12,
+                15
+              ],
+              "improvement": [
+                4,
+                7
+              ],
+              "item": {
+                "icon": 11,
+                "name": "22号対水上電探",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                15,
+                22
+              ],
+              "improvement": [
+                10,
+                15
+              ],
+              "item": {
+                "icon": 11,
+                "name": "32号対水上電探",
+                "count": 1
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "type": "小型電探",
+    "icon": 11,
+    "name": "22号対水上電探改四",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              true,
+              false,
+              false,
+              false,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "妙高改二"
+            ]
+          },
+          {
+            "day": [
+              true,
+              true,
+              false,
+              false,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "羽黒改二"
+            ]
+          },
+          {
+            "day": [
+              false,
+              false,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "secretary": [
+              "金剛改二"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 10,
+          "ammo": 0,
+          "steel": 40,
+          "bauxite": 40,
+          "material": [
+            {
+              "development": [
+                5,
+                8
+              ],
+              "improvement": [
+                3,
+                4
+              ],
+              "item": {
+                "icon": 11,
+                "name": "22号対水上電探",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                8,
+                10
+              ],
+              "improvement": [
+                4,
+                8
+              ],
+              "item": {
+                "icon": 11,
+                "name": "22号対水上電探改四",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "type": "大型電探",
+    "icon": 11,
+    "name": "21号対空電探改",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              true,
+              false,
+              false,
+              false,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "大和"
+            ]
+          },
+          {
+            "day": [
+              false,
+              false,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "secretary": [
+              "武蔵"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 10,
+          "ammo": 0,
+          "steel": 60,
+          "bauxite": 70,
+          "material": [
+            {
+              "development": [
+                6,
+                8
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 11,
+                "name": "21号対空電探",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                10,
+                12
+              ],
+              "improvement": [
+                4,
+                8
+              ],
+              "item": {
+                "icon": 11,
+                "name": "21号対空電探",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 106,
+    "type": "小型電探",
+    "icon": 11,
+    "name": "13号対空電探改",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              false,
+              false,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "磯風改"
+            ]
+          },
+          {
+            "day": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "初霜改二"
+            ]
+          },
+          {
+            "day": [
+              true,
+              true,
+              true,
+              true,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "雪風"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 10,
+          "ammo": 0,
+          "steel": 30,
+          "bauxite": 40,
+          "material": [
+            {
+              "development": [
+                5,
+                7
+              ],
+              "improvement": [
+                3,
+                4
+              ],
+              "item": {
+                "icon": 11,
+                "name": "13号対空電探",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                7,
+                9
+              ],
+              "improvement": [
+                4,
+                8
+              ],
+              "item": {
+                "icon": 11,
+                "name": "13号対空電探",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 141,
+    "type": "大型電探",
+    "icon": 11,
+    "name": "32号対水上電探改",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              false,
+              true,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "日向"
+            ]
+          },
+          {
+            "day": [
+              true,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "伊勢"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 10,
+          "ammo": 0,
+          "steel": 100,
+          "bauxite": 80,
+          "material": [
+            {
+              "development": [
+                10,
+                15
+              ],
+              "improvement": [
+                5,
+                6
+              ],
+              "item": {
+                "icon": 11,
+                "name": "22号対水上電探",
+                "count": 3
+              }
+            },
+            {
+              "development": [
+                14,
+                18
+              ],
+              "improvement": [
+                7,
+                10
+              ],
+              "item": {
+                "icon": 11,
+                "name": "32号対水上電探",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "type": "対艦強化弾",
+    "icon": 13,
+    "name": "九一式徹甲弾",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 0,
+          "name": "一式徹甲弾",
+          "icon": 13
+        },
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              false,
+              true,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "比叡"
+            ]
+          },
+          {
+            "day": [
+              true,
+              true,
+              false,
+              false,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "霧島"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 30,
+          "ammo": 150,
+          "steel": 310,
+          "bauxite": 10,
+          "material": [
+            {
+              "development": [
+                2,
+                3
+              ],
+              "improvement": [
+                1,
+                1
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                3,
+                5
+              ],
+              "improvement": [
+                1,
+                2
+              ],
+              "item": {
+                "icon": 13,
+                "name": "九一式徹甲弾",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                6,
+                9
+              ],
+              "improvement": [
+                4,
+                9
+              ],
+              "item": {
+                "icon": 13,
+                "name": "九一式徹甲弾",
+                "count": 3
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 116,
+    "type": "対艦強化弾",
+    "icon": 13,
+    "name": "一式徹甲弾",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "金剛"
+            ]
+          },
+          {
+            "day": [
+              false,
+              true,
+              true,
+              true,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "榛名"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 30,
+          "ammo": 170,
+          "steel": 330,
+          "bauxite": 20,
+          "material": [
+            {
+              "development": [
+                3,
+                5
+              ],
+              "improvement": [
+                1,
+                1
+              ],
+              "item": {
+                "icon": 13,
+                "name": "九一式徹甲弾",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                4,
+                6
+              ],
+              "improvement": [
+                2,
+                4
+              ],
+              "item": {
+                "icon": 13,
+                "name": "一式徹甲弾",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "type": "対空機銃",
+    "icon": 15,
+    "name": "25mm連装機銃",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 3,
+          "name": "25mm三連装機銃",
+          "icon": 15
+        },
+        "req": [
+          {
+            "day": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              true
+            ],
+            "secretary": [
+              "五十鈴改二"
+            ]
+          },
+          {
+            "day": [
+              false,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "皐月"
+            ]
+          },
+          {
+            "day": [
+              true,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "文月"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 0,
+          "ammo": 20,
+          "steel": 10,
+          "bauxite": 10,
+          "material": [
+            {
+              "development": [
+                0,
+                1
+              ],
+              "improvement": [
+                1,
+                1
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                1,
+                2
+              ],
+              "improvement": [
+                1,
+                2
+              ],
+              "item": {
+                "icon": 15,
+                "name": "25mm連装機銃",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                2,
+                3
+              ],
+              "improvement": [
+                1,
+                2
+              ],
+              "item": {
+                "icon": 15,
+                "name": "25mm連装機銃",
+                "count": 1
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "type": "対空機銃",
+    "icon": 15,
+    "name": "25mm三連装機銃",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              true,
+              true,
+              true,
+              false,
+              false
+            ],
+            "secretary": [
+              "摩耶"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 0,
+          "ammo": 30,
+          "steel": 20,
+          "bauxite": 10,
+          "material": [
+            {
+              "development": [
+                1,
+                2
+              ],
+              "improvement": [
+                1,
+                1
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                1,
+                3
+              ],
+              "improvement": [
+                1,
+                2
+              ],
+              "item": {
+                "icon": 15,
+                "name": "25mm三連装機銃",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      },
+      {
+        "upgrade": {
+          "level": 0,
+          "name": "25mm三連装機銃 集中配備",
+          "icon": 15
+        },
+        "req": [
+          {
+            "day": [
+              false,
+              true,
+              true,
+              true,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "五十鈴改二"
+            ]
+          },
+          {
+            "day": [
+              true,
+              true,
+              false,
+              false,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "摩耶改二"
+            ]
+          },
+          {
+            "day": [
+              false,
+              false,
+              false,
+              true,
+              true,
+              false,
+              false
+            ],
+            "secretary": [
+              "皐月改二"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 0,
+          "ammo": 30,
+          "steel": 20,
+          "bauxite": 10,
+          "material": [
+            {
+              "development": [
+                1,
+                2
+              ],
+              "improvement": [
+                1,
+                1
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                1,
+                3
+              ],
+              "improvement": [
+                1,
+                2
+              ],
+              "item": {
+                "icon": 15,
+                "name": "25mm三連装機銃",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                5,
+                9
+              ],
+              "improvement": [
+                3,
+                7
+              ],
+              "item": {
+                "icon": 15,
+                "name": "25mm三連装機銃",
+                "count": 5
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "type": "対空機銃",
+    "icon": 15,
+    "name": "25mm単装機銃",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 5,
+          "name": "25mm連装機銃",
+          "icon": 15
+        },
+        "req": [
+          {
+            "day": [
+              true,
+              true,
+              false,
+              false,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "皐月"
+            ]
+          },
+          {
+            "day": [
+              false,
+              false,
+              false,
+              true,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "文月"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 0,
+          "ammo": 10,
+          "steel": 10,
+          "bauxite": 10,
+          "material": [
+            {
+              "development": [
+                0,
+                1
+              ],
+              "improvement": [
+                1,
+                1
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                1,
+                2
+              ],
+              "improvement": [
+                1,
+                1
+              ],
+              "item": {
+                "icon": 15,
+                "name": "25mm単装機銃",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                2,
+                3
+              ],
+              "improvement": [
+                1,
+                2
+              ],
+              "item": {
+                "icon": 15,
+                "name": "25mm単装機銃",
+                "count": 1
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 122,
+    "type": "小口径主砲",
+    "icon": 16,
+    "name": "10cm連装高角砲+高射装置",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              false,
+              true,
+              true,
+              true,
+              true,
+              false,
+              false
+            ],
+            "secretary": [
+              "秋月",
+              "初月"
+            ]
+          },
+          {
+            "day": [
+              true,
+              false,
+              false,
+              false,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "照月"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 10,
+          "ammo": 60,
+          "steel": 150,
+          "bauxite": 50,
+          "material": [
+            {
+              "development": [
+                6,
+                7
+              ],
+              "improvement": [
+                3,
+                4
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                5,
+                8
+              ],
+              "improvement": [
+                4,
+                7
+              ],
+              "item": {
+                "icon": 16,
+                "name": "10cm連装高角砲",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 135,
+    "type": "副砲",
+    "icon": 16,
+    "name": "90mm単装高角砲",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              false,
+              true,
+              true,
+              true,
+              true,
+              false,
+              false
+            ],
+            "secretary": [
+              "Littorio"
+            ]
+          },
+          {
+            "day": [
+              true,
+              false,
+              false,
+              false,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "Roma"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 10,
+          "ammo": 20,
+          "steel": 70,
+          "bauxite": 10,
+          "material": [
+            {
+              "development": [
+                1,
+                2
+              ],
+              "improvement": [
+                1,
+                2
+              ],
+              "item": {
+                "icon": 16,
+                "name": "10cm連装高角砲",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                2,
+                3
+              ],
+              "improvement": [
+                1,
+                2
+              ],
+              "item": {
+                "icon": 16,
+                "name": "10cm連装高角砲",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "type": "爆雷",
+    "icon": 17,
+    "name": "九四式爆雷投射機",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 3,
+          "name": "三式爆雷投射機",
+          "icon": 17
+        },
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              false,
+              true,
+              true,
+              false,
+              false
+            ],
+            "secretary": [
+              "None"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 10,
+          "ammo": 60,
+          "steel": 20,
+          "bauxite": 20,
+          "material": [
+            {
+              "development": [
+                1,
+                2
+              ],
+              "improvement": [
+                1,
+                2
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                2,
+                3
+              ],
+              "improvement": [
+                1,
+                3
+              ],
+              "item": {
+                "icon": 17,
+                "name": "九四式爆雷投射機",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                3,
+                6
+              ],
+              "improvement": [
+                3,
+                8
+              ],
+              "item": {
+                "icon": 17,
+                "name": "九四式爆雷投射機",
+                "count": 2
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "type": "爆雷",
+    "icon": 17,
+    "name": "三式爆雷投射機",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              false,
+              true,
+              true,
+              false,
+              false
+            ],
+            "secretary": [
+              "五十鈴改二"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 10,
+          "ammo": 80,
+          "steel": 20,
+          "bauxite": 30,
+          "material": [
+            {
+              "development": [
+                3,
+                3
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                3,
+                5
+              ],
+              "improvement": [
+                2,
+                4
+              ],
+              "item": {
+                "icon": 17,
+                "name": "三式爆雷投射機",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "type": "ソナー",
+    "icon": 18,
+    "name": "九三式水中聴音機",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 3,
+          "name": "三式水中探信儀",
+          "icon": 18
+        },
+        "req": [
+          {
+            "day": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "夕張"
+            ]
+          },
+          {
+            "day": [
+              false,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "五十鈴改二"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 10,
+          "ammo": 0,
+          "steel": 30,
+          "bauxite": 30,
+          "material": [
+            {
+              "development": [
+                2,
+                2
+              ],
+              "improvement": [
+                1,
+                2
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                3,
+                4
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 18,
+                "name": "九三式水中聴音機",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                6,
+                9
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 18,
+                "name": "九三式水中聴音機",
+                "count": 2
+              }
+            }
+          ]
+        }
+      },
+      {
+        "upgrade": {
+          "level": 0,
+          "name": "四式水中聴音機",
+          "icon": 18
+        },
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              false,
+              false,
+              true,
+              true,
+              false
+            ],
+            "secretary": [
+              "五十鈴改二"
+            ]
+          },
+          {
+            "day": [
+              true,
+              false,
+              false,
+              false,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "時雨改二"
+            ]
+          },
+          {
+            "day": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "香取改"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 10,
+          "ammo": 0,
+          "steel": 30,
+          "bauxite": 30,
+          "material": [
+            {
+              "development": [
+                2,
+                2
+              ],
+              "improvement": [
+                1,
+                2
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                3,
+                4
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 18,
+                "name": "九三式水中聴音機",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                10,
+                20
+              ],
+              "improvement": [
+                6,
+                12
+              ],
+              "item": {
+                "icon": 18,
+                "name": "三式水中探信儀",
+                "count": 2
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "type": "ソナー",
+    "icon": 18,
+    "name": "三式水中探信儀",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              true,
+              true,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "夕張"
+            ]
+          },
+          {
+            "day": [
+              true,
+              false,
+              true,
+              true,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "五十鈴改二"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 10,
+          "ammo": 0,
+          "steel": 30,
+          "bauxite": 50,
+          "material": [
+            {
+              "development": [
+                4,
+                5
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                5,
+                7
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 18,
+                "name": "三式水中探信儀",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 149,
+    "type": "ソナー",
+    "icon": 18,
+    "name": "四式水中聴音機",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              false,
+              false,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "五十鈴改二"
+            ]
+          },
+          {
+            "day": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "秋月"
+            ]
+          },
+          {
+            "day": [
+              false,
+              false,
+              false,
+              true,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "照月"
+            ]
+          },
+          {
+            "day": [
+              false,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "香取改"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 10,
+          "ammo": 0,
+          "steel": 50,
+          "bauxite": 60,
+          "material": [
+            {
+              "development": [
+                5,
+                7
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 18,
+                "name": "九三式水中聴音機",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                6,
+                10
+              ],
+              "improvement": [
+                4,
+                6
+              ],
+              "item": {
+                "icon": 18,
+                "name": "四式水中聴音機",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "type": "上陸用舟艇",
+    "icon": 20,
+    "name": "大発動艇",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 0,
+          "name": "大発動艇(八九式中戦車&陸戦隊)",
+          "icon": 20
+        },
+        "req": [
+          {
+            "day": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "あきつ丸"
+            ]
+          },
+          {
+            "day": [
+              true,
+              true,
+              true,
+              true,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "皐月改二"
+            ]
+          },
+          {
+            "day": [
+              true,
+              true,
+              false,
+              false,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "阿武隈改二"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 50,
+          "ammo": 30,
+          "steel": 30,
+          "bauxite": 10,
+          "material": [
+            {
+              "development": [
+                1,
+                2
+              ],
+              "improvement": [
+                1,
+                2
+              ],
+              "item": {
+                "icon": 25,
+                "name": "ドラム缶(輸送用)",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                1,
+                4
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 15,
+                "name": "7.7mm機銃",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                4,
+                8
+              ],
+              "improvement": [
+                3,
+                7
+              ],
+              "item": {
+                "icon": 15,
+                "name": "12.7mm単装機銃",
+                "count": 3
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 166,
+    "type": "上陸用舟艇",
+    "icon": 20,
+    "name": "大発動艇(八九式中戦車&陸戦隊)",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 0,
+          "name": "特二式内火艇",
+          "icon": 36
+        },
+        "req": [
+          {
+            "day": [
+              true,
+              true,
+              false,
+              false,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "あきつ丸"
+            ]
+          },
+          {
+            "day": [
+              false,
+              false,
+              false,
+              false,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "皐月改二"
+            ]
+          },
+          {
+            "day": [
+              false,
+              false,
+              true,
+              true,
+              true,
+              false,
+              false
+            ],
+            "secretary": [
+              "阿武隈改二"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 70,
+          "ammo": 80,
+          "steel": 120,
+          "bauxite": 30,
+          "material": [
+            {
+              "development": [
+                3,
+                5
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 15,
+                "name": "25mm単装機銃",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                4,
+                8
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 15,
+                "name": "12cm30連装噴進砲",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                10,
+                18
+              ],
+              "improvement": [
+                5,
+                9
+              ],
+              "item": {
+                "icon": 15,
+                "name": "7.7mm機銃",
+                "count": 3
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "type": "探照灯",
+    "icon": 24,
+    "name": "探照灯",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 0,
+          "name": "96式150cm探照灯",
+          "icon": 24
+        },
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              false,
+              false,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "暁"
+            ]
+          },
+          {
+            "day": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "神通"
+            ]
+          },
+          {
+            "day": [
+              false,
+              true,
+              true,
+              true,
+              false,
+              false,
+              false
+            ],
+            "secretary": [
+              "青葉",
+              "綾波"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 10,
+          "ammo": 0,
+          "steel": 30,
+          "bauxite": 20,
+          "material": [
+            {
+              "development": [
+                3,
+                3
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                3,
+                5
+              ],
+              "improvement": [
+                2,
+                4
+              ],
+              "item": {
+                "icon": 24,
+                "name": "探照灯",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                5,
+                10
+              ],
+              "improvement": [
+                3,
+                7
+              ],
+              "item": {
+                "icon": 32,
+                "name": "熟練見張員",
+                "count": 1
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 140,
+    "type": "大型探照灯",
+    "icon": 24,
+    "name": "96式150cm探照灯",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              true,
+              true,
+              false,
+              false,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "比叡"
+            ]
+          },
+          {
+            "day": [
+              false,
+              false,
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "secretary": [
+              "霧島"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 20,
+          "ammo": 0,
+          "steel": 70,
+          "bauxite": 30,
+          "material": [
+            {
+              "development": [
+                4,
+                5
+              ],
+              "improvement": [
+                3,
+                4
+              ],
+              "item": {
+                "icon": 24,
+                "name": "探照灯",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                5,
+                10
+              ],
+              "improvement": [
+                3,
+                7
+              ],
+              "item": {
+                "icon": 24,
+                "name": "探照灯",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 120,
+    "type": "高射装置",
+    "icon": 30,
+    "name": "91式高射装置",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 0,
+          "name": "94式高射装置",
+          "icon": 30
+        },
+        "req": [
+          {
+            "day": [
+              true,
+              true,
+              false,
+              false,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "摩耶",
+              "秋月"
+            ]
+          },
+          {
+            "day": [
+              true,
+              false,
+              false,
+              false,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "照月"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 0,
+          "ammo": 0,
+          "steel": 60,
+          "bauxite": 40,
+          "material": [
+            {
+              "development": [
+                3,
+                4
+              ],
+              "improvement": [
+                1,
+                2
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                3,
+                5
+              ],
+              "improvement": [
+                2,
+                4
+              ],
+              "item": {
+                "icon": 16,
+                "name": "12.7cm連装高角砲",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                4,
+                9
+              ],
+              "improvement": [
+                4,
+                7
+              ],
+              "item": {
+                "icon": 16,
+                "name": "10cm連装高角砲",
+                "count": 2
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 121,
+    "type": "高射装置",
+    "icon": 30,
+    "name": "94式高射装置",
+    "improvement": [
+      {
+        "upgrade": {
+          "level": 0,
+          "name": "10cm連装高角砲+高射装置",
+          "icon": 16
+        },
+        "req": [
+          {
+            "day": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "秋月",
+              "照月"
+            ]
+          },
+          {
+            "day": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "初月"
+            ]
+          },
+          {
+            "day": [
+              true,
+              false,
+              false,
+              false,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "吹雪改二"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 0,
+          "ammo": 0,
+          "steel": 80,
+          "bauxite": 70,
+          "material": [
+            {
+              "development": [
+                4,
+                5
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                4,
+                6
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 16,
+                "name": "10cm連装高角砲",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                8,
+                10
+              ],
+              "improvement": [
+                5,
+                10
+              ],
+              "item": {
+                "icon": 16,
+                "name": "10cm連装高角砲",
+                "count": 2
+              }
+            }
+          ]
+        }
+      },
+      {
+        "upgrade": {
+          "level": 0,
+          "name": "12.7cm高角砲+高射装置",
+          "icon": 16
+        },
+        "req": [
+          {
+            "day": [
+              true,
+              false,
+              false,
+              false,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "摩耶改二"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 0,
+          "ammo": 0,
+          "steel": 80,
+          "bauxite": 70,
+          "material": [
+            {
+              "development": [
+                4,
+                5
+              ],
+              "improvement": [
+                2,
+                3
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            },
+            {
+              "development": [
+                4,
+                6
+              ],
+              "improvement": [
+                3,
+                5
+              ],
+              "item": {
+                "icon": 16,
+                "name": "12.7cm連装高角砲",
+                "count": 1
+              }
+            },
+            {
+              "development": [
+                7,
+                9
+              ],
+              "improvement": [
+                5,
+                9
+              ],
+              "item": {
+                "icon": 16,
+                "name": "12.7cm連装高角砲",
+                "count": 2
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 167,
+    "type": "特型内火艇",
+    "icon": 36,
+    "name": "特二式内火艇",
+    "improvement": [
+      {
+        "upgrade": false,
+        "req": [
+          {
+            "day": [
+              false,
+              false,
+              false,
+              true,
+              true,
+              true,
+              true
+            ],
+            "secretary": [
+              "伊8"
+            ]
+          },
+          {
+            "day": [
+              true,
+              true,
+              false,
+              false,
+              false,
+              true,
+              true
+            ],
+            "secretary": [
+              "伊58"
+            ]
+          },
+          {
+            "day": [
+              false,
+              true,
+              true,
+              true,
+              true,
+              false,
+              false
+            ],
+            "secretary": [
+              "伊401"
+            ]
+          }
+        ],
+        "consume": {
+          "fuel": 80,
+          "ammo": 90,
+          "steel": 100,
+          "bauxite": 70,
+          "material": [
+            {
+              "development": [
+                5,
+                8
+              ],
+              "improvement": [
+                3,
+                4
+              ],
+              "item": {
+                "icon": 15,
+                "name": "7.7mm機銃",
+                "count": 2
+              }
+            },
+            {
+              "development": [
+                8,
+                12
+              ],
+              "improvement": [
+                4,
+                6
+              ],
+              "item": {
+                "icon": 15,
+                "name": "12.7mm単装機銃",
+                "count": 3
+              }
+            },
+            {
+              "development": [
+                0,
+                0
+              ],
+              "improvement": [
+                0,
+                0
+              ],
+              "item": {
+                "icon": 0,
+                "name": "",
+                "count": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
 ]

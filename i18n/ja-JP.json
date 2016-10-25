@@ -1,6 +1,6 @@
 {
   "Equipment Improvement": "装備改修表",
-  "Show possible improvements of the day": "簡易装備改修表",
+  "Show possible improvements of the day based on data from [WhoCallsTheFleet](http://fleet.moe) and [Kcwiki](https://zh.kcwiki.moe)": "簡易装備改修表、データは[WhoCallsTheFleet](http://fleet.moe)と[kcwiki](https://zh.kcwiki.moe)によって提供されている。",
   "Weekday setting": "曜日設定",
   "Choose weekday": "曜日選択",
   "Sunday": "日曜日",
@@ -10,8 +10,19 @@
   "Thursday": "木曜日",
   "Friday": "金曜日",
   "Saturday": "土曜日",
+  "Sun": "日",
+  "Mon": "月",
+  "Tue": "火",
+  "Wed": "水",
+  "Thu": "木",
+  "Fri": "金",
+  "Sat": "土",
   "Improvement information": "改修装備",
   "Type": "分類",
   "Name": "装備名",
-  "2nd Ship": "二番艦"
+  "2nd Ship": "二番艦",
+  "None": "無し",
+  "upgrade to": "上位の装備へ更新",
+  "Resource to consume": "必要資材",
+  "upgrade": "更新"
 }
